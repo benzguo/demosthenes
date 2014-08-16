@@ -37,7 +37,42 @@ class MainViewController: NSViewController {
         diffuseLightNode.position = SCNVector3Make(-30, 30, 50)
         rootNode.addChildNode(diffuseLightNode)
 
+        let flatShinyMaterial = SCNMaterial()
+        let cubeMap = [
+            NSImage(named: "darkland-right.jpg"),
+            NSImage(named: "darkland-left.jpg"),
+            NSImage(named: "darkland-top.jpg"),
+            NSImage(named: "darkland-bottom.jpg"),
+            NSImage(named: "darkland-back.jpg"),
+            NSImage(named: "darkland-front.jpg"),
+        ]
+        flatShinyMaterial.reflective.contents = cubeMap
+        flatShinyMaterial.shininess = 100
+        flatShinyMaterial.diffuse.contents = NSColor.blackColor()
+        flatShinyMaterial.specular.contents = NSColor.whiteColor()       
+
+        // floor (not showing)
+        let floor = SCNFloor()
+        floor.reflectionFalloffEnd = 100
+        floor.firstMaterial.diffuse.contents = NSImage(named: "floor-diffuse.jpg")
+        floor.firstMaterial.diffuse.contentsTransform = CATransform3DMakeScale(0.4, 0.4, 0.4);
+        let floorNode = SCNNode(geometry: floor)
+        rootNode.addChildNode(floorNode)
+
+        // not used
+        let colorAnimation = CAKeyframeAnimation(keyPath: "color")
+        colorAnimation.values = [
+            NSColor.redColor(),
+            NSColor.blueColor(),
+            NSColor.greenColor(),
+            NSColor.redColor()
+        ]
+        colorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        colorAnimation.repeatCount = Float.infinity
+        colorAnimation.duration = 3.0       
+
         let cube = SCNBox(width: 4.0, height: 4.0, length: 4.0, chamferRadius: 0.0)
+        cube.materials = [flatShinyMaterial]
         let cubeNode = SCNNode(geometry: cube)
         rootNode.addChildNode(cubeNode)
 
@@ -57,16 +92,9 @@ class MainViewController: NSViewController {
         let torusNode = SCNNode(geometry: torus)
         let rotationTransform = CATransform3DMakeRotation(CGFloat(M_PI/2.0), CGFloat(1), CGFloat(0), CGFloat(0))
         torusNode.transform = rotationTransform
-        let material = SCNMaterial()
-        let noiseImage = NSImage(named: "noise")
-        material.diffuse.contents = noiseImage
-        material.specular.contents = NSColor.whiteColor()
-        material.shininess = 1.0
-        // trilinear filter makes image-based materials look better
-        material.diffuse.minificationFilter = .FilterModeLinear
-        material.diffuse.magnificationFilter = .FilterModeLinear
-        material.diffuse.mipFilter = .FilterModeLinear
-        torus.materials = [material]
+
+
+        torus.materials = [flatShinyMaterial]
         rootNode.addChildNode(torusNode)
 
 
