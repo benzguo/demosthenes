@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961651C2199F07BB0088DC97 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651C1199F07BB0088DC97 /* noise.png */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961651C1199F07BB0088DC97 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961651C0199F07BB0088DC97 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				961651C1199F07BB0088DC97 /* noise.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		96A3B952199EEED200AEF7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		96A3B95D199EEED200AEF7B3 /* mtv */ = {
 			isa = PBXGroup;
 			children = (
+				961651C0199F07BB0088DC97 /* images */,
 				96A3B962199EEED200AEF7B3 /* AppDelegate.swift */,
 				96A3B964199EEED300AEF7B3 /* Images.xcassets */,
 				96A3B966199EEED300AEF7B3 /* MainMenu.xib */,
@@ -129,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961651C2199F07BB0088DC97 /* noise.png in Resources */,
 				96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */,
 				96A3B968199EEED300AEF7B3 /* MainMenu.xib in Resources */,
 			);
