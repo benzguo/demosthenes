@@ -16,10 +16,10 @@ class MainViewController: NSViewController {
 
         let cameraNode = SCNNode()
         let camera = SCNCamera()
-        camera.xFov = 45 // increase for wide angle
-        camera.yFov = 45
+        camera.xFov = 90 // increase for wide angle
+        camera.yFov = 90
         cameraNode.camera = camera
-        cameraNode.position = SCNVector3Make(0, 0, 30)
+        cameraNode.position = SCNVector3Make(0, 30, 90)
         rootNode.addChildNode(cameraNode)
 
         // lights
@@ -34,7 +34,7 @@ class MainViewController: NSViewController {
         diffuseLight.type = SCNLightTypeOmni
         let diffuseLightNode = SCNNode()
         diffuseLightNode.light = diffuseLight
-        diffuseLightNode.position = SCNVector3Make(-30, 30, 50)
+        diffuseLightNode.position = SCNVector3Make(0, 80, 80)
         rootNode.addChildNode(diffuseLightNode)
 
         let flatShinyMaterial = SCNMaterial()
@@ -48,14 +48,12 @@ class MainViewController: NSViewController {
         ]
         flatShinyMaterial.reflective.contents = cubeMap
         flatShinyMaterial.shininess = 100
-        flatShinyMaterial.diffuse.contents = NSColor.blackColor()
+        flatShinyMaterial.diffuse.contents = NSColor.darkGrayColor()
         flatShinyMaterial.specular.contents = NSColor.whiteColor()       
 
-        // floor (not showing)
         let floor = SCNFloor()
         floor.reflectionFalloffEnd = 100
-        floor.firstMaterial.diffuse.contents = NSImage(named: "floor-diffuse.jpg")
-        floor.firstMaterial.diffuse.contentsTransform = CATransform3DMakeScale(0.4, 0.4, 0.4);
+        floor.materials = [flatShinyMaterial]
         let floorNode = SCNNode(geometry: floor)
         rootNode.addChildNode(floorNode)
 
@@ -69,7 +67,27 @@ class MainViewController: NSViewController {
         ]
         colorAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         colorAnimation.repeatCount = Float.infinity
-        colorAnimation.duration = 3.0       
+        colorAnimation.duration = 3.0
+
+//        SCNNode *armatureNode = [self.scene.rootNode childNodeWithName:@"Armature" recursively:YES];
+//        NSURL *sceneURL = [[NSBundle mainBundle] URLForResource:@"streetlamp-providence" withExtension:@"dae"];
+        let sceneURL = NSBundle.mainBundle().URLForResource("streetlamp-luminaire", withExtension: "dae")
+        let sceneSource = SCNSceneSource(URL: sceneURL, options: nil)
+        let identifiers = sceneSource.identifiersOfEntriesWithClass(SCNNode.self) as [String]
+        let streetlampNode = SCNNode()
+        for id: String in identifiers {
+            let node = sceneSource.entryWithIdentifier(id, withClass: SCNNode.self) as SCNNode
+            streetlampNode.addChildNode(node)
+        }
+        let streetlampRotation = CATransform3DMakeRotation(CGFloat(M_PI/2.0), CGFloat(-1), CGFloat(0), CGFloat(0))
+        streetlampNode.transform = streetlampRotation
+        streetlampNode.position = SCNVector3Make(0, -190, 0)
+        rootNode.addChildNode(streetlampNode)
+
+
+//        SCNSceneSource *sceneSource = [SCNSceneSource sceneSourceWithURL:sceneURL options:nil];
+//        CAAnimation *animationObject = [sceneSource entryWithIdentifier:@"idle-animation" withClass:[CAAnimation class]];
+//        [armatureNode addAnimation:animationObject forKey:@"idle-animation"];
 
         let cube = SCNBox(width: 4.0, height: 4.0, length: 4.0, chamferRadius: 0.0)
         cube.materials = [flatShinyMaterial]
@@ -88,27 +106,25 @@ class MainViewController: NSViewController {
         sphereNode.position = SCNVector3Make(3.0, 0.0, 0.0)
         rootNode.addChildNode(sphereNode)
 
-        let torus = SCNTorus(ringRadius: 8, pipeRadius: 1)
-        let torusNode = SCNNode(geometry: torus)
+        let box = SCNBox(width: 80.0, height: 80.0, length: 80.0, chamferRadius: 0.0)
+        let boxNode = SCNNode(geometry: box)
         let rotationTransform = CATransform3DMakeRotation(CGFloat(M_PI/2.0), CGFloat(1), CGFloat(0), CGFloat(0))
-        torusNode.transform = rotationTransform
+        boxNode.transform = streetlampRotation
 
+        box.materials = [flatShinyMaterial]
+        rootNode.addChildNode(boxNode)
 
-        torus.materials = [flatShinyMaterial]
-        rootNode.addChildNode(torusNode)
-
-
-        let torusRotation = CAKeyframeAnimation(keyPath: "transform")
-        torusRotation.values = [
-            NSValue(CATransform3D: CATransform3DRotate(torusNode.transform, 0 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
-            NSValue(CATransform3D: CATransform3DRotate(torusNode.transform, 1 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
-            NSValue(CATransform3D: CATransform3DRotate(torusNode.transform, 2 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
-            NSValue(CATransform3D: CATransform3DRotate(torusNode.transform, 3 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
-            NSValue(CATransform3D: CATransform3DRotate(torusNode.transform, 4 * CGFloat(M_PI)/2.0, 1, 0.5, 0))
+        let boxRotation = CAKeyframeAnimation(keyPath: "transform")
+        boxRotation.values = [
+            NSValue(CATransform3D: CATransform3DRotate(boxNode.transform, 0 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
+            NSValue(CATransform3D: CATransform3DRotate(boxNode.transform, 1 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
+            NSValue(CATransform3D: CATransform3DRotate(boxNode.transform, 2 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
+            NSValue(CATransform3D: CATransform3DRotate(boxNode.transform, 3 * CGFloat(M_PI)/2.0, 1, 0.5, 0)),
+            NSValue(CATransform3D: CATransform3DRotate(boxNode.transform, 4 * CGFloat(M_PI)/2.0, 1, 0.5, 0))
         ]
-        torusRotation.duration = 3.0
-        torusRotation.repeatCount = Float.infinity
-        torusNode.addAnimation(torusRotation, forKey: "transform")
+        boxRotation.duration = 10.0
+        boxRotation.repeatCount = Float.infinity
+        boxNode.addAnimation(boxRotation, forKey: "transform")
 
         let text = SCNText(string: "☛", extrusionDepth: 4.0)
         let textNode = SCNNode(geometry: text)

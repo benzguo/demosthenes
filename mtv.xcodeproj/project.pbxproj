@@ -29,17 +29,8 @@
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
 		96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165201199F13A30088DC97 /* floor-diffuse.jpg */; };
-		96165211199F19E80088DC97 /* texture0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165206199F19E80088DC97 /* texture0.jpg */; };
-		96165212199F19E80088DC97 /* texture1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165207199F19E80088DC97 /* texture1.jpg */; };
-		96165213199F19E80088DC97 /* texture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165208199F19E80088DC97 /* texture2.jpg */; };
-		96165214199F19E80088DC97 /* texture3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165209199F19E80088DC97 /* texture3.jpg */; };
-		96165215199F19E80088DC97 /* texture4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9616520A199F19E80088DC97 /* texture4.jpg */; };
-		96165216199F19E80088DC97 /* texture5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9616520B199F19E80088DC97 /* texture5.jpg */; };
-		96165217199F19E80088DC97 /* texture6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9616520C199F19E80088DC97 /* texture6.jpg */; };
-		96165218199F19E80088DC97 /* texture7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9616520D199F19E80088DC97 /* texture7.png */; };
-		96165219199F19E80088DC97 /* texture8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9616520E199F19E80088DC97 /* texture8.jpg */; };
-		9616521A199F19E80088DC97 /* texture9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9616520F199F19E80088DC97 /* texture9.jpg */; };
-		9616521B199F19E80088DC97 /* Asus P6T6.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96165210199F19E80088DC97 /* Asus P6T6.dae */; };
+		9616521D199F1FEB0088DC97 /* streetlamp-providence.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9616521C199F1FEB0088DC97 /* streetlamp-providence.dae */; };
+		9616521F199F26280088DC97 /* streetlamp-luminaire.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9616521E199F26280088DC97 /* streetlamp-luminaire.dae */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
@@ -70,17 +61,8 @@
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
 		96165201199F13A30088DC97 /* floor-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "floor-diffuse.jpg"; sourceTree = "<group>"; };
-		96165206199F19E80088DC97 /* texture0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture0.jpg; sourceTree = "<group>"; };
-		96165207199F19E80088DC97 /* texture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture1.jpg; sourceTree = "<group>"; };
-		96165208199F19E80088DC97 /* texture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture2.jpg; sourceTree = "<group>"; };
-		96165209199F19E80088DC97 /* texture3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture3.jpg; sourceTree = "<group>"; };
-		9616520A199F19E80088DC97 /* texture4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture4.jpg; sourceTree = "<group>"; };
-		9616520B199F19E80088DC97 /* texture5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture5.jpg; sourceTree = "<group>"; };
-		9616520C199F19E80088DC97 /* texture6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture6.jpg; sourceTree = "<group>"; };
-		9616520D199F19E80088DC97 /* texture7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture7.png; sourceTree = "<group>"; };
-		9616520E199F19E80088DC97 /* texture8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture8.jpg; sourceTree = "<group>"; };
-		9616520F199F19E80088DC97 /* texture9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture9.jpg; sourceTree = "<group>"; };
-		96165210199F19E80088DC97 /* Asus P6T6.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "Asus P6T6.dae"; sourceTree = "<group>"; };
+		9616521C199F1FEB0088DC97 /* streetlamp-providence.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "streetlamp-providence.dae"; sourceTree = "<group>"; };
+		9616521E199F26280088DC97 /* streetlamp-luminaire.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "streetlamp-luminaire.dae"; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,35 +163,10 @@
 		96165203199F19E80088DC97 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				96165204199F19E80088DC97 /* motherboard */,
+				9616521E199F26280088DC97 /* streetlamp-luminaire.dae */,
+				9616521C199F1FEB0088DC97 /* streetlamp-providence.dae */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		96165204199F19E80088DC97 /* motherboard */ = {
-			isa = PBXGroup;
-			children = (
-				96165205199F19E80088DC97 /* Asus P6T6 */,
-				96165210199F19E80088DC97 /* Asus P6T6.dae */,
-			);
-			path = motherboard;
-			sourceTree = "<group>";
-		};
-		96165205199F19E80088DC97 /* Asus P6T6 */ = {
-			isa = PBXGroup;
-			children = (
-				96165206199F19E80088DC97 /* texture0.jpg */,
-				96165207199F19E80088DC97 /* texture1.jpg */,
-				96165208199F19E80088DC97 /* texture2.jpg */,
-				96165209199F19E80088DC97 /* texture3.jpg */,
-				9616520A199F19E80088DC97 /* texture4.jpg */,
-				9616520B199F19E80088DC97 /* texture5.jpg */,
-				9616520C199F19E80088DC97 /* texture6.jpg */,
-				9616520D199F19E80088DC97 /* texture7.png */,
-				9616520E199F19E80088DC97 /* texture8.jpg */,
-				9616520F199F19E80088DC97 /* texture9.jpg */,
-			);
-			path = "Asus P6T6";
 			sourceTree = "<group>";
 		};
 		96A3B952199EEED200AEF7B3 = {
@@ -309,32 +266,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */,
-				96165216199F19E80088DC97 /* texture5.jpg in Resources */,
-				96165213199F19E80088DC97 /* texture2.jpg in Resources */,
-				96165217199F19E80088DC97 /* texture6.jpg in Resources */,
-				96165211199F19E80088DC97 /* texture0.jpg in Resources */,
 				961651F1199F0EEB0088DC97 /* darkland-top.jpg in Resources */,
 				96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */,
-				96165218199F19E80088DC97 /* texture7.png in Resources */,
 				961651FA199F0EEB0088DC97 /* earth-normal.png in Resources */,
 				961651F0199F0EEB0088DC97 /* darkland-right.jpg in Resources */,
-				96165219199F19E80088DC97 /* texture8.jpg in Resources */,
-				96165215199F19E80088DC97 /* texture4.jpg in Resources */,
 				961651ED199F0EEB0088DC97 /* darkland-bottom.jpg in Resources */,
 				961651EC199F0EEB0088DC97 /* darkland-back.jpg in Resources */,
 				961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */,
 				961651FD199F0EEB0088DC97 /* stone-normal.png in Resources */,
 				961651EF199F0EEB0088DC97 /* darkland-left.jpg in Resources */,
-				96165212199F19E80088DC97 /* texture1.jpg in Resources */,
 				961651F6199F0EEB0088DC97 /* stone-diffuse.png in Resources */,
 				961651FC199F0EEB0088DC97 /* scree-normal.jpg in Resources */,
-				9616521B199F19E80088DC97 /* Asus P6T6.dae in Resources */,
 				961651EE199F0EEB0088DC97 /* darkland-front.jpg in Resources */,
 				96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */,
 				961651F9199F0EEB0088DC97 /* chrome-normal.png in Resources */,
 				961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */,
+				9616521F199F26280088DC97 /* streetlamp-luminaire.dae in Resources */,
+				9616521D199F1FEB0088DC97 /* streetlamp-providence.dae in Resources */,
 				961651F3199F0EEB0088DC97 /* earth-diffuse.jpg in Resources */,
-				9616521A199F19E80088DC97 /* texture9.jpg in Resources */,
 				961651F7199F0EEB0088DC97 /* wood-diffuse.jpg in Resources */,
 				961651F4199F0EEB0088DC97 /* noise-diffuse.png in Resources */,
 				961651F5199F0EEB0088DC97 /* scree-diffuse.jpg in Resources */,
@@ -342,7 +291,6 @@
 				961651FB199F0EEB0088DC97 /* noise-normal.png in Resources */,
 				96A3B968199EEED300AEF7B3 /* MainMenu.xib in Resources */,
 				961651F2199F0EEB0088DC97 /* Envmap.txt in Resources */,
-				96165214199F19E80088DC97 /* texture3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
