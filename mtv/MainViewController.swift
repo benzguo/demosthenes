@@ -4,13 +4,17 @@ import SceneKit
 class MainViewController: NSViewController {
 
     var sceneView: SCNView!
+    var midiPlayer: MIDIPlayer?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    required init(coder: NSCoder!) {
+        super.init(coder: coder)
     }
 
+
+
     override func awakeFromNib() {
+
+
         sceneView = self.view as SCNView
         sceneView.backgroundColor = NSColor.grayColor()
         sceneView.scene = SCNScene()
@@ -82,6 +86,13 @@ class MainViewController: NSViewController {
         textNode.transform = CATransform3DScale(textNode.transform, 0.1, 0.1, 0.1)
         cubeNode.addChildNode(textNode)
 
+        self.setupMIDI()
     }
+
+    func setupMIDI() {
+        midiPlayer = MIDIPlayer(filename: "SongInMyHead_RH")
+        midiPlayer!.play()
+    }
+
 
 }

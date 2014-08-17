@@ -33,10 +33,13 @@
 		963012B5199FDAD300D16B49 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B4199FDAD300D16B49 /* SCNMaterial.swift */; };
 		963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B619A00F3900D16B49 /* MIDIPlayer.swift */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
+		965EC21819A12E1500269336 /* SongInMyHead_LH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21619A12E1500269336 /* SongInMyHead_LH.mid */; };
+		965EC21919A12E1500269336 /* SongInMyHead_RH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21719A12E1500269336 /* SongInMyHead_RH.mid */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
 		96A3B968199EEED300AEF7B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B966199EEED300AEF7B3 /* MainMenu.xib */; };
+		96F08CE019A1278300C1409A /* MIDIPlayerCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */; };
 		96FFEE7C199FCFFE00E83AA7 /* __Water_Pool_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE5F199FCFFE00E83AA7 /* __Water_Pool_1.jpg */; };
 		96FFEE7D199FCFFE00E83AA7 /* material_1.psd in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE60199FCFFE00E83AA7 /* material_1.psd */; };
 		96FFEE7E199FCFFE00E83AA7 /* material_2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE61199FCFFE00E83AA7 /* material_2.psd */; };
@@ -95,12 +98,17 @@
 		963012B4199FDAD300D16B49 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		963012B619A00F3900D16B49 /* MIDIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIPlayer.swift; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		965EC21619A12E1500269336 /* SongInMyHead_LH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_LH.mid; sourceTree = "<group>"; };
+		965EC21719A12E1500269336 /* SongInMyHead_RH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_RH.mid; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		96A3B962199EEED200AEF7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A3B964199EEED300AEF7B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96A3B967199EEED300AEF7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96F08CDD19A1278300C1409A /* mtv-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtv-Bridging-Header.h"; sourceTree = "<group>"; };
+		96F08CDE19A1278300C1409A /* MIDIPlayerCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPlayerCore.h; sourceTree = "<group>"; };
+		96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIPlayerCore.m; sourceTree = "<group>"; };
 		96FFEE5F199FCFFE00E83AA7 /* __Water_Pool_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = __Water_Pool_1.jpg; sourceTree = "<group>"; };
 		96FFEE60199FCFFE00E83AA7 /* material_1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = material_1.psd; sourceTree = "<group>"; };
 		96FFEE61199FCFFE00E83AA7 /* material_2.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = material_2.psd; sourceTree = "<group>"; };
@@ -232,6 +240,15 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		965EC21519A12E1500269336 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				965EC21619A12E1500269336 /* SongInMyHead_LH.mid */,
+				965EC21719A12E1500269336 /* SongInMyHead_RH.mid */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
 		96A3B952199EEED200AEF7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -251,13 +268,17 @@
 		96A3B95D199EEED200AEF7B3 /* mtv */ = {
 			isa = PBXGroup;
 			children = (
+				965EC21519A12E1500269336 /* MIDI */,
 				96165203199F19E80088DC97 /* models */,
 				961651D0199F0EEB0088DC97 /* materials */,
+				96F08CDD19A1278300C1409A /* mtv-Bridging-Header.h */,
 				96A3B962199EEED200AEF7B3 /* AppDelegate.swift */,
 				96A3B964199EEED300AEF7B3 /* Images.xcassets */,
 				96A3B966199EEED300AEF7B3 /* MainMenu.xib */,
 				9644BB6C199EF16200F1EE50 /* MainViewController.swift */,
 				963012B619A00F3900D16B49 /* MIDIPlayer.swift */,
+				96F08CDE19A1278300C1409A /* MIDIPlayerCore.h */,
+				96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */,
 				96FFEE98199FD08F00E83AA7 /* SCNNode.swift */,
 				963012B2199FD8E400D16B49 /* SCNBox.swift */,
 				963012B4199FDAD300D16B49 /* SCNMaterial.swift */,
@@ -384,6 +405,7 @@
 				96FFEE82199FCFFE00E83AA7 /* material_7.psd in Resources */,
 				961651ED199F0EEB0088DC97 /* darkland-bottom.jpg in Resources */,
 				96FFEE83199FCFFE00E83AA7 /* material_8.psd in Resources */,
+				965EC21819A12E1500269336 /* SongInMyHead_LH.mid in Resources */,
 				96FFEE84199FCFFE00E83AA7 /* material_8_0.psd in Resources */,
 				96FFEE7D199FCFFE00E83AA7 /* material_1.psd in Resources */,
 				96FFEE92199FCFFE00E83AA7 /* v5_3.jpg in Resources */,
@@ -404,6 +426,7 @@
 				96FFEE88199FCFFE00E83AA7 /* Water_Pool.jpg in Resources */,
 				961651F9199F0EEB0088DC97 /* chrome-normal.png in Resources */,
 				96FFEE87199FCFFE00E83AA7 /* Vegetation_Bark_Ponderosa.jpg in Resources */,
+				965EC21919A12E1500269336 /* SongInMyHead_RH.mid in Resources */,
 				96FFEE95199FCFFE00E83AA7 /* v5_6.jpg in Resources */,
 				961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */,
 				96FFEE8D199FCFFE00E83AA7 /* v3.jpg in Resources */,
@@ -437,6 +460,7 @@
 				96FFEE99199FD08F00E83AA7 /* SCNNode.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */,
+				96F08CE019A1278300C1409A /* MIDIPlayerCore.m in Sources */,
 				963012B5199FDAD300D16B49 /* SCNMaterial.swift in Sources */,
 				96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */,
 				96A3B961199EEED200AEF7B3 /* main.swift in Sources */,
@@ -538,11 +562,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = mtv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = mtv;
 				SDKROOT = macosx10.10;
+				SWIFT_OBJC_BRIDGING_HEADER = "mtv/mtv-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -550,11 +577,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = mtv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = mtv;
 				SDKROOT = macosx10.10;
+				SWIFT_OBJC_BRIDGING_HEADER = "mtv/mtv-Bridging-Header.h";
 			};
 			name = Release;
 		};
