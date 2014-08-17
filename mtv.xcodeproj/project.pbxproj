@@ -31,6 +31,7 @@
 		96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165201199F13A30088DC97 /* floor-diffuse.jpg */; };
 		963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B2199FD8E400D16B49 /* SCNBox.swift */; };
 		963012B5199FDAD300D16B49 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B4199FDAD300D16B49 /* SCNMaterial.swift */; };
+		963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B619A00F3900D16B49 /* MIDIPlayer.swift */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
@@ -92,6 +93,7 @@
 		96165201199F13A30088DC97 /* floor-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "floor-diffuse.jpg"; sourceTree = "<group>"; };
 		963012B2199FD8E400D16B49 /* SCNBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNBox.swift; sourceTree = "<group>"; };
 		963012B4199FDAD300D16B49 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
+		963012B619A00F3900D16B49 /* MIDIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIPlayer.swift; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				96A3B964199EEED300AEF7B3 /* Images.xcassets */,
 				96A3B966199EEED300AEF7B3 /* MainMenu.xib */,
 				9644BB6C199EF16200F1EE50 /* MainViewController.swift */,
+				963012B619A00F3900D16B49 /* MIDIPlayer.swift */,
 				96FFEE98199FD08F00E83AA7 /* SCNNode.swift */,
 				963012B2199FD8E400D16B49 /* SCNBox.swift */,
 				963012B4199FDAD300D16B49 /* SCNMaterial.swift */,
@@ -430,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */,
 				96FFEE99199FD08F00E83AA7 /* SCNNode.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */,
