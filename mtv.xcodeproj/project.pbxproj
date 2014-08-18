@@ -29,6 +29,7 @@
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
 		96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165201199F13A30088DC97 /* floor-diffuse.jpg */; };
+		9619A39A19A1B79B00442FA7 /* SCNGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9619A39919A1B79B00442FA7 /* SCNGeometry.swift */; };
 		963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B2199FD8E400D16B49 /* SCNBox.swift */; };
 		963012B5199FDAD300D16B49 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B4199FDAD300D16B49 /* SCNMaterial.swift */; };
 		963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963012B619A00F3900D16B49 /* MIDIPlayer.swift */; };
@@ -36,6 +37,8 @@
 		965EC21819A12E1500269336 /* SongInMyHead_LH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21619A12E1500269336 /* SongInMyHead_LH.mid */; };
 		965EC21919A12E1500269336 /* SongInMyHead_RH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21719A12E1500269336 /* SongInMyHead_RH.mid */; };
 		965EC21B19A13C2100269336 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965EC21A19A13C2100269336 /* MIDI.swift */; };
+		969AA26C19A24472000741A1 /* CascadeDrums.mid in Resources */ = {isa = PBXBuildFile; fileRef = 969AA26B19A24472000741A1 /* CascadeDrums.mid */; };
+		969AA26E19A24C1F000741A1 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AA26D19A24C1F000741A1 /* NSView.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -95,6 +98,7 @@
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
 		96165201199F13A30088DC97 /* floor-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "floor-diffuse.jpg"; sourceTree = "<group>"; };
+		9619A39919A1B79B00442FA7 /* SCNGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNGeometry.swift; sourceTree = "<group>"; };
 		963012B2199FD8E400D16B49 /* SCNBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNBox.swift; sourceTree = "<group>"; };
 		963012B4199FDAD300D16B49 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		963012B619A00F3900D16B49 /* MIDIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIPlayer.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		965EC21619A12E1500269336 /* SongInMyHead_LH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_LH.mid; sourceTree = "<group>"; };
 		965EC21719A12E1500269336 /* SongInMyHead_RH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_RH.mid; sourceTree = "<group>"; };
 		965EC21A19A13C2100269336 /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
+		969AA26B19A24472000741A1 /* CascadeDrums.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = CascadeDrums.mid; sourceTree = "<group>"; };
+		969AA26D19A24C1F000741A1 /* NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 		965EC21519A12E1500269336 /* MIDI */ = {
 			isa = PBXGroup;
 			children = (
+				969AA26B19A24472000741A1 /* CascadeDrums.mid */,
 				965EC21619A12E1500269336 /* SongInMyHead_LH.mid */,
 				965EC21719A12E1500269336 /* SongInMyHead_RH.mid */,
 			);
@@ -282,7 +289,9 @@
 				963012B619A00F3900D16B49 /* MIDIPlayer.swift */,
 				96F08CDE19A1278300C1409A /* MIDIPlayerCore.h */,
 				96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */,
+				969AA26D19A24C1F000741A1 /* NSView.swift */,
 				96FFEE98199FD08F00E83AA7 /* SCNNode.swift */,
+				9619A39919A1B79B00442FA7 /* SCNGeometry.swift */,
 				963012B2199FD8E400D16B49 /* SCNBox.swift */,
 				963012B4199FDAD300D16B49 /* SCNMaterial.swift */,
 				96A3B95E199EEED200AEF7B3 /* Supporting Files */,
@@ -401,6 +410,7 @@
 				96FFEE8C199FCFFE00E83AA7 /* v2.jpg in Resources */,
 				96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */,
 				96FFEE8F199FCFFE00E83AA7 /* v5_0.jpg in Resources */,
+				969AA26C19A24472000741A1 /* CascadeDrums.mid in Resources */,
 				961651FA199F0EEB0088DC97 /* earth-normal.png in Resources */,
 				96FFEE81199FCFFE00E83AA7 /* material_6.psd in Resources */,
 				961651F0199F0EEB0088DC97 /* darkland-right.jpg in Resources */,
@@ -461,12 +471,14 @@
 			files = (
 				963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */,
 				96FFEE99199FD08F00E83AA7 /* SCNNode.swift in Sources */,
+				9619A39A19A1B79B00442FA7 /* SCNGeometry.swift in Sources */,
 				965EC21B19A13C2100269336 /* MIDI.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */,
 				96F08CE019A1278300C1409A /* MIDIPlayerCore.m in Sources */,
 				963012B5199FDAD300D16B49 /* SCNMaterial.swift in Sources */,
 				96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */,
+				969AA26E19A24C1F000741A1 /* NSView.swift in Sources */,
 				96A3B961199EEED200AEF7B3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

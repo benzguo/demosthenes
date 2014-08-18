@@ -1,10 +1,11 @@
 import Cocoa
 import SceneKit
 
-class MainViewController: NSViewController, MIDIPlayerDelegate {
+class MainViewController: NSViewController, MIDIPlayerDelegate, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
     var midiPlayer: MIDIPlayer?
+    var sphereNode: SCNNode!
 
     required init(coder: NSCoder!) {
         super.init(coder: coder)
@@ -12,10 +13,10 @@ class MainViewController: NSViewController, MIDIPlayerDelegate {
 
     override func awakeFromNib() {
 
-
         sceneView = self.view as SCNView
         sceneView.backgroundColor = NSColor.grayColor()
         sceneView.scene = SCNScene()
+        sceneView.delegate = self
         let rootNode = sceneView.scene.rootNode
 
         let cameraNode = SCNNode()
@@ -50,25 +51,21 @@ class MainViewController: NSViewController, MIDIPlayerDelegate {
         rootNode.addChildNode(floorNode)
 
 
-        let animalgirlNode = SCNNode(resourceName: "animalgirl")
-        animalgirlNode.rotate(-M_PI/3.0, x: 0, y: 1, z: 0)
-        animalgirlNode.position = SCNVector3Make(0, -190, 0)
-        animalgirlNode.scale(0.1)
-        rootNode.addChildNode(animalgirlNode)
+//        let animalgirlNode = SCNNode(resourceName: "animalgirl")
+//        animalgirlNode.rotate(-M_PI/3.0, x: 0, y: 1, z: 0)
+//        animalgirlNode.position = SCNVector3Make(0, -190, 0)
+//        animalgirlNode.scale(0.1)
+//        rootNode.addChildNode(animalgirlNode)
 
         let cube = SCNBox(size: 80.0)
         cube.materials = [flatShinyMaterial]
         let cubeNode = SCNNode(geometry: cube)
         cubeNode.addRotation(vector: SCNVector3Make(1.0, 1.0, 1.0), duration: 5.0)
-        flatShinyMaterial.addColorAnimation([
-            NSColor.blueColor(),
-            NSColor.blackColor()
-            ], duration: 3.0, repeatCount: Float.infinity)
         rootNode.addChildNode(cubeNode)
 
-        let sphere = SCNSphere(radius: 0.5)
-        let sphereNode = SCNNode(geometry: sphere)
-        sphereNode.position = SCNVector3Make(3.0, 0.0, 0.0)
+        let sphere = SCNSphere(radius: 40)
+        sphereNode = SCNNode(geometry: sphere)
+        sphereNode.position = SCNVector3Make(0, 20, 0.0)
         rootNode.addChildNode(sphereNode)
 
         let box = SCNBox(size: 80.0)
@@ -87,15 +84,20 @@ class MainViewController: NSViewController, MIDIPlayerDelegate {
         self.setupMIDI()
     }
 
+    func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
+    }
+
     func setupMIDI() {
-        midiPlayer = MIDIPlayer(filename: "SongInMyHead_RH")
+        midiPlayer = MIDIPlayer(filename: "CascadeDrums")
+        midiPlayer!.delegate = self
         midiPlayer!.play()
     }
 
     // MARK: - MIDIPlayerDelegate
     func didReceiveNoteOnEvents(events: [MIDIEventNoteOn]) {
-        print(events)
-        print("\n")
+        SCNTransaction.begin()
+        sphereNode.setRandomColor()
+        SCNTransaction.commit()
     }
 
 

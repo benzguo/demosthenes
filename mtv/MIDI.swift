@@ -1,4 +1,4 @@
-struct MIDIEventNoteOn {
+public struct MIDIEventNoteOn {
     let note: Int
     let velocity: Int
 }

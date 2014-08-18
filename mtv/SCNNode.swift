@@ -46,4 +46,12 @@ extension SCNNode {
         animation.repeatCount = repeatCount
         self.addAnimation(animation, forKey: "rotation")
     }
+
+    func setRandomColor() {
+        let material = self.geometry.materials[0] as SCNMaterial
+        let r = CGFloat(Double(arc4random_uniform(100))/100.0)
+        let g = CGFloat(Double(arc4random_uniform(100))/100.0)
+        let b = CGFloat(Double(arc4random_uniform(100))/100.0)
+        material.diffuse.contents = NSColor(red: r, green: g, blue: b, alpha: 1)
+    }
 }

@@ -17,12 +17,12 @@ extension SCNMaterial {
         self.shininess = 100
     }
 
-    func addColorAnimation(colors: [NSColor], duration: Float, repeatCount: Float = 1.0) {
+    func addColorAnimation(colors: [NSColor], duration: Double, repeatCount: Float = 1.0) {
         let animation = CAKeyframeAnimation(keyPath: "color")
         animation.values = colors
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         animation.repeatCount = repeatCount
-        animation.duration = 3.0
+        animation.duration = duration
         self.addAnimation(animation, forKey: "color")
     }
 }

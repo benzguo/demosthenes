@@ -3,13 +3,13 @@ import CoreMIDI
 import CoreAudio
 import AudioToolbox
 
-protocol MIDIPlayerDelegate {
+public protocol MIDIPlayerDelegate {
     func didReceiveNoteOnEvents(events: [MIDIEventNoteOn])
 }
 
-class MIDIPlayer: MIDIPlayerCoreDelegate {
+public class MIDIPlayer: MIDIPlayerCoreDelegate {
+    public var delegate: MIDIPlayerDelegate?
     var core: MIDIPlayerCore!
-    var delegate: MIDIPlayerDelegate?
 
     init(filename: String) {
         core = MIDIPlayerCore(filename: filename, delegate: self)
@@ -28,7 +28,7 @@ class MIDIPlayer: MIDIPlayerCoreDelegate {
     }
 
     // MARK: - MIDIPlayerCoreDelegate
-    func didReceivePackets(packets: [AnyObject]!) {
+    public func didReceivePackets(packets: [AnyObject]!) {
         let events: [MIDIEventNoteOn] = packets.map {packet in
             let p = packet as [String: Int]
             return MIDIEventNoteOn(note: p["note"]!, velocity: p["velocity"]!)
