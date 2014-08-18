@@ -1,11 +1,13 @@
 import Cocoa
 import SceneKit
+import AVFoundation
 
 class MainViewController: NSViewController, MIDIPlayerDelegate, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
     var midiPlayer: MIDIPlayer?
     var sphereNode: SCNNode!
+    var audioPlayer: AVPlayer?
 
     required init(coder: NSCoder!) {
         super.init(coder: coder)
@@ -82,23 +84,38 @@ class MainViewController: NSViewController, MIDIPlayerDelegate, SCNSceneRenderer
         cubeNode.addChildNode(textNode)
 
         self.setupMIDI()
+        self.setupAudio()
+        self.start()
     }
 
-    func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
-    }
 
     func setupMIDI() {
         midiPlayer = MIDIPlayer(filename: "CascadeDrums")
         midiPlayer!.delegate = self
-        midiPlayer!.play()
     }
 
-    // MARK: - MIDIPlayerDelegate
-    func didReceiveNoteOnEvents(events: [MIDIEventNoteOn]) {
+    func setupAudio() {
+        let path = NSBundle.mainBundle().pathForResource("Cascade", ofType: "wav")
+        let url = NSURL(fileURLWithPath: path)
+        audioPlayer = AVPlayer(URL: url)
+    }
+
+    func start() {
+        midiPlayer!.play()
+        audioPlayer!.play()
+    }
+
+    // MARK: MIDIPlayerDelegate
+    func midiPlayer(player: MIDIPlayer, didReceiveNoteOnEvents events: [MIDIEventNoteOn]) {
         SCNTransaction.begin()
-        sphereNode.setRandomColor()
+//            sphereNode.scale(1.5)
+//            sphereNode.scale(1)
+        sphereNode.flash(NSColor.greenColor())
         SCNTransaction.commit()
     }
 
+    // MARK: SCNSceneRendererDelegate
+    func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
+    }
 
 }

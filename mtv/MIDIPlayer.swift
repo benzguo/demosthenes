@@ -4,7 +4,7 @@ import CoreAudio
 import AudioToolbox
 
 public protocol MIDIPlayerDelegate {
-    func didReceiveNoteOnEvents(events: [MIDIEventNoteOn])
+    func midiPlayer(player: MIDIPlayer, didReceiveNoteOnEvents events: [MIDIEventNoteOn])
 }
 
 public class MIDIPlayer: MIDIPlayerCoreDelegate {
@@ -34,7 +34,7 @@ public class MIDIPlayer: MIDIPlayerCoreDelegate {
             return MIDIEventNoteOn(note: p["note"]!, velocity: p["velocity"]!)
         }
         if delegate != nil {
-            delegate?.didReceiveNoteOnEvents(events)
+            delegate?.midiPlayer(self, didReceiveNoteOnEvents: events)
         }       
     }
 

@@ -47,11 +47,12 @@ extension SCNNode {
         self.addAnimation(animation, forKey: "rotation")
     }
 
-    func setRandomColor() {
+    func flash(color: NSColor, duration: Double = 0.2) {
         let material = self.geometry.materials[0] as SCNMaterial
-        let r = CGFloat(Double(arc4random_uniform(100))/100.0)
-        let g = CGFloat(Double(arc4random_uniform(100))/100.0)
-        let b = CGFloat(Double(arc4random_uniform(100))/100.0)
-        material.diffuse.contents = NSColor(red: r, green: g, blue: b, alpha: 1)
+        let maybeColor: AnyObject!  = material.diffuse.contents
+        if maybeColor is NSColor {
+            let originalColor = maybeColor as NSColor
+            material.addColorAnimation([color, originalColor], duration: duration, repeatCount: 1, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+        }
     }
 }

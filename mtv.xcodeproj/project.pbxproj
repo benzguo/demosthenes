@@ -39,6 +39,9 @@
 		965EC21B19A13C2100269336 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965EC21A19A13C2100269336 /* MIDI.swift */; };
 		969AA26C19A24472000741A1 /* CascadeDrums.mid in Resources */ = {isa = PBXBuildFile; fileRef = 969AA26B19A24472000741A1 /* CascadeDrums.mid */; };
 		969AA26E19A24C1F000741A1 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AA26D19A24C1F000741A1 /* NSView.swift */; };
+		969AA27219A259D4000741A1 /* Cascade.wav in Resources */ = {isa = PBXBuildFile; fileRef = 969AA27019A259D4000741A1 /* Cascade.wav */; };
+		969AA27319A259D4000741A1 /* Cascade.wav.asd in Resources */ = {isa = PBXBuildFile; fileRef = 969AA27119A259D4000741A1 /* Cascade.wav.asd */; };
+		969AA27519A25E3C000741A1 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AA27419A25E3C000741A1 /* NSColor.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -108,6 +111,9 @@
 		965EC21A19A13C2100269336 /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
 		969AA26B19A24472000741A1 /* CascadeDrums.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = CascadeDrums.mid; sourceTree = "<group>"; };
 		969AA26D19A24C1F000741A1 /* NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		969AA27019A259D4000741A1 /* Cascade.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cascade.wav; sourceTree = "<group>"; };
+		969AA27119A259D4000741A1 /* Cascade.wav.asd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cascade.wav.asd; sourceTree = "<group>"; };
+		969AA27419A25E3C000741A1 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -258,6 +264,15 @@
 			path = MIDI;
 			sourceTree = "<group>";
 		};
+		969AA26F19A259D4000741A1 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				969AA27019A259D4000741A1 /* Cascade.wav */,
+				969AA27119A259D4000741A1 /* Cascade.wav.asd */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		96A3B952199EEED200AEF7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +292,7 @@
 		96A3B95D199EEED200AEF7B3 /* mtv */ = {
 			isa = PBXGroup;
 			children = (
+				969AA26F19A259D4000741A1 /* audio */,
 				965EC21519A12E1500269336 /* MIDI */,
 				96165203199F19E80088DC97 /* models */,
 				961651D0199F0EEB0088DC97 /* materials */,
@@ -290,6 +306,7 @@
 				96F08CDE19A1278300C1409A /* MIDIPlayerCore.h */,
 				96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */,
 				969AA26D19A24C1F000741A1 /* NSView.swift */,
+				969AA27419A25E3C000741A1 /* NSColor.swift */,
 				96FFEE98199FD08F00E83AA7 /* SCNNode.swift */,
 				9619A39919A1B79B00442FA7 /* SCNGeometry.swift */,
 				963012B2199FD8E400D16B49 /* SCNBox.swift */,
@@ -412,9 +429,11 @@
 				96FFEE8F199FCFFE00E83AA7 /* v5_0.jpg in Resources */,
 				969AA26C19A24472000741A1 /* CascadeDrums.mid in Resources */,
 				961651FA199F0EEB0088DC97 /* earth-normal.png in Resources */,
+				969AA27319A259D4000741A1 /* Cascade.wav.asd in Resources */,
 				96FFEE81199FCFFE00E83AA7 /* material_6.psd in Resources */,
 				961651F0199F0EEB0088DC97 /* darkland-right.jpg in Resources */,
 				96FFEE94199FCFFE00E83AA7 /* v5_5.jpg in Resources */,
+				969AA27219A259D4000741A1 /* Cascade.wav in Resources */,
 				96FFEE82199FCFFE00E83AA7 /* material_7.psd in Resources */,
 				961651ED199F0EEB0088DC97 /* darkland-bottom.jpg in Resources */,
 				96FFEE83199FCFFE00E83AA7 /* material_8.psd in Resources */,
@@ -473,6 +492,7 @@
 				96FFEE99199FD08F00E83AA7 /* SCNNode.swift in Sources */,
 				9619A39A19A1B79B00442FA7 /* SCNGeometry.swift in Sources */,
 				965EC21B19A13C2100269336 /* MIDI.swift in Sources */,
+				969AA27519A25E3C000741A1 /* NSColor.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */,
 				96F08CE019A1278300C1409A /* MIDIPlayerCore.m in Sources */,
