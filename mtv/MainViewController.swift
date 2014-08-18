@@ -1,7 +1,7 @@
 import Cocoa
 import SceneKit
 
-class MainViewController: NSViewController {
+class MainViewController: NSViewController, MIDIPlayerDelegate {
 
     var sceneView: SCNView!
     var midiPlayer: MIDIPlayer?
@@ -9,8 +9,6 @@ class MainViewController: NSViewController {
     required init(coder: NSCoder!) {
         super.init(coder: coder)
     }
-
-
 
     override func awakeFromNib() {
 
@@ -92,6 +90,12 @@ class MainViewController: NSViewController {
     func setupMIDI() {
         midiPlayer = MIDIPlayer(filename: "SongInMyHead_RH")
         midiPlayer!.play()
+    }
+
+    // MARK: - MIDIPlayerDelegate
+    func didReceiveNoteOnEvents(events: [MIDIEventNoteOn]) {
+        print(events)
+        print("\n")
     }
 
 

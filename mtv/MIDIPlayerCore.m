@@ -81,7 +81,6 @@ static void readProc(const MIDIPacketList *pktlist, void *refCon, void *connRefC
                                                @"velocity": @(velocity)
                                               };
             [packets addObject:packetDictionary];
-            printf("%i\n", note);
         }
         packet = MIDIPacketNext(packet);
     }

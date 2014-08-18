@@ -4,6 +4,7 @@
 
 @protocol MIDIPlayerCoreDelegate
 
+// only sends note-on packets
 - (void)didReceivePackets:(NSArray *)packets;
 
 @end

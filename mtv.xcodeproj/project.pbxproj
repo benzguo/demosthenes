@@ -35,6 +35,7 @@
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		965EC21819A12E1500269336 /* SongInMyHead_LH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21619A12E1500269336 /* SongInMyHead_LH.mid */; };
 		965EC21919A12E1500269336 /* SongInMyHead_RH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 965EC21719A12E1500269336 /* SongInMyHead_RH.mid */; };
+		965EC21B19A13C2100269336 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965EC21A19A13C2100269336 /* MIDI.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -100,6 +101,7 @@
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		965EC21619A12E1500269336 /* SongInMyHead_LH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_LH.mid; sourceTree = "<group>"; };
 		965EC21719A12E1500269336 /* SongInMyHead_RH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_RH.mid; sourceTree = "<group>"; };
+		965EC21A19A13C2100269336 /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				96A3B964199EEED300AEF7B3 /* Images.xcassets */,
 				96A3B966199EEED300AEF7B3 /* MainMenu.xib */,
 				9644BB6C199EF16200F1EE50 /* MainViewController.swift */,
+				965EC21A19A13C2100269336 /* MIDI.swift */,
 				963012B619A00F3900D16B49 /* MIDIPlayer.swift */,
 				96F08CDE19A1278300C1409A /* MIDIPlayerCore.h */,
 				96F08CDF19A1278300C1409A /* MIDIPlayerCore.m */,
@@ -458,6 +461,7 @@
 			files = (
 				963012B719A00F3900D16B49 /* MIDIPlayer.swift in Sources */,
 				96FFEE99199FD08F00E83AA7 /* SCNNode.swift in Sources */,
+				965EC21B19A13C2100269336 /* MIDI.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				963012B3199FD8E400D16B49 /* SCNBox.swift in Sources */,
 				96F08CE019A1278300C1409A /* MIDIPlayerCore.m in Sources */,
