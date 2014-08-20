@@ -1,15 +1,19 @@
 import Cocoa
 import SceneKit
 import AVFoundation
+import CoreMedia
 
-class MainViewController: NSViewController, MIDIPlayerDelegate, SCNSceneRendererDelegate {
+class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
     var midiPlayer: MIDIPlayer?
     var sphereNode: SCNNode!
     var audioPlayer: AVPlayer?
+    var startDate: NSDate?
+    var song: Song
 
     required init(coder: NSCoder!) {
+        song = Song()
         super.init(coder: coder)
     }
 
@@ -83,39 +87,42 @@ class MainViewController: NSViewController, MIDIPlayerDelegate, SCNSceneRenderer
         textNode.transform = CATransform3DScale(textNode.transform, 0.1, 0.1, 0.1)
         cubeNode.addChildNode(textNode)
 
-        self.setupMIDI()
-        self.setupAudio()
         self.start()
     }
 
-
-    func setupMIDI() {
-        midiPlayer = MIDIPlayer(filename: "CascadeDrums")
-        midiPlayer!.delegate = self
-    }
-
-    func setupAudio() {
-        let path = NSBundle.mainBundle().pathForResource("Cascade", ofType: "wav")
+    func start() {
+        let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
         let url = NSURL(fileURLWithPath: path)
         audioPlayer = AVPlayer(URL: url)
-    }
+        audioPlayer!.addObserver(self, forKeyPath: "status", options: nil, context: nil)
 
-    func start() {
-        midiPlayer!.play()
-        audioPlayer!.play()
-    }
-
-    // MARK: MIDIPlayerDelegate
-    func midiPlayer(player: MIDIPlayer, didReceiveNoteOnEvents events: [MIDIEventNoteOn]) {
-        SCNTransaction.begin()
-//            sphereNode.scale(1.5)
-//            sphereNode.scale(1)
-        sphereNode.flash(NSColor.greenColor())
-        SCNTransaction.commit()
     }
 
     // MARK: SCNSceneRendererDelegate
     func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
+        let time = NSDate().timeIntervalSinceDate(startDate)
+        if isnan(time) {
+            return
+        }
+        if time >= song.nextEvent.toRaw() {
+            print("event\n")
+            SCNTransaction.begin()
+            sphereNode.flash(NSColor.greenColor())
+            SCNTransaction.commit()
+            song.step()
+        }
+    }
+
+    // MARK: KVO
+    override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [NSObject : AnyObject]!, context: UnsafeMutablePointer<()>) {
+        if object is AVPlayer {
+            if (audioPlayer!.status == AVPlayerStatus.ReadyToPlay) {
+                audioPlayer!.prerollAtRate(1, completionHandler: { finished in
+                    self.startDate = NSDate()
+                    self.audioPlayer!.play()
+                })
+            }
+        }
     }
 
 }

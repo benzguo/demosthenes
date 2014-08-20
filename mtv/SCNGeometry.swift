@@ -1,5 +1,0 @@
-import SceneKit
-
-extension SCNGeometry {
-
-}
