@@ -6,19 +6,23 @@ import CoreMedia
 class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
-    var midiPlayer: MIDIPlayer?
     var sphereNode: SCNNode!
-    var audioPlayer: AVPlayer?
-    var startDate: NSDate?
     var song: Song
+    var audioPlayer: AVPlayer
+    var startDate: NSDate?
 
     required init(coder: NSCoder!) {
         song = Song()
+        let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
+        let url = NSURL(fileURLWithPath: path)
+        audioPlayer = AVPlayer(URL: url)
+
         super.init(coder: coder)
+
+        audioPlayer.addObserver(self, forKeyPath: "status", options: nil, context: nil)
     }
 
     override func awakeFromNib() {
-
         sceneView = self.view as SCNView
         sceneView.backgroundColor = NSColor.grayColor()
         sceneView.scene = SCNScene()
@@ -86,17 +90,19 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         textNode.position = SCNVector3Make(-1, 2, 0)
         textNode.transform = CATransform3DScale(textNode.transform, 0.1, 0.1, 0.1)
         cubeNode.addChildNode(textNode)
-
-        self.start()
     }
 
-    func start() {
-        let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
-        let url = NSURL(fileURLWithPath: path)
-        audioPlayer = AVPlayer(URL: url)
-        audioPlayer!.addObserver(self, forKeyPath: "status", options: nil, context: nil)
-
-    }
+    // MARK: KVO
+    override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [NSObject : AnyObject]!, context: UnsafeMutablePointer<()>) {
+        if object is AVPlayer {
+            if (audioPlayer.status == AVPlayerStatus.ReadyToPlay) {
+                audioPlayer.prerollAtRate(1, completionHandler: { finished in
+                    self.startDate = NSDate()
+                    self.audioPlayer.play()
+                })
+            }
+        }
+    }   
 
     // MARK: SCNSceneRendererDelegate
     func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
@@ -105,24 +111,23 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
             return
         }
         if time >= song.nextEvent.toRaw() {
-            print("event\n")
-            SCNTransaction.begin()
-            sphereNode.flash(NSColor.greenColor())
-            SCNTransaction.commit()
             song.step()
-        }
-    }
+            switch (song.currentEvent) {
+            case .Organ:
+                Organ()
 
-    // MARK: KVO
-    override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [NSObject : AnyObject]!, context: UnsafeMutablePointer<()>) {
-        if object is AVPlayer {
-            if (audioPlayer!.status == AVPlayerStatus.ReadyToPlay) {
-                audioPlayer!.prerollAtRate(1, completionHandler: { finished in
-                    self.startDate = NSDate()
-                    self.audioPlayer!.play()
-                })
+            default:
+                break
             }
         }
     }
+
+    func Organ() {
+        SCNTransaction.begin()
+        sphereNode.flash(NSColor.greenColor())
+        SCNTransaction.commit()
+    }
+
+
 
 }
