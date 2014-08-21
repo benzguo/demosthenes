@@ -26,9 +26,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     required init(coder: NSCoder!) {
         // audio
         cursor = Cursor()
-        let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
-        let url = NSURL(fileURLWithPath: path)
-        audioPlayer = AVPlayer(URL: url)
+        audioPlayer = AVPlayer(aif: "Song In My Head")
 
         // camera
         camera = SCNCamera()

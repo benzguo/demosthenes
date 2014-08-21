@@ -16,10 +16,6 @@ public enum Section: Int {
     case LastChorus
     case LastHits
 
-    func events() -> [Double] {
-        return Section.eventsTable[self.toRaw()]
-    }
-
     static let eventsTable: [[Double]] =
     [
         [ 0 ],
@@ -129,6 +125,10 @@ public enum Section: Int {
             244.581,
         ],
     ]
+
+    func events() -> [Double] {
+        return Section.eventsTable[self.toRaw()]
+    }
 }
 
 extension MainViewController {

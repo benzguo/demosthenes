@@ -755,6 +755,7 @@
 		96AE29E719A5D02500CFC595 /* MainViewController_Choruses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */; };
 		96AE29E919A5D03100CFC595 /* MainViewController_Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */; };
 		96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EA19A5E4BE00CFC595 /* Cursor.swift */; };
+		96AE29ED19A5E59600CFC595 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EC19A5E59600CFC595 /* AVPlayer.swift */; };
 		96FFEE7C199FCFFE00E83AA7 /* __Water_Pool_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE5F199FCFFE00E83AA7 /* __Water_Pool_1.jpg */; };
 		96FFEE7D199FCFFE00E83AA7 /* material_1.psd in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE60199FCFFE00E83AA7 /* material_1.psd */; };
 		96FFEE7E199FCFFE00E83AA7 /* material_2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE61199FCFFE00E83AA7 /* material_2.psd */; };
@@ -1537,6 +1538,7 @@
 		96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Choruses.swift; path = song/MainViewController_Choruses.swift; sourceTree = "<group>"; };
 		96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Bridge.swift; path = song/MainViewController_Bridge.swift; sourceTree = "<group>"; };
 		96AE29EA19A5E4BE00CFC595 /* Cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
+		96AE29EC19A5E59600CFC595 /* AVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
 		96F08CDD19A1278300C1409A /* mtv-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtv-Bridging-Header.h"; sourceTree = "<group>"; };
 		96FFEE5F199FCFFE00E83AA7 /* __Water_Pool_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = __Water_Pool_1.jpg; sourceTree = "<group>"; };
 		96FFEE60199FCFFE00E83AA7 /* material_1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = material_1.psd; sourceTree = "<group>"; };
@@ -3195,6 +3197,7 @@
 			children = (
 				966EB46F19A5231800D05880 /* NSColor.swift */,
 				966EB47019A5231800D05880 /* NSView.swift */,
+				96AE29EC19A5E59600CFC595 /* AVPlayer.swift */,
 			);
 			name = Categories;
 			path = mtv/Categories;
@@ -4162,6 +4165,7 @@
 				966EB47919A5232200D05880 /* SCNGeometry.swift in Sources */,
 				966EB46B19A5230200D05880 /* MIDI.swift in Sources */,
 				96A3B961199EEED200AEF7B3 /* main.swift in Sources */,
+				96AE29ED19A5E59600CFC595 /* AVPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
