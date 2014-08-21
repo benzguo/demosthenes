@@ -11,23 +11,23 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func Intro(event: Event) {
-        switch event {
-        case .Intro1_1:
+    func Intro(index: Int) {
+        switch index {
+        case 1:
             break
-        case .Intro1_2:
+        case 2:
             break
-        case .Intro1_3:
+        case 3:
             break
-        case .Intro1_4:
+        case 4:
             break
-        case .Intro2_1:
+        case 5:
             break
-        case .Intro2_2:
+        case 6:
             break
-        case .Intro2_3:
+        case 7:
             break
-        case .Intro2_4:
+        case 8:
             break
         default:
             break

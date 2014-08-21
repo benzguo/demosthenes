@@ -2,25 +2,25 @@ import SceneKit
 
 extension MainViewController {
 
-    func FirstChorus(event: Event) {
+    func FirstChorus(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .FirstChorus1_1:
+        switch index {
+        case 1:
             break
-        case .FirstChorus1_2:
+        case 2:
             break
-        case .FirstChorus1_3:
+        case 3:
             break
-        case .FirstChorus1_4:
+        case 4:
             break
-        case .FirstChorus2_1:
+        case 5: //
             break
-        case .FirstChorus2_2:
+        case 6:
             break
-        case .FirstChorus2_3:
+        case 7:
             break
-        case .FirstChorus2_4:
+        case 8:
             break
         default:
             break
@@ -29,41 +29,41 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func LastChorus(event: Event) {
+    func LastChorus(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .LastChorus1_1:
+        switch index {
+        case 1:
             break
-        case .LastChorus1_2:
+        case 2:
             break
-        case .LastChorus1_3:
+        case 3:
             break
-        case .LastChorus1_4:
+        case 4:
             break
-        case .LastChorus2_1:
+        case 5: //
             break
-        case .LastChorus2_2:
+        case 6:
             break
-        case .LastChorus2_3:
+        case 7:
             break
-        case .LastChorus2_4:
+        case 8:
             break
-        case .LastChorus3_1:
+        case 9: //
             break
-        case .LastChorus3_2:
+        case 10:
             break
-        case .LastChorus3_3:
+        case 11:
             break
-        case .LastChorus3_4:
+        case 12:
             break
-        case .LastChorus4_1:
+        case 13: //
             break
-        case .LastChorus4_2:
+        case 14:
             break
-        case .LastChorus4_3:
+        case 15:
             break
-        case .LastChorus4_4:
+        case 16:
             break
         default:
             break

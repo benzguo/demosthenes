@@ -3,21 +3,21 @@ import SceneKit
 
 extension MainViewController {
 
-     func FirstHits(event: Event) {
+    func FirstHits(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .FirstHits1:
+        switch index {
+        case 1:
             mysteryCube.removeFromParentNode()
             rootNode.stopRotation()
             scene.setSkybox("desert")
-        case .FirstHits2:
+        case 2:
             scene.setSkybox("endset")
-        case .FirstHits3:
+        case 3:
             scene.setSkybox("desert_evening")
-        case .FirstHits4:
+        case 4:
             scene.setSkybox("desertstorm")
-        case .FirstHits5:
+        case 5:
             scene.setSkybox("desertsky")
         default:
             break
@@ -26,19 +26,19 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func SecondHits(event: Event) {
+    func SecondHits(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .SecondHits1:
+        switch index {
+        case 1:
             scene.setSkybox("desert")
-        case .SecondHits2:
+        case 2:
             scene.setSkybox("endset")
-        case .SecondHits3:
+        case 3:
             scene.setSkybox("desert_evening")
-        case .SecondHits4:
+        case 4:
             scene.setSkybox("desertstorm")
-        case .SecondHits5:
+        case 5:
             scene.setSkybox("desertsky")
         default:
             break
@@ -47,40 +47,40 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func ThirdHits(event: Event) {
+    func ThirdHits(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .ThirdHits1:
+        switch index {
+        case 1:
             scene.setSkybox("desert")
-        case .ThirdHits2:
+        case 2:
             scene.setSkybox("endset")
-        case .ThirdHits3:
+        case 3:
             scene.setSkybox("desert_evening")
-        case .ThirdHits4:
+        case 4:
             scene.setSkybox("desertstorm")
-        case .ThirdHits5:
+        case 5:
             scene.setSkybox("desertsky")
         default:
             break
         }
-
+        
         SCNTransaction.commit()
     }
-
-    func LastHits(event: Event) {
+    
+    func LastHits(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .LastHits1:
+        switch index {
+        case 1:
             scene.setSkybox("desert")
-        case .LastHits2:
+        case 2:
             scene.setSkybox("endset")
-        case .LastHits3:
+        case 3:
             scene.setSkybox("desert_evening")
-        case .LastHits4:
+        case 4:
             scene.setSkybox("desertstorm")
-        case .LastHits5:
+        case 5:
             scene.setSkybox("desertsky")
         default:
             break
@@ -88,5 +88,5 @@ extension MainViewController {
 
         SCNTransaction.commit()
     }
-
+    
 }

@@ -2,17 +2,17 @@ import SceneKit
 
 extension MainViewController {
 
-    func FirstVerse(event: Event) {
+    func FirstVerse(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .FirstVerse1_1:
+        switch index {
+        case 1:
             break
-        case .FirstVerse1_2:
+        case 2:
             break
-        case .FirstVerse2_1:
+        case 3: //
             break
-        case .FirstVerse2_2:
+        case 4:
             break
         default:
             break
@@ -21,33 +21,33 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func SecondVerse(event: Event) {
+    func SecondVerse(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .SecondVerse1_1:
+        switch index {
+        case 1:
             break
-        case .SecondVerse1_2:
+        case 2:
             break
-        case .SecondVerse1_3:
+        case 3:
             break
-        case .SecondVerse1_4:
+        case 4:
             break
-        case .SecondVerse2_1:
+        case 5: //
             break
-        case .SecondVerse2_2:
+        case 6:
             break
-        case .SecondVerse2_3:
+        case 7:
             break
-        case .SecondVerse2_4:
+        case 8:
             break
-        case .SecondVerse2_5:
+        case 9:
             break
-        case .SecondVerse2_6:
+        case 10:
             break
-        case .SecondVerse2_7:
+        case 11:
             break
-        case .SecondVerse2_8:
+        case 12:
             break
         default:
             break

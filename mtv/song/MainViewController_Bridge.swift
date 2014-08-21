@@ -2,25 +2,25 @@ import SceneKit
 
 extension MainViewController {
 
-    func Bridge(event: Event) {
+    func Bridge(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .Bridge1_1:
+        switch index {
+        case 1:
             break
-        case .Bridge1_2:
+        case 2:
             break
-        case .Bridge1_3:
+        case 3:
             break
-        case .Bridge1_4:
+        case 4:
             break
-        case .Bridge2_1:
+        case 5: //
             break
-        case .Bridge2_2:
+        case 6:
             break
-        case .Bridge2_3:
+        case 7:
             break
-        case .Bridge2_4:
+        case 8:
             break
         default:
             break
@@ -29,19 +29,19 @@ extension MainViewController {
         SCNTransaction.commit()
     }
 
-    func Buildup(event: Event) {
+    func Buildup(index: Int) {
         SCNTransaction.begin()
 
-        switch event {
-        case .Buildup1:
+        switch index {
+        case 1:
             break
-        case .Buildup2:
+        case 2:
             break
-        case .Buildup3:
+        case 3:
             break
-        case .Buildup4:
+        case 4:
             break
-        case .Buildup5:
+        case 5:
             break
         default:
             break

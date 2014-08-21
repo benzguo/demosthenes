@@ -8,7 +8,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     var sceneView: SCNView!
     var scene: SCNScene!
     var rootNode: SCNNode!
-    let song: Song
+    let cursor: Cursor
     let audioPlayer: AVPlayer
     var startTime: NSDate?
     let camera: SCNCamera
@@ -25,7 +25,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     required init(coder: NSCoder!) {
         // audio
-        song = Song()
+        cursor = Cursor()
         let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
         let url = NSURL(fileURLWithPath: path)
         audioPlayer = AVPlayer(URL: url)
