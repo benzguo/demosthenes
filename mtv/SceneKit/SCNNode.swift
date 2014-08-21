@@ -24,7 +24,7 @@ extension SCNNode {
         self.transform = rotation
     }
 
-    func addRotation(vector v: SCNVector3, duration: Double, repeatCount: Float = Float.infinity) {
+    func setRotation(vector v: SCNVector3, duration: Double, repeatCount: Float = Float.infinity) {
 
         let t = CGFloat(M_PI/2.0)
         let animation = CAKeyframeAnimation(keyPath: "transform")
@@ -45,6 +45,10 @@ extension SCNNode {
         animation.duration = duration
         animation.repeatCount = repeatCount
         self.addAnimation(animation, forKey: "rotation")
+    }
+
+    func stopRotation() {
+        self.removeAnimationForKey("rotation")
     }
 
     func flash(color: NSColor, duration: Double = 0.4) {
