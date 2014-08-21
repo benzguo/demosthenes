@@ -10,12 +10,20 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     var song: Song
     var audioPlayer: AVPlayer
     var startDate: NSDate?
+    var camera: SCNCamera
+    var cameraNode: SCNNode
 
     required init(coder: NSCoder!) {
+        // audio
         song = Song()
         let path = NSBundle.mainBundle().pathForResource("Song In My Head", ofType: "aif")
         let url = NSURL(fileURLWithPath: path)
         audioPlayer = AVPlayer(URL: url)
+
+        // camera
+        camera = SCNCamera()
+        cameraNode = SCNNode()
+        cameraNode.camera = camera
 
         super.init(coder: coder)
 
@@ -26,14 +34,12 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView = self.view as SCNView
         sceneView.backgroundColor = NSColor.grayColor()
         sceneView.scene = SCNScene()
+        sceneView.scene.setSkybox("hazy_lake")
         sceneView.delegate = self
         let rootNode = sceneView.scene.rootNode
 
-        let cameraNode = SCNNode()
-        let camera = SCNCamera()
         camera.xFov = 90 // increase for wide angle
         camera.yFov = 90
-        cameraNode.camera = camera
         cameraNode.position = SCNVector3Make(0, 30, 90)
         rootNode.addChildNode(cameraNode)
 
@@ -52,7 +58,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         diffuseLightNode.position = SCNVector3Make(0, 80, 80)
         rootNode.addChildNode(diffuseLightNode)
 
-        let flatShinyMaterial = SCNMaterial(cubeMap: "darkland")
+        let flatShinyMaterial = SCNMaterial(cubeMap: "greywash")
 
         let floor = SCNFloor()
         floor.reflectionFalloffEnd = 200

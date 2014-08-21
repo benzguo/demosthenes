@@ -4,12 +4,12 @@ extension SCNMaterial {
     convenience init(cubeMap name: String) {
         self.init()
         let cubeMap = [
-            NSImage(named: "\(name)-right.jpg"),
-            NSImage(named: "\(name)-left.jpg"),
-            NSImage(named: "\(name)-top.jpg"),
-            NSImage(named: "\(name)-bottom.jpg"),
-            NSImage(named: "\(name)-back.jpg"),
-            NSImage(named: "\(name)-front.jpg"),
+            NSImage(named: "\(name)_right"),
+            NSImage(named: "\(name)_left"),
+            NSImage(named: "\(name)_top"),
+            NSImage(named: "\(name)_top"), // no bottom
+            NSImage(named: "\(name)_back"),
+            NSImage(named: "\(name)_front"),
         ]
         self.reflective.contents = cubeMap
         self.diffuse.contents = NSColor.blackColor()
