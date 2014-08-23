@@ -2,13 +2,17 @@ import SceneKit
 
 extension SCNFloor {
     func setImage(name: String) {
-        // Set a new material property with this image to the "floorMap" custom property of the floor
-        let image = NSImage(named: "\(name)_top")
-        let property = SCNMaterialProperty(contents: image)
-        property.wrapS = .WrapModeRepeat;
-        property.wrapT = .WrapModeRepeat;
-        property.mipFilter = .FilterModeLinear;
+        let material = SCNMaterial()
+        material.ambient.contents = NSColor.blackColor()
+        material.diffuse.contents = NSImage(named: name)
+        material.specular.wrapS = .WrapModeMirror
+        material.specular.wrapT = .WrapModeMirror
+        material.diffuse.wrapS  = .WrapModeMirror
+        material.diffuse.wrapT  = .WrapModeMirror
+        self.firstMaterial = material
+    }
 
-        self.firstMaterial.setValue(property, forKey: "floorMap")
+    func setCubemap(name: String) {
+        self.firstMaterial = SCNMaterial(cubeMap: name)
     }
 }

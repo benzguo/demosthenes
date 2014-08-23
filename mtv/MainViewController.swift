@@ -39,7 +39,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // cameras
         camera = SCNCamera()
-        camera.xFov = 70.0 // increase for wide angle
+        camera.xFov = 110.0 // increase for wide angle
         camera.yFov = 42.0
         cameraHandle = SCNNode()
         rootNode.addChildNode(cameraHandle)
@@ -66,23 +66,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         // floor
         floor = SCNFloor()
         floor.reflectionFalloffEnd = 3.0
-
-//        let floorMaterial = SCNMaterial(cubeMap: "calm")
-        let floorMaterial = SCNMaterial()
-        floorMaterial.ambient.contents = NSColor.blackColor()
-        floorMaterial.diffuse.contents = NSImage(named: "atari_bluenoise")
-        floorMaterial.specular.wrapS = .WrapModeMirror
-        floorMaterial.specular.wrapT = .WrapModeMirror
-        floorMaterial.diffuse.wrapS  = .WrapModeMirror
-        floorMaterial.diffuse.wrapT  = .WrapModeMirror
-
-        // Use a shader modifier to support a secondary texture
-        let shaderFile = NSBundle.mainBundle().pathForResource("floor", ofType: "shader")
-        let shaderSource = NSString(contentsOfFile: shaderFile, encoding: NSUTF8StringEncoding, error: nil)       
-        floorMaterial.shaderModifiers = [ SCNShaderModifierEntryPointSurface : shaderSource ];
-        floor.firstMaterial = floorMaterial
-        floor.setImage("atari_bluenoise")
-//        floor.setCubemap("city")
+        floor.setCubemap("city")
         floorNode = SCNNode(geometry: floor)
 
         // objects
@@ -141,7 +125,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
             if (audioPlayer.status == AVPlayerStatus.ReadyToPlay) {
                 audioPlayer.prerollAtRate(1, completionHandler: { finished in
                     self.startTime = NSDate()
-                    self.audioPlayer.play()
+//                    self.audioPlayer.play()
                 })
             }
         }
@@ -149,7 +133,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     func setSkybox(name: String) {
         scene.setSkybox(name)
-//        floor.setCubemap(name)
+        floor.setCubemap(name)
     }
 
 }

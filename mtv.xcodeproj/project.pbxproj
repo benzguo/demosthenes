@@ -715,11 +715,6 @@
 		96154B6119A57ADA00AAD5EF /* wintermount_left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9615489E19A57AD900AAD5EF /* wintermount_left.jpg */; };
 		96154B6219A57ADA00AAD5EF /* wintermount_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9615489F19A57AD900AAD5EF /* wintermount_right.jpg */; };
 		96154B6319A57ADA00AAD5EF /* wintermount_top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961548A019A57AD900AAD5EF /* wintermount_top.jpg */; };
-		961651F3199F0EEB0088DC97 /* earth-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651DB199F0EEB0088DC97 /* earth-diffuse.jpg */; };
-		961651F4199F0EEB0088DC97 /* noise-diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651DC199F0EEB0088DC97 /* noise-diffuse.png */; };
-		961651F5199F0EEB0088DC97 /* scree-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651DD199F0EEB0088DC97 /* scree-diffuse.jpg */; };
-		961651F6199F0EEB0088DC97 /* stone-diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651DE199F0EEB0088DC97 /* stone-diffuse.png */; };
-		961651F7199F0EEB0088DC97 /* wood-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651DF199F0EEB0088DC97 /* wood-diffuse.jpg */; };
 		961651F8199F0EEB0088DC97 /* stripes-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E1199F0EEB0088DC97 /* stripes-mask.png */; };
 		961651F9199F0EEB0088DC97 /* chrome-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E3199F0EEB0088DC97 /* chrome-normal.png */; };
 		961651FA199F0EEB0088DC97 /* earth-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E4199F0EEB0088DC97 /* earth-normal.png */; };
@@ -729,7 +724,6 @@
 		961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E8199F0EEB0088DC97 /* wood-normal.png */; };
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
-		96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96165201199F13A30088DC97 /* floor-diffuse.jpg */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		966EB46019A5224000D05880 /* Song In My Head.aif in Resources */ = {isa = PBXBuildFile; fileRef = 966EB45F19A5224000D05880 /* Song In My Head.aif */; };
 		966EB46419A5224B00D05880 /* SongInMyHead_BenLH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */; };
@@ -837,6 +831,16 @@
 		969C674719A80789002149D0 /* wave.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672F19A80789002149D0 /* wave.shader */; };
 		969C674819A80789002149D0 /* xRay.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C673019A80789002149D0 /* xRay.shader */; };
 		969C674A19A807F7002149D0 /* SCNFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C674919A807F7002149D0 /* SCNFloor.swift */; };
+		969C675019A824C7002149D0 /* color_envmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C674C19A824C7002149D0 /* color_envmap.png */; };
+		969C675119A824C7002149D0 /* tiledbright_envmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C674D19A824C7002149D0 /* tiledbright_envmap.jpg */; };
+		969C675219A824C7002149D0 /* tileddark_envmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C674E19A824C7002149D0 /* tileddark_envmap.jpg */; };
+		969C675319A824C7002149D0 /* tilednormal_envmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C674F19A824C7002149D0 /* tilednormal_envmap.jpg */; };
+		969C675A19A825CE002149D0 /* earth_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675419A825CE002149D0 /* earth_diffuse.jpg */; };
+		969C675B19A825CE002149D0 /* floor_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675519A825CE002149D0 /* floor_diffuse.jpg */; };
+		969C675C19A825CE002149D0 /* noise_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C675619A825CE002149D0 /* noise_diffuse.png */; };
+		969C675D19A825CE002149D0 /* scree_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675719A825CE002149D0 /* scree_diffuse.jpg */; };
+		969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C675819A825CE002149D0 /* stone_diffuse.png */; };
+		969C675F19A825CE002149D0 /* wood_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675919A825CE002149D0 /* wood_diffuse.jpg */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -1588,11 +1592,6 @@
 		9615489E19A57AD900AAD5EF /* wintermount_left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wintermount_left.jpg; sourceTree = "<group>"; };
 		9615489F19A57AD900AAD5EF /* wintermount_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wintermount_right.jpg; sourceTree = "<group>"; };
 		961548A019A57AD900AAD5EF /* wintermount_top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wintermount_top.jpg; sourceTree = "<group>"; };
-		961651DB199F0EEB0088DC97 /* earth-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-diffuse.jpg"; sourceTree = "<group>"; };
-		961651DC199F0EEB0088DC97 /* noise-diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noise-diffuse.png"; sourceTree = "<group>"; };
-		961651DD199F0EEB0088DC97 /* scree-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scree-diffuse.jpg"; sourceTree = "<group>"; };
-		961651DE199F0EEB0088DC97 /* stone-diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stone-diffuse.png"; sourceTree = "<group>"; };
-		961651DF199F0EEB0088DC97 /* wood-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-diffuse.jpg"; sourceTree = "<group>"; };
 		961651E1199F0EEB0088DC97 /* stripes-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stripes-mask.png"; sourceTree = "<group>"; };
 		961651E3199F0EEB0088DC97 /* chrome-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrome-normal.png"; sourceTree = "<group>"; };
 		961651E4199F0EEB0088DC97 /* earth-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-normal.png"; sourceTree = "<group>"; };
@@ -1602,7 +1601,6 @@
 		961651E8199F0EEB0088DC97 /* wood-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wood-normal.png"; sourceTree = "<group>"; };
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
-		96165201199F13A30088DC97 /* floor-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "floor-diffuse.jpg"; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966EB45F19A5224000D05880 /* Song In My Head.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song In My Head.aif"; sourceTree = "<group>"; };
 		966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_BenLH.mid; sourceTree = "<group>"; };
@@ -1711,6 +1709,16 @@
 		969C672F19A80789002149D0 /* wave.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wave.shader; sourceTree = "<group>"; };
 		969C673019A80789002149D0 /* xRay.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xRay.shader; sourceTree = "<group>"; };
 		969C674919A807F7002149D0 /* SCNFloor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNFloor.swift; sourceTree = "<group>"; };
+		969C674C19A824C7002149D0 /* color_envmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_envmap.png; sourceTree = "<group>"; };
+		969C674D19A824C7002149D0 /* tiledbright_envmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiledbright_envmap.jpg; sourceTree = "<group>"; };
+		969C674E19A824C7002149D0 /* tileddark_envmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tileddark_envmap.jpg; sourceTree = "<group>"; };
+		969C674F19A824C7002149D0 /* tilednormal_envmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tilednormal_envmap.jpg; sourceTree = "<group>"; };
+		969C675419A825CE002149D0 /* earth_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth_diffuse.jpg; sourceTree = "<group>"; };
+		969C675519A825CE002149D0 /* floor_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = floor_diffuse.jpg; sourceTree = "<group>"; };
+		969C675619A825CE002149D0 /* noise_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise_diffuse.png; sourceTree = "<group>"; };
+		969C675719A825CE002149D0 /* scree_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scree_diffuse.jpg; sourceTree = "<group>"; };
+		969C675819A825CE002149D0 /* stone_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_diffuse.png; sourceTree = "<group>"; };
+		969C675919A825CE002149D0 /* wood_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_diffuse.jpg; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -3292,6 +3300,7 @@
 		961651D0199F0EEB0088DC97 /* materials */ = {
 			isa = PBXGroup;
 			children = (
+				969C674B19A824C7002149D0 /* envmaps */,
 				9615457819A57AD800AAD5EF /* cubemaps */,
 				961651DA199F0EEB0088DC97 /* diffuse */,
 				961651E0199F0EEB0088DC97 /* masks */,
@@ -3304,12 +3313,12 @@
 		961651DA199F0EEB0088DC97 /* diffuse */ = {
 			isa = PBXGroup;
 			children = (
-				96165201199F13A30088DC97 /* floor-diffuse.jpg */,
-				961651DB199F0EEB0088DC97 /* earth-diffuse.jpg */,
-				961651DC199F0EEB0088DC97 /* noise-diffuse.png */,
-				961651DD199F0EEB0088DC97 /* scree-diffuse.jpg */,
-				961651DE199F0EEB0088DC97 /* stone-diffuse.png */,
-				961651DF199F0EEB0088DC97 /* wood-diffuse.jpg */,
+				969C675419A825CE002149D0 /* earth_diffuse.jpg */,
+				969C675519A825CE002149D0 /* floor_diffuse.jpg */,
+				969C675619A825CE002149D0 /* noise_diffuse.png */,
+				969C675719A825CE002149D0 /* scree_diffuse.jpg */,
+				969C675819A825CE002149D0 /* stone_diffuse.png */,
+				969C675919A825CE002149D0 /* wood_diffuse.jpg */,
 			);
 			path = diffuse;
 			sourceTree = "<group>";
@@ -3516,6 +3525,17 @@
 			name = shaders;
 			path = mtv/shaders;
 			sourceTree = SOURCE_ROOT;
+		};
+		969C674B19A824C7002149D0 /* envmaps */ = {
+			isa = PBXGroup;
+			children = (
+				969C674C19A824C7002149D0 /* color_envmap.png */,
+				969C674D19A824C7002149D0 /* tiledbright_envmap.jpg */,
+				969C674E19A824C7002149D0 /* tileddark_envmap.jpg */,
+				969C674F19A824C7002149D0 /* tilednormal_envmap.jpg */,
+			);
+			path = envmaps;
+			sourceTree = "<group>";
 		};
 		96A3B952199EEED200AEF7B3 = {
 			isa = PBXGroup;
@@ -3776,6 +3796,7 @@
 				96154A1819A57ADA00AAD5EF /* jajlake2_top.jpg in Resources */,
 				96154AD219A57ADA00AAD5EF /* powderpeak.zip in Resources */,
 				96154A5B19A57ADA00AAD5EF /* jajmars_front.jpg in Resources */,
+				969C675F19A825CE002149D0 /* wood_diffuse.jpg in Resources */,
 				96154B2219A57ADA00AAD5EF /* snowblind_left.jpg in Resources */,
 				96FFEE82199FCFFE00E83AA7 /* material_7.psd in Resources */,
 				961548FB19A57AD900AAD5EF /* Note.txt in Resources */,
@@ -3805,6 +3826,7 @@
 				96154B0019A57ADA00AAD5EF /* redplanet_right.jpg in Resources */,
 				96154AD019A57ADA00AAD5EF /* podsky_top.jpg in Resources */,
 				969C66F719A7FA14002149D0 /* sega_purplestatic.jpg in Resources */,
+				969C675D19A825CE002149D0 /* scree_diffuse.jpg in Resources */,
 				96154B5519A57ADA00AAD5EF /* toonsnow.zip in Resources */,
 				96154A5F19A57ADA00AAD5EF /* mars1.zip in Resources */,
 				96154A9D19A57ADA00AAD5EF /* nightwalker_right.jpg in Resources */,
@@ -3876,6 +3898,7 @@
 				961548B519A57AD900AAD5EF /* Note.txt in Resources */,
 				961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */,
 				9615492E19A57AD900AAD5EF /* endset_back.jpg in Resources */,
+				969C675019A824C7002149D0 /* color_envmap.png in Resources */,
 				96154A8719A57ADA00AAD5EF /* nwo512_front.jpg in Resources */,
 				9615499C19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B4E19A57ADA00AAD5EF /* sundown.zip in Resources */,
@@ -3962,6 +3985,7 @@
 				96154A9319A57ADA00AAD5EF /* nnksky01_back.jpg in Resources */,
 				96154A4819A57ADA00AAD5EF /* lostatseanight_left.jpg in Resources */,
 				961548F419A57AD900AAD5EF /* Note.txt in Resources */,
+				969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */,
 				961549D019A57ADA00AAD5EF /* hexagon_front.jpg in Resources */,
 				961549AB19A57ADA00AAD5EF /* green.zip in Resources */,
 				961548A719A57AD900AAD5EF /* Note.txt in Resources */,
@@ -3976,7 +4000,6 @@
 				9615490019A57AD900AAD5EF /* cottoncandy_right.jpg in Resources */,
 				96154AA919A57ADA00AAD5EF /* oasisday_back.jpg in Resources */,
 				961548E219A57AD900AAD5EF /* city_front.jpg in Resources */,
-				961651F6199F0EEB0088DC97 /* stone-diffuse.png in Resources */,
 				96154A1019A57ADA00AAD5EF /* jajlake1_right.jpg in Resources */,
 				961651FC199F0EEB0088DC97 /* scree-normal.jpg in Resources */,
 				96154B3E19A57ADA00AAD5EF /* stars_left.jpg in Resources */,
@@ -4046,7 +4069,6 @@
 				96154A7619A57ADA00AAD5EF /* mudskipper.zip in Resources */,
 				96154AF719A57ADA00AAD5EF /* redday_front.jpg in Resources */,
 				96154A1A19A57ADA00AAD5EF /* Note.txt in Resources */,
-				96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */,
 				969C66F019A7FA14002149D0 /* sega_lightcave.jpg in Resources */,
 				96154A5119A57ADA00AAD5EF /* majesty_top.jpg in Resources */,
 				969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */,
@@ -4077,6 +4099,7 @@
 				9615499919A57ADA00AAD5EF /* gardensky_left.jpg in Resources */,
 				96154A5819A57ADA00AAD5EF /* mars_top.jpg in Resources */,
 				96154AF019A57ADA00AAD5EF /* rapture_front.jpg in Resources */,
+				969C675319A824C7002149D0 /* tilednormal_envmap.jpg in Resources */,
 				96154B2819A57ADA00AAD5EF /* snowy_front.jpg in Resources */,
 				9615498C19A57ADA00AAD5EF /* frozen_right.jpg in Resources */,
 				96154B0C19A57ADA00AAD5EF /* shadowpeak_front.jpg in Resources */,
@@ -4086,6 +4109,7 @@
 				9615490719A57AD900AAD5EF /* darkgloom_right.jpg in Resources */,
 				96154A9619A57ADA00AAD5EF /* nnksky01_right.jpg in Resources */,
 				969C674719A80789002149D0 /* wave.shader in Resources */,
+				969C675B19A825CE002149D0 /* floor_diffuse.jpg in Resources */,
 				96154A6F19A57ADA00AAD5EF /* mudriver.zip in Resources */,
 				96154B5A19A57ADA00AAD5EF /* underwater_left.jpg in Resources */,
 				96FFEE88199FCFFE00E83AA7 /* Water_Pool.jpg in Resources */,
@@ -4157,6 +4181,7 @@
 				96154B4519A57ADA00AAD5EF /* stratosphere_left.jpg in Resources */,
 				96FFEE8D199FCFFE00E83AA7 /* v3.jpg in Resources */,
 				969C673219A80789002149D0 /* character.shader in Resources */,
+				969C675A19A825CE002149D0 /* earth_diffuse.jpg in Resources */,
 				969C66EB19A7FA14002149D0 /* sega_field.jpg in Resources */,
 				961548D319A57AD900AAD5EF /* calm_back.jpg in Resources */,
 				96154A1419A57ADA00AAD5EF /* jajlake2_back.jpg in Resources */,
@@ -4174,7 +4199,6 @@
 				961549A419A57ADA00AAD5EF /* grave.zip in Resources */,
 				96154AC619A57ADA00AAD5EF /* plain_sky_left.jpg in Resources */,
 				96154B4D19A57ADA00AAD5EF /* Note.txt in Resources */,
-				961651F3199F0EEB0088DC97 /* earth-diffuse.jpg in Resources */,
 				96154A8619A57ADA00AAD5EF /* nwo512_back.jpg in Resources */,
 				96154A1619A57ADA00AAD5EF /* jajlake2_left.jpg in Resources */,
 				96154B3919A57ADA00AAD5EF /* starfield_top.jpg in Resources */,
@@ -4201,6 +4225,7 @@
 				961549BC19A57ADA00AAD5EF /* greywash_left.jpg in Resources */,
 				9615494519A57ADA00AAD5EF /* desertstorm_left.jpg in Resources */,
 				96154A5019A57ADA00AAD5EF /* majesty_right.jpg in Resources */,
+				969C675119A824C7002149D0 /* tiledbright_envmap.jpg in Resources */,
 				9615499F19A57ADA00AAD5EF /* grand_canyon_left.jpg in Resources */,
 				961549F519A57ADA00AAD5EF /* iceflow_right.jpg in Resources */,
 				96FFEE90199FCFFE00E83AA7 /* v5_1.jpg in Resources */,
@@ -4249,7 +4274,6 @@
 				969C673619A80789002149D0 /* explode.shader in Resources */,
 				96154A4F19A57ADA00AAD5EF /* majesty_left.jpg in Resources */,
 				9615492F19A57AD900AAD5EF /* endset_front.jpg in Resources */,
-				961651F7199F0EEB0088DC97 /* wood-diffuse.jpg in Resources */,
 				96154A0319A57ADA00AAD5EF /* mine_right.jpg in Resources */,
 				9615494319A57ADA00AAD5EF /* desertstorm_back.jpg in Resources */,
 				961549F419A57ADA00AAD5EF /* iceflow_left.jpg in Resources */,
@@ -4262,7 +4286,6 @@
 				96154B3819A57ADA00AAD5EF /* starfield_right.jpg in Resources */,
 				96154B2419A57ADA00AAD5EF /* snowblind_top.jpg in Resources */,
 				9615499619A57ADA00AAD5EF /* gardensky.zip in Resources */,
-				961651F4199F0EEB0088DC97 /* noise-diffuse.png in Resources */,
 				969C673919A80789002149D0 /* mapGeometry.shader in Resources */,
 				96154AB719A57ADA00AAD5EF /* orangecream_back.jpg in Resources */,
 				961549E119A57ADA00AAD5EF /* jajice1_top.jpg in Resources */,
@@ -4307,6 +4330,7 @@
 				961548E119A57AD900AAD5EF /* city_back.jpg in Resources */,
 				9615498A19A57ADA00AAD5EF /* frozen_front.jpg in Resources */,
 				9615495719A57ADA00AAD5EF /* elbrus.zip in Resources */,
+				969C675C19A825CE002149D0 /* noise_diffuse.png in Resources */,
 				961548F219A57AD900AAD5EF /* clouds_right.jpg in Resources */,
 				96154AA819A57ADA00AAD5EF /* oasisday.zip in Resources */,
 				9615492419A57AD900AAD5EF /* desert_top.jpg in Resources */,
@@ -4401,7 +4425,6 @@
 				961548B719A57AD900AAD5EF /* blood_sport512_back.jpg in Resources */,
 				96154B0919A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B2C19A57ADA00AAD5EF /* jajspace2_back.jpg in Resources */,
-				961651F5199F0EEB0088DC97 /* scree-diffuse.jpg in Resources */,
 				96154AE219A57ADA00AAD5EF /* purplenebula_front.jpg in Resources */,
 				96154A0B19A57ADA00AAD5EF /* kryptosky.zip in Resources */,
 				961651F8199F0EEB0088DC97 /* stripes-mask.png in Resources */,
@@ -4511,6 +4534,7 @@
 				961548A119A57AD900AAD5EF /* alien.zip in Resources */,
 				961549D619A57ADA00AAD5EF /* hourglass_back.jpg in Resources */,
 				9615490F19A57AD900AAD5EF /* jajdarkland1_top.jpg in Resources */,
+				969C675219A824C7002149D0 /* tileddark_envmap.jpg in Resources */,
 				96154A3E19A57ADA00AAD5EF /* lostvalley.zip in Resources */,
 				969C671719A7FA14002149D0 /* zx_YSTI.jpg in Resources */,
 				96154A9B19A57ADA00AAD5EF /* nightwalker_front.jpg in Resources */,
