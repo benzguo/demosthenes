@@ -13,7 +13,9 @@ extension SCNFloor {
     }
 
     func setCubemap(name: String) {
-        self.firstMaterial = SCNMaterial(cubeMap: name)
+        let shaderModifiers = self.firstMaterial.shaderModifiers
+        firstMaterial = SCNMaterial(cubeMap: name)
+        firstMaterial.shaderModifiers = shaderModifiers
     }
 
     func setGeometryShader(name: String) {
@@ -40,6 +42,6 @@ extension SCNFloor {
             shaderModifiers = modifiers.mutableCopy() as NSMutableDictionary
         }
         shaderModifiers[entryPoint] = shader
-        self.firstMaterial.shaderModifiers = shaderModifiers
+        firstMaterial.shaderModifiers = shaderModifiers
     }
 }

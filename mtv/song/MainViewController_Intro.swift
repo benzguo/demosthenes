@@ -1,6 +1,7 @@
 import SceneKit
 
 public var mysteryCubeKey = "mysteryCube"
+public var introCubeKey = "introCube"
 
 extension MainViewController {
 
@@ -41,22 +42,28 @@ extension MainViewController {
         case 1:
 
 
-            let box = SCNBox(size: 50)
-            let boxNode = SCNNode(geometry: box)
-            boxNode.setRotation(vector: SCNVector3Make(1, 0.5, 0), duration: 10.0)
-            boxNode.setSurfaceShader("greenoil_surf")
+            let cube = SCNBox(size: 50)
+            let introCube = SCNNode(geometry: cube)
+            introCube.setRotation(vector: SCNVector3Make(1, 0.5, 0), duration: 10.0)
+            introCube.setSurfaceShader("greenoil_surf")
 
             let pixellateFilter = CIFilter(name: "CIPixellate")
             pixellateFilter.setDefaults()
             pixellateFilter.setValue(20, forKey: "inputScale")
             pixellateFilter.name = "px"
 
-            boxNode.filters = [pixellateFilter]
+            introCube.filters = [pixellateFilter]
+            self.saveNode(introCube, withKey: &introCubeKey)
+            rootNode.addChildNode(introCube)
 
-            rootNode.addChildNode(boxNode)
+
+        case 2:
+
+            let introCube = self.nodeForKey(&introCubeKey)
+            introCube.setFragmentShader("video_frag")
+            introCube.filters = []
 
 
-       break
         case 3:
             break
         case 4:
