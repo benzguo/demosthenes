@@ -3,6 +3,9 @@ import SceneKit
 import AVFoundation
 import CoreMedia
 
+// delay before audio playback, in seconds
+let audioPlaybackDelay = 0.2
+
 class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
@@ -10,7 +13,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let scene: SCNScene
     let rootNode: SCNNode
     let cursor: Cursor
-    let audioPlayer: AVPlayer
+    let audioPlayer: AVAudioPlayer
     var startTime: NSDate?
 
     let camera: SCNCamera
@@ -32,7 +35,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // audio
         cursor = Cursor()
-        audioPlayer = AVPlayer(aif: "Song In My Head")
+        audioPlayer = AVAudioPlayer(aif: "Song In My Head")
 
         // cameras
         camera = SCNCamera()
@@ -75,7 +78,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         super.init(coder: coder)
 
-        audioPlayer.addObserver(self, forKeyPath: "status", options: nil, context: nil)
         setSkybox("city")
     }
 
@@ -90,6 +92,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.loops = true
         overlayScene = OverlayScene(size: sceneView.bounds.size)
         overlayScene.setImage("atari_bluenoise")
+
+        start()
+
         // WARN: TRY THIS ON OSX 10.10
 //        sceneView.overlaySKScene = overlayScene // NEED OSX 10.10
 
@@ -98,32 +103,14 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        animalgirlNode.position = SCNVector3Make(0, -190, 0)
 //        animalgirlNode.scale(0.1)
 //        rootNode.addChildNode(animalgirlNode)
+}
 
-//
-//        let sphere = SCNSphere(radius: 40)
-//        sphereNode = SCNNode(geometry: sphere)
-//        sphereNode.position = SCNVector3Make(0, 20, 0.0)
-//        rootNode.addChildNode(sphereNode)
-
-//
-//        let text = SCNText(string: "☛", extrusionDepth: 4.0)
-//        let textNode = SCNNode(geometry: text)
-//        textNode.position = SCNVector3Make(-1, 2, 0)
-//        textNode.transform = CATransform3DScale(textNode.transform, 0.1, 0.1, 0.1)
-//        cubeNode.addChildNode(textNode)
+    func start() {
+        audioPlayer.prepareToPlay()
+        startTime = NSDate()
+        audioPlayer.playAtTime(audioPlayer.deviceCurrentTime + audioPlaybackDelay)
     }
 
-    // MARK: KVO
-    override func observeValueForKeyPath(keyPath: String!, ofObject object: AnyObject!, change: [NSObject : AnyObject]!, context: UnsafeMutablePointer<()>) {
-        if object is AVPlayer {
-            if (audioPlayer.status == AVPlayerStatus.ReadyToPlay) {
-                audioPlayer.prerollAtRate(1, completionHandler: { finished in
-                    self.startTime = NSDate()
-//                    self.audioPlayer.play()
-                })
-            }
-        }
-    }
 
     func setSkybox(name: String) {
         scene.setSkybox(name)

@@ -15,4 +15,31 @@ extension SCNFloor {
     func setCubemap(name: String) {
         self.firstMaterial = SCNMaterial(cubeMap: name)
     }
+
+    func setGeometryShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointGeometry)
+    }
+
+    func setSurfaceShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointSurface)
+    }
+
+    func setLightingShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointLightingModel)
+    }
+
+    func setFragmentShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointFragment)
+    }
+
+    private func setShader(name: String, entryPoint: String) {
+        let shader = ShaderManager.shaderNamed(name)
+        let maybeModifiers: NSDictionary? = self.firstMaterial.shaderModifiers
+        var shaderModifiers = NSMutableDictionary()
+        if let modifiers = maybeModifiers {
+            shaderModifiers = modifiers.mutableCopy() as NSMutableDictionary
+        }
+        shaderModifiers[entryPoint] = shader
+        self.firstMaterial.shaderModifiers = shaderModifiers
+    }
 }

@@ -14,11 +14,11 @@ extension MainViewController {
             rootNode.stopRotation()
             setSkybox("desert")
         case 2:
-            scene.setSkybox("endset")
+            setSkybox("endset")
         case 3:
             setSkybox("desert_evening")
         case 4:
-            scene.setSkybox("desertstorm")
+            setSkybox("desertstorm")
         case 5:
             setSkybox("desertsky")
         default:
@@ -35,11 +35,11 @@ extension MainViewController {
         case 1:
             setSkybox("desert")
         case 2:
-            scene.setSkybox("endset")
+            setSkybox("endset")
         case 3:
             setSkybox("desert_evening")
         case 4:
-            scene.setSkybox("desertstorm")
+            setSkybox("desertstorm")
         case 5:
             setSkybox("desertsky")
         default:
@@ -56,11 +56,11 @@ extension MainViewController {
         case 1:
             setSkybox("desert")
         case 2:
-            scene.setSkybox("endset")
+            setSkybox("endset")
         case 3:
             setSkybox("desert_evening")
         case 4:
-            scene.setSkybox("desertstorm")
+            setSkybox("desertstorm")
         case 5:
             setSkybox("desertsky")
         default:
@@ -77,11 +77,11 @@ extension MainViewController {
         case 1:
             setSkybox("desert")
         case 2:
-            scene.setSkybox("endset")
+            setSkybox("endset")
         case 3:
             setSkybox("desert_evening")
         case 4:
-            scene.setSkybox("desertstorm")
+            setSkybox("desertstorm")
         case 5:
             setSkybox("desertsky")
         default:

@@ -51,12 +51,30 @@ extension SCNNode {
         self.removeAnimationForKey("rotation")
     }
 
-    func flash(color: NSColor, duration: Double = 0.4) {
-        let material = self.geometry.materials[0] as SCNMaterial
-        let maybeColor: AnyObject!  = material.diffuse.contents
-        if maybeColor is NSColor {
-            let originalColor = maybeColor as NSColor
-            material.addColorAnimation([color, originalColor], duration: duration, repeatCount: 0, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut))
+    func setGeometryShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointGeometry)
+    }
+
+    func setSurfaceShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointSurface)
+    }
+
+    func setLightingShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointLightingModel)
+    }
+
+    func setFragmentShader(name: String) {
+        setShader(name, entryPoint: SCNShaderModifierEntryPointFragment)
+    }   
+
+    private func setShader(name: String, entryPoint: String) {
+        let shader = ShaderManager.shaderNamed(name)
+        let maybeModifiers: NSDictionary? = self.geometry.firstMaterial.shaderModifiers
+        var shaderModifiers = NSMutableDictionary()
+        if let modifiers = maybeModifiers {
+            shaderModifiers = modifiers.mutableCopy() as NSMutableDictionary
         }
+        shaderModifiers[entryPoint] = shader
+        self.geometry.firstMaterial.shaderModifiers = shaderModifiers
     }
 }
