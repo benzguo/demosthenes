@@ -47,7 +47,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         cameraHandle.addChildNode(cameraPitch)
         cameraNode = SCNNode()
         cameraNode.camera = camera
-        cameraNode.position = SCNVector3Make(0, 30, 90)
+        cameraNode.position = SCNVector3Make(0, 1, 50)
         cameraPitch.addChildNode(cameraNode)
 
         // lights
