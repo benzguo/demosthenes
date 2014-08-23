@@ -10,15 +10,15 @@ extension MainViewController {
         case 1:
             mysteryCube.removeFromParentNode()
             rootNode.stopRotation()
-            scene.setSkybox("desert")
+            setSkybox("desert")
         case 2:
             scene.setSkybox("endset")
         case 3:
-            scene.setSkybox("desert_evening")
+            setSkybox("desert_evening")
         case 4:
             scene.setSkybox("desertstorm")
         case 5:
-            scene.setSkybox("desertsky")
+            setSkybox("desertsky")
         default:
             break
         }
@@ -31,15 +31,15 @@ extension MainViewController {
 
         switch index {
         case 1:
-            scene.setSkybox("desert")
+            setSkybox("desert")
         case 2:
             scene.setSkybox("endset")
         case 3:
-            scene.setSkybox("desert_evening")
+            setSkybox("desert_evening")
         case 4:
             scene.setSkybox("desertstorm")
         case 5:
-            scene.setSkybox("desertsky")
+            setSkybox("desertsky")
         default:
             break
         }
@@ -52,15 +52,15 @@ extension MainViewController {
 
         switch index {
         case 1:
-            scene.setSkybox("desert")
+            setSkybox("desert")
         case 2:
             scene.setSkybox("endset")
         case 3:
-            scene.setSkybox("desert_evening")
+            setSkybox("desert_evening")
         case 4:
             scene.setSkybox("desertstorm")
         case 5:
-            scene.setSkybox("desertsky")
+            setSkybox("desertsky")
         default:
             break
         }
@@ -73,15 +73,15 @@ extension MainViewController {
 
         switch index {
         case 1:
-            scene.setSkybox("desert")
+            setSkybox("desert")
         case 2:
             scene.setSkybox("endset")
         case 3:
-            scene.setSkybox("desert_evening")
+            setSkybox("desert_evening")
         case 4:
             scene.setSkybox("desertstorm")
         case 5:
-            scene.setSkybox("desertsky")
+            setSkybox("desertsky")
         default:
             break
         }

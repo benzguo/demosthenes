@@ -744,6 +744,99 @@
 		966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47619A5232200D05880 /* SCNMaterial.swift */; };
 		966EB47B19A5232200D05880 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47719A5232200D05880 /* SCNNode.swift */; };
 		966EB47F19A52DB700D05880 /* snare.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB47E19A52DB700D05880 /* snare.mid */; };
+		969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C668F19A7F7E1002149D0 /* OverlayScene.swift */; };
+		969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669219A7FA14002149D0 /* atari_bluenoise.jpg */; };
+		969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669319A7FA14002149D0 /* atari_creamnoise.jpg */; };
+		969C66D719A7FA14002149D0 /* atari_greenblock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669419A7FA14002149D0 /* atari_greenblock.jpg */; };
+		969C66D819A7FA14002149D0 /* atari_greenglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669519A7FA14002149D0 /* atari_greenglitch.jpg */; };
+		969C66D919A7FA14002149D0 /* atari_greyglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669619A7FA14002149D0 /* atari_greyglitch.jpg */; };
+		969C66DA19A7FA14002149D0 /* atari_greynoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669719A7FA14002149D0 /* atari_greynoise.jpg */; };
+		969C66DB19A7FA14002149D0 /* atari_gridglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669819A7FA14002149D0 /* atari_gridglitch.jpg */; };
+		969C66DC19A7FA14002149D0 /* atari_horizontalstripe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669919A7FA14002149D0 /* atari_horizontalstripe.jpg */; };
+		969C66DD19A7FA14002149D0 /* atari_horizontalstripes_blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669A19A7FA14002149D0 /* atari_horizontalstripes_blue.jpg */; };
+		969C66DE19A7FA14002149D0 /* atari_letterglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669B19A7FA14002149D0 /* atari_letterglitch.jpg */; };
+		969C66DF19A7FA14002149D0 /* atari_pseudotext.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669C19A7FA14002149D0 /* atari_pseudotext.jpg */; };
+		969C66E019A7FA14002149D0 /* atari_red_textglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669D19A7FA14002149D0 /* atari_red_textglitch.jpg */; };
+		969C66E119A7FA14002149D0 /* atari_scoreglitch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669E19A7FA14002149D0 /* atari_scoreglitch.jpg */; };
+		969C66E219A7FA14002149D0 /* sega_airplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669F19A7FA14002149D0 /* sega_airplane.jpg */; };
+		969C66E319A7FA14002149D0 /* sega_airport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A019A7FA14002149D0 /* sega_airport.jpg */; };
+		969C66E419A7FA14002149D0 /* sega_arena.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A119A7FA14002149D0 /* sega_arena.jpg */; };
+		969C66E519A7FA14002149D0 /* sega_city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A219A7FA14002149D0 /* sega_city.jpg */; };
+		969C66E619A7FA14002149D0 /* sega_cockpit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A319A7FA14002149D0 /* sega_cockpit.jpg */; };
+		969C66E719A7FA14002149D0 /* sega_destroy_face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A419A7FA14002149D0 /* sega_destroy_face.jpg */; };
+		969C66E819A7FA14002149D0 /* sega_developed_for.gif in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A519A7FA14002149D0 /* sega_developed_for.gif */; };
+		969C66E919A7FA14002149D0 /* sega_dinosaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A619A7FA14002149D0 /* sega_dinosaur.jpg */; };
+		969C66EA19A7FA14002149D0 /* sega_explosion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A719A7FA14002149D0 /* sega_explosion.jpg */; };
+		969C66EB19A7FA14002149D0 /* sega_field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A819A7FA14002149D0 /* sega_field.jpg */; };
+		969C66EC19A7FA14002149D0 /* sega_furniture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66A919A7FA14002149D0 /* sega_furniture.jpg */; };
+		969C66ED19A7FA14002149D0 /* sega_galaxy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AA19A7FA14002149D0 /* sega_galaxy.jpg */; };
+		969C66EE19A7FA14002149D0 /* sega_gemfire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AB19A7FA14002149D0 /* sega_gemfire.jpg */; };
+		969C66EF19A7FA14002149D0 /* sega_island.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AC19A7FA14002149D0 /* sega_island.jpg */; };
+		969C66F019A7FA14002149D0 /* sega_lightcave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AD19A7FA14002149D0 /* sega_lightcave.jpg */; };
+		969C66F119A7FA14002149D0 /* sega_mahjong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AE19A7FA14002149D0 /* sega_mahjong.jpg */; };
+		969C66F219A7FA14002149D0 /* sega_map_english.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66AF19A7FA14002149D0 /* sega_map_english.jpg */; };
+		969C66F319A7FA14002149D0 /* sega_marilyndiptych.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B019A7FA14002149D0 /* sega_marilyndiptych.jpg */; };
+		969C66F419A7FA14002149D0 /* sega_music_game.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B119A7FA14002149D0 /* sega_music_game.jpg */; };
+		969C66F519A7FA14002149D0 /* sega_persia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B219A7FA14002149D0 /* sega_persia.jpg */; };
+		969C66F619A7FA14002149D0 /* sega_pinewoods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B319A7FA14002149D0 /* sega_pinewoods.jpg */; };
+		969C66F719A7FA14002149D0 /* sega_purplestatic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B419A7FA14002149D0 /* sega_purplestatic.jpg */; };
+		969C66F819A7FA14002149D0 /* sega_rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B519A7FA14002149D0 /* sega_rain.jpg */; };
+		969C66F919A7FA14002149D0 /* sega_redface.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B619A7FA14002149D0 /* sega_redface.jpg */; };
+		969C66FA19A7FA14002149D0 /* sega_saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B719A7FA14002149D0 /* sega_saturn.jpg */; };
+		969C66FB19A7FA14002149D0 /* sega_snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B819A7FA14002149D0 /* sega_snow.jpg */; };
+		969C66FC19A7FA14002149D0 /* sega_spaceturtle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66B919A7FA14002149D0 /* sega_spaceturtle.jpg */; };
+		969C66FD19A7FA14002149D0 /* sega_splatterhouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BA19A7FA14002149D0 /* sega_splatterhouse.jpg */; };
+		969C66FE19A7FA14002149D0 /* sega_zaxon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BB19A7FA14002149D0 /* sega_zaxon.jpg */; };
+		969C66FF19A7FA14002149D0 /* segagg_lightbeam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BC19A7FA14002149D0 /* segagg_lightbeam.jpg */; };
+		969C670019A7FA14002149D0 /* segagg_persia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BD19A7FA14002149D0 /* segagg_persia.jpg */; };
+		969C670119A7FA14002149D0 /* segagg_purpleroad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BE19A7FA14002149D0 /* segagg_purpleroad.jpg */; };
+		969C670219A7FA14002149D0 /* segagg_purpleyellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66BF19A7FA14002149D0 /* segagg_purpleyellow.jpg */; };
+		969C670319A7FA14002149D0 /* segagg_sonic_static.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C019A7FA14002149D0 /* segagg_sonic_static.jpg */; };
+		969C670419A7FA14002149D0 /* segagg_suburb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C119A7FA14002149D0 /* segagg_suburb.jpg */; };
+		969C670519A7FA14002149D0 /* zx_1999.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C219A7FA14002149D0 /* zx_1999.jpg */; };
+		969C670619A7FA14002149D0 /* zx_3D.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C319A7FA14002149D0 /* zx_3D.jpg */; };
+		969C670719A7FA14002149D0 /* zx_3Dinterceptor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C419A7FA14002149D0 /* zx_3Dinterceptor.jpg */; };
+		969C670819A7FA14002149D0 /* zx_3dmastergame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C519A7FA14002149D0 /* zx_3dmastergame.jpg */; };
+		969C670919A7FA14002149D0 /* zx_3Dmaze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C619A7FA14002149D0 /* zx_3Dmaze.jpg */; };
+		969C670A19A7FA14002149D0 /* zx_3dstrategy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C719A7FA14002149D0 /* zx_3dstrategy.jpg */; };
+		969C670B19A7FA14002149D0 /* zx_areyouusingtv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C819A7FA14002149D0 /* zx_areyouusingtv.jpg */; };
+		969C670C19A7FA14002149D0 /* zx_areyouusingtv_blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66C919A7FA14002149D0 /* zx_areyouusingtv_blue.jpg */; };
+		969C670D19A7FA14002149D0 /* zx_blackandwhite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CA19A7FA14002149D0 /* zx_blackandwhite.jpg */; };
+		969C670E19A7FA14002149D0 /* zx_chaoseditor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CB19A7FA14002149D0 /* zx_chaoseditor.jpg */; };
+		969C670F19A7FA14002149D0 /* zx_charttopper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CC19A7FA14002149D0 /* zx_charttopper.jpg */; };
+		969C671019A7FA14002149D0 /* zx_computer_room.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CD19A7FA14002149D0 /* zx_computer_room.jpg */; };
+		969C671119A7FA14002149D0 /* zx_deathscene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CE19A7FA14002149D0 /* zx_deathscene.jpg */; };
+		969C671219A7FA14002149D0 /* zx_feladat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66CF19A7FA14002149D0 /* zx_feladat.jpg */; };
+		969C671319A7FA14002149D0 /* zx_green_temple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66D019A7FA14002149D0 /* zx_green_temple.jpg */; };
+		969C671419A7FA14002149D0 /* zx_redbody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66D119A7FA14002149D0 /* zx_redbody.jpg */; };
+		969C671519A7FA14002149D0 /* zx_spheroid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66D219A7FA14002149D0 /* zx_spheroid.jpg */; };
+		969C671619A7FA14002149D0 /* zx_visibleexit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66D319A7FA14002149D0 /* zx_visibleexit.jpg */; };
+		969C671719A7FA14002149D0 /* zx_YSTI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C66D419A7FA14002149D0 /* zx_YSTI.jpg */; };
+		969C673119A80789002149D0 /* carPaint.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C671919A80789002149D0 /* carPaint.shader */; };
+		969C673219A80789002149D0 /* character.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C671A19A80789002149D0 /* character.shader */; };
+		969C673319A80789002149D0 /* characterLighting.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C671B19A80789002149D0 /* characterLighting.shader */; };
+		969C673419A80789002149D0 /* CustomProgram.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C671C19A80789002149D0 /* CustomProgram.fsh */; };
+		969C673519A80789002149D0 /* CustomProgram.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C671D19A80789002149D0 /* CustomProgram.vsh */; };
+		969C673619A80789002149D0 /* explode.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C671E19A80789002149D0 /* explode.shader */; };
+		969C673719A80789002149D0 /* floor.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C671F19A80789002149D0 /* floor.shader */; };
+		969C673819A80789002149D0 /* mapFragment.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672019A80789002149D0 /* mapFragment.shader */; };
+		969C673919A80789002149D0 /* mapGeometry.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672119A80789002149D0 /* mapGeometry.shader */; };
+		969C673A19A80789002149D0 /* mapLighting.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672219A80789002149D0 /* mapLighting.shader */; };
+		969C673B19A80789002149D0 /* NodeDelegate.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672319A80789002149D0 /* NodeDelegate.fsh */; };
+		969C673C19A80789002149D0 /* NodeDelegate.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672419A80789002149D0 /* NodeDelegate.vsh */; };
+		969C673D19A80789002149D0 /* ParticleSystem.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672519A80789002149D0 /* ParticleSystem.fsh */; };
+		969C673E19A80789002149D0 /* ParticleSystem.gsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672619A80789002149D0 /* ParticleSystem.gsh */; };
+		969C673F19A80789002149D0 /* ParticleSystem.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672719A80789002149D0 /* ParticleSystem.vsh */; };
+		969C674019A80789002149D0 /* SceneDelegate.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672819A80789002149D0 /* SceneDelegate.fsh */; };
+		969C674119A80789002149D0 /* SceneDelegate.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672919A80789002149D0 /* SceneDelegate.vsh */; };
+		969C674219A80789002149D0 /* sm_frag.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672A19A80789002149D0 /* sm_frag.shader */; };
+		969C674319A80789002149D0 /* sm_geom.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672B19A80789002149D0 /* sm_geom.shader */; };
+		969C674419A80789002149D0 /* sm_light.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672C19A80789002149D0 /* sm_light.shader */; };
+		969C674519A80789002149D0 /* sm_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672D19A80789002149D0 /* sm_surf.shader */; };
+		969C674619A80789002149D0 /* toon.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672E19A80789002149D0 /* toon.shader */; };
+		969C674719A80789002149D0 /* wave.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672F19A80789002149D0 /* wave.shader */; };
+		969C674819A80789002149D0 /* xRay.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C673019A80789002149D0 /* xRay.shader */; };
+		969C674A19A807F7002149D0 /* SCNFloor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C674919A807F7002149D0 /* SCNFloor.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -1525,6 +1618,99 @@
 		966EB47619A5232200D05880 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		966EB47719A5232200D05880 /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
 		966EB47E19A52DB700D05880 /* snare.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = snare.mid; sourceTree = "<group>"; };
+		969C668F19A7F7E1002149D0 /* OverlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScene.swift; sourceTree = "<group>"; };
+		969C669219A7FA14002149D0 /* atari_bluenoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_bluenoise.jpg; sourceTree = "<group>"; };
+		969C669319A7FA14002149D0 /* atari_creamnoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_creamnoise.jpg; sourceTree = "<group>"; };
+		969C669419A7FA14002149D0 /* atari_greenblock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_greenblock.jpg; sourceTree = "<group>"; };
+		969C669519A7FA14002149D0 /* atari_greenglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_greenglitch.jpg; sourceTree = "<group>"; };
+		969C669619A7FA14002149D0 /* atari_greyglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_greyglitch.jpg; sourceTree = "<group>"; };
+		969C669719A7FA14002149D0 /* atari_greynoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_greynoise.jpg; sourceTree = "<group>"; };
+		969C669819A7FA14002149D0 /* atari_gridglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_gridglitch.jpg; sourceTree = "<group>"; };
+		969C669919A7FA14002149D0 /* atari_horizontalstripe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_horizontalstripe.jpg; sourceTree = "<group>"; };
+		969C669A19A7FA14002149D0 /* atari_horizontalstripes_blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_horizontalstripes_blue.jpg; sourceTree = "<group>"; };
+		969C669B19A7FA14002149D0 /* atari_letterglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_letterglitch.jpg; sourceTree = "<group>"; };
+		969C669C19A7FA14002149D0 /* atari_pseudotext.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_pseudotext.jpg; sourceTree = "<group>"; };
+		969C669D19A7FA14002149D0 /* atari_red_textglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_red_textglitch.jpg; sourceTree = "<group>"; };
+		969C669E19A7FA14002149D0 /* atari_scoreglitch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_scoreglitch.jpg; sourceTree = "<group>"; };
+		969C669F19A7FA14002149D0 /* sega_airplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_airplane.jpg; sourceTree = "<group>"; };
+		969C66A019A7FA14002149D0 /* sega_airport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_airport.jpg; sourceTree = "<group>"; };
+		969C66A119A7FA14002149D0 /* sega_arena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_arena.jpg; sourceTree = "<group>"; };
+		969C66A219A7FA14002149D0 /* sega_city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_city.jpg; sourceTree = "<group>"; };
+		969C66A319A7FA14002149D0 /* sega_cockpit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_cockpit.jpg; sourceTree = "<group>"; };
+		969C66A419A7FA14002149D0 /* sega_destroy_face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_destroy_face.jpg; sourceTree = "<group>"; };
+		969C66A519A7FA14002149D0 /* sega_developed_for.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sega_developed_for.gif; sourceTree = "<group>"; };
+		969C66A619A7FA14002149D0 /* sega_dinosaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_dinosaur.jpg; sourceTree = "<group>"; };
+		969C66A719A7FA14002149D0 /* sega_explosion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_explosion.jpg; sourceTree = "<group>"; };
+		969C66A819A7FA14002149D0 /* sega_field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_field.jpg; sourceTree = "<group>"; };
+		969C66A919A7FA14002149D0 /* sega_furniture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_furniture.jpg; sourceTree = "<group>"; };
+		969C66AA19A7FA14002149D0 /* sega_galaxy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_galaxy.jpg; sourceTree = "<group>"; };
+		969C66AB19A7FA14002149D0 /* sega_gemfire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_gemfire.jpg; sourceTree = "<group>"; };
+		969C66AC19A7FA14002149D0 /* sega_island.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_island.jpg; sourceTree = "<group>"; };
+		969C66AD19A7FA14002149D0 /* sega_lightcave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_lightcave.jpg; sourceTree = "<group>"; };
+		969C66AE19A7FA14002149D0 /* sega_mahjong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_mahjong.jpg; sourceTree = "<group>"; };
+		969C66AF19A7FA14002149D0 /* sega_map_english.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_map_english.jpg; sourceTree = "<group>"; };
+		969C66B019A7FA14002149D0 /* sega_marilyndiptych.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_marilyndiptych.jpg; sourceTree = "<group>"; };
+		969C66B119A7FA14002149D0 /* sega_music_game.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_music_game.jpg; sourceTree = "<group>"; };
+		969C66B219A7FA14002149D0 /* sega_persia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_persia.jpg; sourceTree = "<group>"; };
+		969C66B319A7FA14002149D0 /* sega_pinewoods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_pinewoods.jpg; sourceTree = "<group>"; };
+		969C66B419A7FA14002149D0 /* sega_purplestatic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_purplestatic.jpg; sourceTree = "<group>"; };
+		969C66B519A7FA14002149D0 /* sega_rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_rain.jpg; sourceTree = "<group>"; };
+		969C66B619A7FA14002149D0 /* sega_redface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_redface.jpg; sourceTree = "<group>"; };
+		969C66B719A7FA14002149D0 /* sega_saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_saturn.jpg; sourceTree = "<group>"; };
+		969C66B819A7FA14002149D0 /* sega_snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_snow.jpg; sourceTree = "<group>"; };
+		969C66B919A7FA14002149D0 /* sega_spaceturtle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_spaceturtle.jpg; sourceTree = "<group>"; };
+		969C66BA19A7FA14002149D0 /* sega_splatterhouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_splatterhouse.jpg; sourceTree = "<group>"; };
+		969C66BB19A7FA14002149D0 /* sega_zaxon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sega_zaxon.jpg; sourceTree = "<group>"; };
+		969C66BC19A7FA14002149D0 /* segagg_lightbeam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_lightbeam.jpg; sourceTree = "<group>"; };
+		969C66BD19A7FA14002149D0 /* segagg_persia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_persia.jpg; sourceTree = "<group>"; };
+		969C66BE19A7FA14002149D0 /* segagg_purpleroad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_purpleroad.jpg; sourceTree = "<group>"; };
+		969C66BF19A7FA14002149D0 /* segagg_purpleyellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_purpleyellow.jpg; sourceTree = "<group>"; };
+		969C66C019A7FA14002149D0 /* segagg_sonic_static.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_sonic_static.jpg; sourceTree = "<group>"; };
+		969C66C119A7FA14002149D0 /* segagg_suburb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = segagg_suburb.jpg; sourceTree = "<group>"; };
+		969C66C219A7FA14002149D0 /* zx_1999.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_1999.jpg; sourceTree = "<group>"; };
+		969C66C319A7FA14002149D0 /* zx_3D.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_3D.jpg; sourceTree = "<group>"; };
+		969C66C419A7FA14002149D0 /* zx_3Dinterceptor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_3Dinterceptor.jpg; sourceTree = "<group>"; };
+		969C66C519A7FA14002149D0 /* zx_3dmastergame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_3dmastergame.jpg; sourceTree = "<group>"; };
+		969C66C619A7FA14002149D0 /* zx_3Dmaze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_3Dmaze.jpg; sourceTree = "<group>"; };
+		969C66C719A7FA14002149D0 /* zx_3dstrategy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_3dstrategy.jpg; sourceTree = "<group>"; };
+		969C66C819A7FA14002149D0 /* zx_areyouusingtv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_areyouusingtv.jpg; sourceTree = "<group>"; };
+		969C66C919A7FA14002149D0 /* zx_areyouusingtv_blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_areyouusingtv_blue.jpg; sourceTree = "<group>"; };
+		969C66CA19A7FA14002149D0 /* zx_blackandwhite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_blackandwhite.jpg; sourceTree = "<group>"; };
+		969C66CB19A7FA14002149D0 /* zx_chaoseditor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_chaoseditor.jpg; sourceTree = "<group>"; };
+		969C66CC19A7FA14002149D0 /* zx_charttopper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_charttopper.jpg; sourceTree = "<group>"; };
+		969C66CD19A7FA14002149D0 /* zx_computer_room.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_computer_room.jpg; sourceTree = "<group>"; };
+		969C66CE19A7FA14002149D0 /* zx_deathscene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_deathscene.jpg; sourceTree = "<group>"; };
+		969C66CF19A7FA14002149D0 /* zx_feladat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_feladat.jpg; sourceTree = "<group>"; };
+		969C66D019A7FA14002149D0 /* zx_green_temple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_green_temple.jpg; sourceTree = "<group>"; };
+		969C66D119A7FA14002149D0 /* zx_redbody.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_redbody.jpg; sourceTree = "<group>"; };
+		969C66D219A7FA14002149D0 /* zx_spheroid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_spheroid.jpg; sourceTree = "<group>"; };
+		969C66D319A7FA14002149D0 /* zx_visibleexit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_visibleexit.jpg; sourceTree = "<group>"; };
+		969C66D419A7FA14002149D0 /* zx_YSTI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zx_YSTI.jpg; sourceTree = "<group>"; };
+		969C671919A80789002149D0 /* carPaint.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = carPaint.shader; sourceTree = "<group>"; };
+		969C671A19A80789002149D0 /* character.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = character.shader; sourceTree = "<group>"; };
+		969C671B19A80789002149D0 /* characterLighting.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = characterLighting.shader; sourceTree = "<group>"; };
+		969C671C19A80789002149D0 /* CustomProgram.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CustomProgram.fsh; sourceTree = "<group>"; };
+		969C671D19A80789002149D0 /* CustomProgram.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CustomProgram.vsh; sourceTree = "<group>"; };
+		969C671E19A80789002149D0 /* explode.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = explode.shader; sourceTree = "<group>"; };
+		969C671F19A80789002149D0 /* floor.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = floor.shader; sourceTree = "<group>"; };
+		969C672019A80789002149D0 /* mapFragment.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapFragment.shader; sourceTree = "<group>"; };
+		969C672119A80789002149D0 /* mapGeometry.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapGeometry.shader; sourceTree = "<group>"; };
+		969C672219A80789002149D0 /* mapLighting.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapLighting.shader; sourceTree = "<group>"; };
+		969C672319A80789002149D0 /* NodeDelegate.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NodeDelegate.fsh; sourceTree = "<group>"; };
+		969C672419A80789002149D0 /* NodeDelegate.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NodeDelegate.vsh; sourceTree = "<group>"; };
+		969C672519A80789002149D0 /* ParticleSystem.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ParticleSystem.fsh; sourceTree = "<group>"; };
+		969C672619A80789002149D0 /* ParticleSystem.gsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ParticleSystem.gsh; sourceTree = "<group>"; };
+		969C672719A80789002149D0 /* ParticleSystem.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ParticleSystem.vsh; sourceTree = "<group>"; };
+		969C672819A80789002149D0 /* SceneDelegate.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SceneDelegate.fsh; sourceTree = "<group>"; };
+		969C672919A80789002149D0 /* SceneDelegate.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SceneDelegate.vsh; sourceTree = "<group>"; };
+		969C672A19A80789002149D0 /* sm_frag.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_frag.shader; sourceTree = "<group>"; };
+		969C672B19A80789002149D0 /* sm_geom.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_geom.shader; sourceTree = "<group>"; };
+		969C672C19A80789002149D0 /* sm_light.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_light.shader; sourceTree = "<group>"; };
+		969C672D19A80789002149D0 /* sm_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_surf.shader; sourceTree = "<group>"; };
+		969C672E19A80789002149D0 /* toon.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toon.shader; sourceTree = "<group>"; };
+		969C672F19A80789002149D0 /* wave.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wave.shader; sourceTree = "<group>"; };
+		969C673019A80789002149D0 /* xRay.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xRay.shader; sourceTree = "<group>"; };
+		969C674919A807F7002149D0 /* SCNFloor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNFloor.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -3211,6 +3397,7 @@
 				966EB47619A5232200D05880 /* SCNMaterial.swift */,
 				966EB47719A5232200D05880 /* SCNNode.swift */,
 				96153F8819A579AB00AAD5EF /* SCNScene.swift */,
+				969C674919A807F7002149D0 /* SCNFloor.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -3222,6 +3409,113 @@
 			);
 			path = audio;
 			sourceTree = "<group>";
+		};
+		969C669119A7FA14002149D0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				969C669219A7FA14002149D0 /* atari_bluenoise.jpg */,
+				969C669319A7FA14002149D0 /* atari_creamnoise.jpg */,
+				969C669419A7FA14002149D0 /* atari_greenblock.jpg */,
+				969C669519A7FA14002149D0 /* atari_greenglitch.jpg */,
+				969C669619A7FA14002149D0 /* atari_greyglitch.jpg */,
+				969C669719A7FA14002149D0 /* atari_greynoise.jpg */,
+				969C669819A7FA14002149D0 /* atari_gridglitch.jpg */,
+				969C669919A7FA14002149D0 /* atari_horizontalstripe.jpg */,
+				969C669A19A7FA14002149D0 /* atari_horizontalstripes_blue.jpg */,
+				969C669B19A7FA14002149D0 /* atari_letterglitch.jpg */,
+				969C669C19A7FA14002149D0 /* atari_pseudotext.jpg */,
+				969C669D19A7FA14002149D0 /* atari_red_textglitch.jpg */,
+				969C669E19A7FA14002149D0 /* atari_scoreglitch.jpg */,
+				969C669F19A7FA14002149D0 /* sega_airplane.jpg */,
+				969C66A019A7FA14002149D0 /* sega_airport.jpg */,
+				969C66A119A7FA14002149D0 /* sega_arena.jpg */,
+				969C66A219A7FA14002149D0 /* sega_city.jpg */,
+				969C66A319A7FA14002149D0 /* sega_cockpit.jpg */,
+				969C66A419A7FA14002149D0 /* sega_destroy_face.jpg */,
+				969C66A519A7FA14002149D0 /* sega_developed_for.gif */,
+				969C66A619A7FA14002149D0 /* sega_dinosaur.jpg */,
+				969C66A719A7FA14002149D0 /* sega_explosion.jpg */,
+				969C66A819A7FA14002149D0 /* sega_field.jpg */,
+				969C66A919A7FA14002149D0 /* sega_furniture.jpg */,
+				969C66AA19A7FA14002149D0 /* sega_galaxy.jpg */,
+				969C66AB19A7FA14002149D0 /* sega_gemfire.jpg */,
+				969C66AC19A7FA14002149D0 /* sega_island.jpg */,
+				969C66AD19A7FA14002149D0 /* sega_lightcave.jpg */,
+				969C66AE19A7FA14002149D0 /* sega_mahjong.jpg */,
+				969C66AF19A7FA14002149D0 /* sega_map_english.jpg */,
+				969C66B019A7FA14002149D0 /* sega_marilyndiptych.jpg */,
+				969C66B119A7FA14002149D0 /* sega_music_game.jpg */,
+				969C66B219A7FA14002149D0 /* sega_persia.jpg */,
+				969C66B319A7FA14002149D0 /* sega_pinewoods.jpg */,
+				969C66B419A7FA14002149D0 /* sega_purplestatic.jpg */,
+				969C66B519A7FA14002149D0 /* sega_rain.jpg */,
+				969C66B619A7FA14002149D0 /* sega_redface.jpg */,
+				969C66B719A7FA14002149D0 /* sega_saturn.jpg */,
+				969C66B819A7FA14002149D0 /* sega_snow.jpg */,
+				969C66B919A7FA14002149D0 /* sega_spaceturtle.jpg */,
+				969C66BA19A7FA14002149D0 /* sega_splatterhouse.jpg */,
+				969C66BB19A7FA14002149D0 /* sega_zaxon.jpg */,
+				969C66BC19A7FA14002149D0 /* segagg_lightbeam.jpg */,
+				969C66BD19A7FA14002149D0 /* segagg_persia.jpg */,
+				969C66BE19A7FA14002149D0 /* segagg_purpleroad.jpg */,
+				969C66BF19A7FA14002149D0 /* segagg_purpleyellow.jpg */,
+				969C66C019A7FA14002149D0 /* segagg_sonic_static.jpg */,
+				969C66C119A7FA14002149D0 /* segagg_suburb.jpg */,
+				969C66C219A7FA14002149D0 /* zx_1999.jpg */,
+				969C66C319A7FA14002149D0 /* zx_3D.jpg */,
+				969C66C419A7FA14002149D0 /* zx_3Dinterceptor.jpg */,
+				969C66C519A7FA14002149D0 /* zx_3dmastergame.jpg */,
+				969C66C619A7FA14002149D0 /* zx_3Dmaze.jpg */,
+				969C66C719A7FA14002149D0 /* zx_3dstrategy.jpg */,
+				969C66C819A7FA14002149D0 /* zx_areyouusingtv.jpg */,
+				969C66C919A7FA14002149D0 /* zx_areyouusingtv_blue.jpg */,
+				969C66CA19A7FA14002149D0 /* zx_blackandwhite.jpg */,
+				969C66CB19A7FA14002149D0 /* zx_chaoseditor.jpg */,
+				969C66CC19A7FA14002149D0 /* zx_charttopper.jpg */,
+				969C66CD19A7FA14002149D0 /* zx_computer_room.jpg */,
+				969C66CE19A7FA14002149D0 /* zx_deathscene.jpg */,
+				969C66CF19A7FA14002149D0 /* zx_feladat.jpg */,
+				969C66D019A7FA14002149D0 /* zx_green_temple.jpg */,
+				969C66D119A7FA14002149D0 /* zx_redbody.jpg */,
+				969C66D219A7FA14002149D0 /* zx_spheroid.jpg */,
+				969C66D319A7FA14002149D0 /* zx_visibleexit.jpg */,
+				969C66D419A7FA14002149D0 /* zx_YSTI.jpg */,
+			);
+			name = images;
+			path = mtv/images;
+			sourceTree = SOURCE_ROOT;
+		};
+		969C671819A80789002149D0 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				969C671919A80789002149D0 /* carPaint.shader */,
+				969C671A19A80789002149D0 /* character.shader */,
+				969C671B19A80789002149D0 /* characterLighting.shader */,
+				969C671C19A80789002149D0 /* CustomProgram.fsh */,
+				969C671D19A80789002149D0 /* CustomProgram.vsh */,
+				969C671E19A80789002149D0 /* explode.shader */,
+				969C671F19A80789002149D0 /* floor.shader */,
+				969C672019A80789002149D0 /* mapFragment.shader */,
+				969C672119A80789002149D0 /* mapGeometry.shader */,
+				969C672219A80789002149D0 /* mapLighting.shader */,
+				969C672319A80789002149D0 /* NodeDelegate.fsh */,
+				969C672419A80789002149D0 /* NodeDelegate.vsh */,
+				969C672519A80789002149D0 /* ParticleSystem.fsh */,
+				969C672619A80789002149D0 /* ParticleSystem.gsh */,
+				969C672719A80789002149D0 /* ParticleSystem.vsh */,
+				969C672819A80789002149D0 /* SceneDelegate.fsh */,
+				969C672919A80789002149D0 /* SceneDelegate.vsh */,
+				969C672A19A80789002149D0 /* sm_frag.shader */,
+				969C672B19A80789002149D0 /* sm_geom.shader */,
+				969C672C19A80789002149D0 /* sm_light.shader */,
+				969C672D19A80789002149D0 /* sm_surf.shader */,
+				969C672E19A80789002149D0 /* toon.shader */,
+				969C672F19A80789002149D0 /* wave.shader */,
+				969C673019A80789002149D0 /* xRay.shader */,
+			);
+			name = shaders;
+			path = mtv/shaders;
+			sourceTree = SOURCE_ROOT;
 		};
 		96A3B952199EEED200AEF7B3 = {
 			isa = PBXGroup;
@@ -3245,13 +3539,16 @@
 				966EB46119A5224B00D05880 /* midi_files */,
 				969AA26F19A259D4000741A1 /* audio */,
 				96165203199F19E80088DC97 /* models */,
+				969C669119A7FA14002149D0 /* images */,
 				961651D0199F0EEB0088DC97 /* materials */,
+				969C671819A80789002149D0 /* shaders */,
 				966EB46E19A5231800D05880 /* Categories */,
 				966EB46619A5230200D05880 /* MIDI */,
 				966EB47319A5232200D05880 /* SceneKit */,
 				96F08CDD19A1278300C1409A /* mtv-Bridging-Header.h */,
 				96A3B962199EEED200AEF7B3 /* AppDelegate.swift */,
 				96A3B966199EEED300AEF7B3 /* MainMenu.xib */,
+				969C668F19A7F7E1002149D0 /* OverlayScene.swift */,
 				9644BB6C199EF16200F1EE50 /* MainViewController.swift */,
 				96AE29EA19A5E4BE00CFC595 /* Cursor.swift */,
 				96AE29DF19A5CE3900CFC595 /* song */,
@@ -3390,15 +3687,18 @@
 				96154A2619A57ADA00AAD5EF /* jajlands2_top.JPG in Resources */,
 				96154AB419A57ADA00AAD5EF /* oasisnight_top.jpg in Resources */,
 				96154B2019A57ADA00AAD5EF /* snowblind_back.jpg in Resources */,
+				969C66E419A7FA14002149D0 /* sega_arena.jpg in Resources */,
 				961548C819A57AD900AAD5EF /* nansen_right.jpg in Resources */,
 				96154A6919A57ADA00AAD5EF /* mountains_back.jpg in Resources */,
 				961548BB19A57AD900AAD5EF /* blood_sport512_top.JPG in Resources */,
+				969C671019A7FA14002149D0 /* zx_computer_room.jpg in Resources */,
 				961548CB19A57AD900AAD5EF /* bluefreeze.zip in Resources */,
 				9615497A19A57ADA00AAD5EF /* flatrock.zip in Resources */,
 				961549FD19A57ADA00AAD5EF /* islands_top.jpg in Resources */,
 				96154A8C19A57ADA00AAD5EF /* nightsky_back.jpg in Resources */,
 				96154B3719A57ADA00AAD5EF /* starfield_left.jpg in Resources */,
 				96FFEE8C199FCFFE00E83AA7 /* v2.jpg in Resources */,
+				969C673119A80789002149D0 /* carPaint.shader in Resources */,
 				96154A6119A57ADA00AAD5EF /* morose.zip in Resources */,
 				9615498B19A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
 				9615499D19A57ADA00AAD5EF /* grand_canyon_back.jpg in Resources */,
@@ -3406,6 +3706,7 @@
 				96154A8D19A57ADA00AAD5EF /* nightsky_front.jpg in Resources */,
 				96154B1119A57ADA00AAD5EF /* siege.zip in Resources */,
 				96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */,
+				969C66F319A7FA14002149D0 /* sega_marilyndiptych.jpg in Resources */,
 				96154A9119A57ADA00AAD5EF /* Note.txt in Resources */,
 				96FFEE8F199FCFFE00E83AA7 /* v5_0.jpg in Resources */,
 				96154ACC19A57ADA00AAD5EF /* podsky_back.jpg in Resources */,
@@ -3423,6 +3724,7 @@
 				961549DB19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B6219A57ADA00AAD5EF /* wintermount_right.jpg in Resources */,
 				961549CD19A57ADA00AAD5EF /* Note.txt in Resources */,
+				969C673419A80789002149D0 /* CustomProgram.fsh in Resources */,
 				9615499B19A57ADA00AAD5EF /* gardensky_top.jpg in Resources */,
 				96FFEE81199FCFFE00E83AA7 /* material_6.psd in Resources */,
 				96154A9A19A57ADA00AAD5EF /* nightwalker_back.jpg in Resources */,
@@ -3444,6 +3746,7 @@
 				96154AFE19A57ADA00AAD5EF /* redplanet_front.jpg in Resources */,
 				9615493519A57AD900AAD5EF /* desertplains_back.jpg in Resources */,
 				9615499A19A57ADA00AAD5EF /* gardensky_right.jpg in Resources */,
+				969C66DD19A7FA14002149D0 /* atari_horizontalstripes_blue.jpg in Resources */,
 				961549CE19A57ADA00AAD5EF /* hexagon.zip in Resources */,
 				9615494119A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A8319A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -3454,6 +3757,7 @@
 				96154B2319A57ADA00AAD5EF /* snowblind_right.jpg in Resources */,
 				96154A4B19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615499719A57ADA00AAD5EF /* gardensky_back.jpg in Resources */,
+				969C671319A7FA14002149D0 /* zx_green_temple.jpg in Resources */,
 				96154A5419A57ADA00AAD5EF /* mars_back.jpg in Resources */,
 				96154A9E19A57ADA00AAD5EF /* nightwalker_top.jpg in Resources */,
 				9615494019A57AD900AAD5EF /* desertsky_top.jpg in Resources */,
@@ -3463,6 +3767,9 @@
 				9615491E19A57AD900AAD5EF /* Note.txt in Resources */,
 				961549AC19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154ACD19A57ADA00AAD5EF /* podsky_front.jpg in Resources */,
+				969C66DB19A7FA14002149D0 /* atari_gridglitch.jpg in Resources */,
+				969C670619A7FA14002149D0 /* zx_3D.jpg in Resources */,
+				969C66EE19A7FA14002149D0 /* sega_gemfire.jpg in Resources */,
 				96154A2319A57ADA00AAD5EF /* jajlands2_front.jpg in Resources */,
 				9615491719A57AD900AAD5EF /* Note.txt in Resources */,
 				961548D519A57AD900AAD5EF /* calm_left.jpg in Resources */,
@@ -3484,6 +3791,7 @@
 				961548D719A57AD900AAD5EF /* calm_top.jpg in Resources */,
 				96154A6619A57ADA00AAD5EF /* morose_top.jpg in Resources */,
 				96154A8F19A57ADA00AAD5EF /* nightsky_right.jpg in Resources */,
+				969C670D19A7FA14002149D0 /* zx_blackandwhite.jpg in Resources */,
 				96154B1F19A57ADA00AAD5EF /* snowblind.zip in Resources */,
 				961548D419A57AD900AAD5EF /* calm_front.jpg in Resources */,
 				961549FA19A57ADA00AAD5EF /* islands_front.jpg in Resources */,
@@ -3496,6 +3804,7 @@
 				96FFEE7D199FCFFE00E83AA7 /* material_1.psd in Resources */,
 				96154B0019A57ADA00AAD5EF /* redplanet_right.jpg in Resources */,
 				96154AD019A57ADA00AAD5EF /* podsky_top.jpg in Resources */,
+				969C66F719A7FA14002149D0 /* sega_purplestatic.jpg in Resources */,
 				96154B5519A57ADA00AAD5EF /* toonsnow.zip in Resources */,
 				96154A5F19A57ADA00AAD5EF /* mars1.zip in Resources */,
 				96154A9D19A57ADA00AAD5EF /* nightwalker_right.jpg in Resources */,
@@ -3507,17 +3816,23 @@
 				961549DE19A57ADA00AAD5EF /* jajice1_front.jpg in Resources */,
 				961549E719A57ADA00AAD5EF /* ice_mountain_top.jpg in Resources */,
 				96154A0419A57ADA00AAD5EF /* mine_top.jpg in Resources */,
+				969C673B19A80789002149D0 /* NodeDelegate.fsh in Resources */,
 				96154A9219A57ADA00AAD5EF /* night_ink.zip in Resources */,
 				96154ADA19A57ADA00AAD5EF /* powderpeaknight_back.jpg in Resources */,
+				969C670C19A7FA14002149D0 /* zx_areyouusingtv_blue.jpg in Resources */,
 				9615491C19A57AD900AAD5EF /* desert_evening_right.jpg in Resources */,
 				9615490E19A57AD900AAD5EF /* jajdarkland1_right.jpg in Resources */,
 				961548EC19A57AD900AAD5EF /* cliffsofinsanity_top.jpg in Resources */,
+				969C670519A7FA14002149D0 /* zx_1999.jpg in Resources */,
 				961548CA19A57AD900AAD5EF /* Note.txt in Resources */,
 				96154AA619A57ADA00AAD5EF /* nuke_top.jpg in Resources */,
 				9615497919A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B0519A57ADA00AAD5EF /* rockyvalley_front.jpg in Resources */,
+				969C673A19A80789002149D0 /* mapLighting.shader in Resources */,
 				961549B419A57ADA00AAD5EF /* greenhaze_front.jpg in Resources */,
+				969C66F119A7FA14002149D0 /* sega_mahjong.jpg in Resources */,
 				96154AD919A57ADA00AAD5EF /* powderpeaknight.zip in Resources */,
+				969C66FC19A7FA14002149D0 /* sega_spaceturtle.jpg in Resources */,
 				96154AA119A57ADA00AAD5EF /* nuke.zip in Resources */,
 				96154A8419A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615495319A57ADA00AAD5EF /* dunes_left.JPG in Resources */,
@@ -3538,6 +3853,7 @@
 				9615493219A57AD900AAD5EF /* endset_top.jpg in Resources */,
 				961549A619A57ADA00AAD5EF /* grave_front.jpg in Resources */,
 				9615498419A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
+				969C66E519A7FA14002149D0 /* sega_city.jpg in Resources */,
 				96154B5619A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548C319A57AD900AAD5EF /* Note.txt in Resources */,
 				961549EE19A57ADA00AAD5EF /* iceflats_right.jpg in Resources */,
@@ -3547,7 +3863,10 @@
 				9615494B19A57ADA00AAD5EF /* devpun_front.jpg in Resources */,
 				961548A819A57AD900AAD5EF /* ashcanyon.zip in Resources */,
 				96154B1C19A57ADA00AAD5EF /* Note.txt in Resources */,
+				969C670019A7FA14002149D0 /* segagg_persia.jpg in Resources */,
+				969C66D919A7FA14002149D0 /* atari_greyglitch.jpg in Resources */,
 				96154A0719A57ADA00AAD5EF /* krypto_sky_front.jpg in Resources */,
+				969C673D19A80789002149D0 /* ParticleSystem.fsh in Resources */,
 				961549B519A57ADA00AAD5EF /* greenhaze_left.jpg in Resources */,
 				96154B1A19A57ADA00AAD5EF /* jajsnow1_right.jpg in Resources */,
 				96154A5C19A57ADA00AAD5EF /* jajmars_left.jpg in Resources */,
@@ -3572,6 +3891,7 @@
 				9615498319A57ADA00AAD5EF /* frozen_front.jpg in Resources */,
 				961549E919A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548B319A57AD900AAD5EF /* bleached_right.jpg in Resources */,
+				969C66F919A7FA14002149D0 /* sega_redface.jpg in Resources */,
 				96154AB019A57ADA00AAD5EF /* oasisnight_back.jpg in Resources */,
 				96154AA319A57ADA00AAD5EF /* nuke_front.jpg in Resources */,
 				96154ABA19A57ADA00AAD5EF /* orangecream_right.jpg in Resources */,
@@ -3580,25 +3900,31 @@
 				96154ABD19A57ADA00AAD5EF /* plague.zip in Resources */,
 				96154A9519A57ADA00AAD5EF /* nnksky01_left.jpg in Resources */,
 				961549FB19A57ADA00AAD5EF /* islands_left.jpg in Resources */,
+				969C674019A80789002149D0 /* SceneDelegate.fsh in Resources */,
 				961651FD199F0EEB0088DC97 /* stone-normal.png in Resources */,
 				96154A4719A57ADA00AAD5EF /* lostatseanight_front.jpg in Resources */,
 				9615494C19A57ADA00AAD5EF /* devpun_left.jpg in Resources */,
 				9615496019A57ADA00AAD5EF /* emerald_front.jpg in Resources */,
 				961549B219A57ADA00AAD5EF /* greenhaze.zip in Resources */,
+				969C66E019A7FA14002149D0 /* atari_red_textglitch.jpg in Resources */,
 				96154A0519A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A0E19A57ADA00AAD5EF /* jajlake1_front.jpg in Resources */,
 				96154B4119A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154AA519A57ADA00AAD5EF /* nuke_right.jpg in Resources */,
 				9615495119A57ADA00AAD5EF /* dunes_back.JPG in Resources */,
+				969C670919A7FA14002149D0 /* zx_3Dmaze.jpg in Resources */,
 				96154A0219A57ADA00AAD5EF /* mine_left.jpg in Resources */,
 				96154AAC19A57ADA00AAD5EF /* oasisday_right.jpg in Resources */,
 				9615490B19A57AD900AAD5EF /* jajdarkland1_back.jpg in Resources */,
 				9615492019A57AD900AAD5EF /* desert_back.jpg in Resources */,
 				96154AD619A57ADA00AAD5EF /* powderpeak_right.jpg in Resources */,
+				969C66D819A7FA14002149D0 /* atari_greenglitch.jpg in Resources */,
 				9615491F19A57AD900AAD5EF /* desert2.zip in Resources */,
 				961548E919A57AD900AAD5EF /* cliffsofinsanity_front.jpg in Resources */,
 				96154A6219A57ADA00AAD5EF /* morose_back.jpg in Resources */,
+				969C674319A80789002149D0 /* sm_geom.shader in Resources */,
 				96154A3719A57ADA00AAD5EF /* limon.zip in Resources */,
+				969C66DF19A7FA14002149D0 /* atari_pseudotext.jpg in Resources */,
 				96154A7D19A57ADA00AAD5EF /* alpine.zip in Resources */,
 				96154B5919A57ADA00AAD5EF /* underwater_front.jpg in Resources */,
 				9615491519A57AD900AAD5EF /* delirious_right.jpg in Resources */,
@@ -3607,6 +3933,8 @@
 				9615493819A57AD900AAD5EF /* desertplains_right.jpg in Resources */,
 				96154AF919A57ADA00AAD5EF /* redday_right.jpg in Resources */,
 				9615494F19A57ADA00AAD5EF /* Note.txt in Resources */,
+				969C66E119A7FA14002149D0 /* atari_scoreglitch.jpg in Resources */,
+				969C674119A80789002149D0 /* SceneDelegate.vsh in Resources */,
 				961548CE19A57AD900AAD5EF /* bluefreeze_left.jpg in Resources */,
 				96154A1B19A57ADA00AAD5EF /* jajlands1_back.jpg in Resources */,
 				961548CC19A57AD900AAD5EF /* bluefreeze_back.jpg in Resources */,
@@ -3616,6 +3944,7 @@
 				96154B4419A57ADA00AAD5EF /* stratosphere_front.jpg in Resources */,
 				961549EF19A57ADA00AAD5EF /* iceflats_top.jpg in Resources */,
 				961548AB19A57AD900AAD5EF /* ashcanyon_left.jpg in Resources */,
+				969C674219A80789002149D0 /* sm_frag.shader in Resources */,
 				9615496A19A57ADA00AAD5EF /* emeraldfog_top.jpg in Resources */,
 				961548E819A57AD900AAD5EF /* cliffsofinsanity_back.jpg in Resources */,
 				961549B119A57ADA00AAD5EF /* xyloote_top.jpg in Resources */,
@@ -3625,8 +3954,11 @@
 				96154A5919A57ADA00AAD5EF /* Note.txt in Resources */,
 				961549A919A57ADA00AAD5EF /* grave_top.jpg in Resources */,
 				961548EA19A57AD900AAD5EF /* cliffsofinsanity_left.jpg in Resources */,
+				969C66F219A7FA14002149D0 /* sega_map_english.jpg in Resources */,
 				96154A5A19A57ADA00AAD5EF /* jajmars_back.jpg in Resources */,
+				969C66ED19A7FA14002149D0 /* sega_galaxy.jpg in Resources */,
 				9615493F19A57AD900AAD5EF /* desertsky_right.jpg in Resources */,
+				969C66F619A7FA14002149D0 /* sega_pinewoods.jpg in Resources */,
 				96154A9319A57ADA00AAD5EF /* nnksky01_back.jpg in Resources */,
 				96154A4819A57ADA00AAD5EF /* lostatseanight_left.jpg in Resources */,
 				961548F419A57AD900AAD5EF /* Note.txt in Resources */,
@@ -3636,6 +3968,7 @@
 				961549AE19A57ADA00AAD5EF /* xyloote_front.jpg in Resources */,
 				96FFEE97199FCFFE00E83AA7 /* violinist.dae in Resources */,
 				96154B5F19A57ADA00AAD5EF /* wintermount_back.jpg in Resources */,
+				969C670419A7FA14002149D0 /* segagg_suburb.jpg in Resources */,
 				961549EA19A57ADA00AAD5EF /* iceflats1.zip in Resources */,
 				96154ABF19A57ADA00AAD5EF /* plague_front.jpg in Resources */,
 				96154A1219A57ADA00AAD5EF /* lake1.zip in Resources */,
@@ -3647,12 +3980,15 @@
 				96154A1019A57ADA00AAD5EF /* jajlake1_right.jpg in Resources */,
 				961651FC199F0EEB0088DC97 /* scree-normal.jpg in Resources */,
 				96154B3E19A57ADA00AAD5EF /* stars_left.jpg in Resources */,
+				969C670A19A7FA14002149D0 /* zx_3dstrategy.jpg in Resources */,
 				961548FC19A57AD900AAD5EF /* cottoncandy.zip in Resources */,
 				961548E719A57AD900AAD5EF /* cliffsofinsanity.zip in Resources */,
 				961548E619A57AD900AAD5EF /* Note.txt in Resources */,
 				9615490219A57AD900AAD5EF /* Note.txt in Resources */,
 				961549F119A57ADA00AAD5EF /* iceflow.zip in Resources */,
+				969C673719A80789002149D0 /* floor.shader in Resources */,
 				96154AAD19A57ADA00AAD5EF /* oasisday_top.jpg in Resources */,
+				969C670819A7FA14002149D0 /* zx_3dmastergame.jpg in Resources */,
 				96154AF219A57ADA00AAD5EF /* rapture_right.jpg in Resources */,
 				961548EB19A57AD900AAD5EF /* cliffsofinsanity_right.jpg in Resources */,
 				96154A7319A57ADA00AAD5EF /* valley_left.jpg in Resources */,
@@ -3690,6 +4026,7 @@
 				96154AA419A57ADA00AAD5EF /* nuke_left.jpg in Resources */,
 				96154A8E19A57ADA00AAD5EF /* nightsky_left.jpg in Resources */,
 				96154A5519A57ADA00AAD5EF /* mars_front.jpg in Resources */,
+				969C66E719A7FA14002149D0 /* sega_destroy_face.jpg in Resources */,
 				96154A9819A57ADA00AAD5EF /* Note.txt in Resources */,
 				961549C819A57ADA00AAD5EF /* necros_hell_back.JPG in Resources */,
 				9615499E19A57ADA00AAD5EF /* grand_canyon_front.jpg in Resources */,
@@ -3710,7 +4047,9 @@
 				96154AF719A57ADA00AAD5EF /* redday_front.jpg in Resources */,
 				96154A1A19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96165202199F13A30088DC97 /* floor-diffuse.jpg in Resources */,
+				969C66F019A7FA14002149D0 /* sega_lightcave.jpg in Resources */,
 				96154A5119A57ADA00AAD5EF /* majesty_top.jpg in Resources */,
+				969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */,
 				9615491D19A57AD900AAD5EF /* desert_evening_top.jpg in Resources */,
 				96154AFD19A57ADA00AAD5EF /* redplanet_back.jpg in Resources */,
 				96154A1919A57ADA00AAD5EF /* lake2.zip in Resources */,
@@ -3718,7 +4057,9 @@
 				96FFEE91199FCFFE00E83AA7 /* v5_2.jpg in Resources */,
 				961548B919A57AD900AAD5EF /* blood_sport512_left.jpg in Resources */,
 				96154A4219A57ADA00AAD5EF /* lostvalley_right.jpg in Resources */,
+				969C66DE19A7FA14002149D0 /* atari_letterglitch.jpg in Resources */,
 				961549C619A57ADA00AAD5EF /* Note.txt in Resources */,
+				969C670719A7FA14002149D0 /* zx_3Dinterceptor.jpg in Resources */,
 				961549D419A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A4319A57ADA00AAD5EF /* lostvalley_top.jpg in Resources */,
 				96154A2E19A57ADA00AAD5EF /* leatherduster_top.jpg in Resources */,
@@ -3744,13 +4085,16 @@
 				96154A8519A57ADA00AAD5EF /* nwo512.zip in Resources */,
 				9615490719A57AD900AAD5EF /* darkgloom_right.jpg in Resources */,
 				96154A9619A57ADA00AAD5EF /* nnksky01_right.jpg in Resources */,
+				969C674719A80789002149D0 /* wave.shader in Resources */,
 				96154A6F19A57ADA00AAD5EF /* mudriver.zip in Resources */,
 				96154B5A19A57ADA00AAD5EF /* underwater_left.jpg in Resources */,
 				96FFEE88199FCFFE00E83AA7 /* Water_Pool.jpg in Resources */,
 				961548B619A57AD900AAD5EF /* blood_sport512.zip in Resources */,
 				9615498819A57ADA00AAD5EF /* frozen.zip in Resources */,
+				969C66E319A7FA14002149D0 /* sega_airport.jpg in Resources */,
 				961549F819A57ADA00AAD5EF /* islands.zip in Resources */,
 				96154B3419A57ADA00AAD5EF /* starfield.zip in Resources */,
+				969C671419A7FA14002149D0 /* zx_redbody.jpg in Resources */,
 				9615493C19A57AD900AAD5EF /* desertsky_back.jpg in Resources */,
 				9615491B19A57AD900AAD5EF /* desert_evening_left.jpg in Resources */,
 				9615492C19A57AD900AAD5EF /* Note.txt in Resources */,
@@ -3775,9 +4119,11 @@
 				9615496319A57ADA00AAD5EF /* emerald_top.jpg in Resources */,
 				961548C119A57AD900AAD5EF /* bluesky_right.jpg in Resources */,
 				961549AD19A57ADA00AAD5EF /* xyloote_back.jpg in Resources */,
+				969C66E219A7FA14002149D0 /* sega_airplane.jpg in Resources */,
 				961549B619A57ADA00AAD5EF /* greenhaze_right.jpg in Resources */,
 				96154A0919A57ADA00AAD5EF /* krypto_sky_right.jpg in Resources */,
 				96154B4A19A57ADA00AAD5EF /* jajsundown1_left.jpg in Resources */,
+				969C670119A7FA14002149D0 /* segagg_purpleroad.jpg in Resources */,
 				96154B5B19A57ADA00AAD5EF /* underwater_right.jpg in Resources */,
 				96154ACA19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615493A19A57AD900AAD5EF /* Note.txt in Resources */,
@@ -3785,6 +4131,7 @@
 				9615495C19A57ADA00AAD5EF /* elbrus_top.jpg in Resources */,
 				9615491619A57AD900AAD5EF /* delirious_top.jpg in Resources */,
 				9615498119A57ADA00AAD5EF /* frozen.zip in Resources */,
+				969C66E619A7FA14002149D0 /* sega_cockpit.jpg in Resources */,
 				9615499119A57ADA00AAD5EF /* frozendusk_front.jpg in Resources */,
 				96FFEE95199FCFFE00E83AA7 /* v5_6.jpg in Resources */,
 				961549BF19A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -3795,6 +4142,7 @@
 				961548F119A57AD900AAD5EF /* clouds_left.jpg in Resources */,
 				96154AA019A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154AB319A57ADA00AAD5EF /* oasisnight_right.jpg in Resources */,
+				969C670F19A7FA14002149D0 /* zx_charttopper.jpg in Resources */,
 				961549E019A57ADA00AAD5EF /* jajice1_right.jpg in Resources */,
 				961549B819A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548C719A57AD900AAD5EF /* nansen_left.jpg in Resources */,
@@ -3808,13 +4156,17 @@
 				96154B1519A57ADA00AAD5EF /* siege_right.jpg in Resources */,
 				96154B4519A57ADA00AAD5EF /* stratosphere_left.jpg in Resources */,
 				96FFEE8D199FCFFE00E83AA7 /* v3.jpg in Resources */,
+				969C673219A80789002149D0 /* character.shader in Resources */,
+				969C66EB19A7FA14002149D0 /* sega_field.jpg in Resources */,
 				961548D319A57AD900AAD5EF /* calm_back.jpg in Resources */,
 				96154A1419A57ADA00AAD5EF /* jajlake2_back.jpg in Resources */,
 				9615499219A57ADA00AAD5EF /* frozendusk_left.jpg in Resources */,
+				969C670E19A7FA14002149D0 /* zx_chaoseditor.jpg in Resources */,
 				96154ABC19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154ACE19A57ADA00AAD5EF /* podsky_left.jpg in Resources */,
 				961548DD19A57AD900AAD5EF /* jajcannons1_right.jpg in Resources */,
 				96154B5319A57ADA00AAD5EF /* toon_snow_right.jpg in Resources */,
+				969C673319A80789002149D0 /* characterLighting.shader in Resources */,
 				96154B1B19A57ADA00AAD5EF /* jajsnow1_top.jpg in Resources */,
 				96154AAA19A57ADA00AAD5EF /* oasisday_front.jpg in Resources */,
 				96154A5E19A57ADA00AAD5EF /* jajmars_top.jpg in Resources */,
@@ -3867,13 +4219,17 @@
 				9615498519A57ADA00AAD5EF /* frozen_right.jpg in Resources */,
 				96FFEE80199FCFFE00E83AA7 /* material_4.psd in Resources */,
 				96FFEE7F199FCFFE00E83AA7 /* material_3.psd in Resources */,
+				969C66E819A7FA14002149D0 /* sega_developed_for.gif in Resources */,
 				961548DF19A57AD900AAD5EF /* Note.txt in Resources */,
 				96154B4B19A57ADA00AAD5EF /* jajsundown1_right.jpg in Resources */,
 				96154AF519A57ADA00AAD5EF /* redday.zip in Resources */,
 				96154AE719A57ADA00AAD5EF /* purplevalley.zip in Resources */,
 				96154A3119A57ADA00AAD5EF /* lilacisles_back.jpg in Resources */,
 				961549D119A57ADA00AAD5EF /* hexagon_left.jpg in Resources */,
+				969C66DC19A7FA14002149D0 /* atari_horizontalstripe.jpg in Resources */,
+				969C673E19A80789002149D0 /* ParticleSystem.gsh in Resources */,
 				9615497619A57ADA00AAD5EF /* fadeaway_left.jpg in Resources */,
+				969C673F19A80789002149D0 /* ParticleSystem.vsh in Resources */,
 				961548A319A57AD900AAD5EF /* jajalien1_front.jpg in Resources */,
 				96154A2F19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615496219A57ADA00AAD5EF /* emerald_right.jpg in Resources */,
@@ -3887,8 +4243,10 @@
 				961549F019A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615497D19A57ADA00AAD5EF /* flatrock_left.jpg in Resources */,
 				96154B0D19A57ADA00AAD5EF /* shadowpeak_left.jpg in Resources */,
+				969C670B19A7FA14002149D0 /* zx_areyouusingtv.jpg in Resources */,
 				961548A219A57AD900AAD5EF /* jajalien1_back.jpg in Resources */,
 				96154A6B19A57ADA00AAD5EF /* mountains_left.jpg in Resources */,
+				969C673619A80789002149D0 /* explode.shader in Resources */,
 				96154A4F19A57ADA00AAD5EF /* majesty_left.jpg in Resources */,
 				9615492F19A57AD900AAD5EF /* endset_front.jpg in Resources */,
 				961651F7199F0EEB0088DC97 /* wood-diffuse.jpg in Resources */,
@@ -3905,6 +4263,7 @@
 				96154B2419A57ADA00AAD5EF /* snowblind_top.jpg in Resources */,
 				9615499619A57ADA00AAD5EF /* gardensky.zip in Resources */,
 				961651F4199F0EEB0088DC97 /* noise-diffuse.png in Resources */,
+				969C673919A80789002149D0 /* mapGeometry.shader in Resources */,
 				96154AB719A57ADA00AAD5EF /* orangecream_back.jpg in Resources */,
 				961549E119A57ADA00AAD5EF /* jajice1_top.jpg in Resources */,
 				961548DE19A57AD900AAD5EF /* jajcannons1_top.jpg in Resources */,
@@ -3918,7 +4277,9 @@
 				96154AEE19A57ADA00AAD5EF /* rapture.zip in Resources */,
 				96154AF819A57ADA00AAD5EF /* redday_left.jpg in Resources */,
 				9615499019A57ADA00AAD5EF /* frozendusk_back.jpg in Resources */,
+				969C66F819A7FA14002149D0 /* sega_rain.jpg in Resources */,
 				961549C419A57ADA00AAD5EF /* hazy_lake_top.jpg in Resources */,
+				969C674819A80789002149D0 /* xRay.shader in Resources */,
 				96154B0E19A57ADA00AAD5EF /* shadowpeak_right.jpg in Resources */,
 				96154AC119A57ADA00AAD5EF /* plague_right.jpg in Resources */,
 				96154A2919A57ADA00AAD5EF /* leatherduster.zip in Resources */,
@@ -3932,10 +4293,12 @@
 				961549BD19A57ADA00AAD5EF /* greywash_right.jpg in Resources */,
 				96154B0619A57ADA00AAD5EF /* rockyvalley_left.jpg in Resources */,
 				9615493119A57AD900AAD5EF /* endset_right.jpg in Resources */,
+				969C670319A7FA14002149D0 /* segagg_sonic_static.jpg in Resources */,
 				9615495819A57ADA00AAD5EF /* elbrus_back.jpg in Resources */,
 				96154B1219A57ADA00AAD5EF /* siege_back.jpg in Resources */,
 				96154B1919A57ADA00AAD5EF /* jajsnow1_left.jpg in Resources */,
 				9615491219A57AD900AAD5EF /* delirious_back.jpg in Resources */,
+				969C66D719A7FA14002149D0 /* atari_greenblock.jpg in Resources */,
 				9615490119A57AD900AAD5EF /* cottoncandy_top.jpg in Resources */,
 				9615494219A57ADA00AAD5EF /* desertstorm.zip in Resources */,
 				961549A819A57ADA00AAD5EF /* grave_right.jpg in Resources */,
@@ -3949,12 +4312,14 @@
 				9615492419A57AD900AAD5EF /* desert_top.jpg in Resources */,
 				96154ABB19A57ADA00AAD5EF /* orangecream_top.jpg in Resources */,
 				9615498F19A57ADA00AAD5EF /* frozendusk.zip in Resources */,
+				969C66FF19A7FA14002149D0 /* segagg_lightbeam.jpg in Resources */,
 				96154A6319A57ADA00AAD5EF /* morose_front.jpg in Resources */,
 				96154B3A19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B5219A57ADA00AAD5EF /* toon_snow_left.jpg in Resources */,
 				96154A9419A57ADA00AAD5EF /* nnksky01_front.jpg in Resources */,
 				96154ADE19A57ADA00AAD5EF /* powderpeaknight_top.jpg in Resources */,
 				96154A8119A57ADA00AAD5EF /* alpine_right.jpg in Resources */,
+				969C670219A7FA14002149D0 /* segagg_purpleyellow.jpg in Resources */,
 				9615494919A57ADA00AAD5EF /* devilpunch.zip in Resources */,
 				96FFEE8E199FCFFE00E83AA7 /* v5.jpg in Resources */,
 				96154AB919A57ADA00AAD5EF /* orangecream_left.jpg in Resources */,
@@ -4012,8 +4377,10 @@
 				961548D019A57AD900AAD5EF /* bluefreeze_top.jpg in Resources */,
 				96154AA219A57ADA00AAD5EF /* nuke_back.jpg in Resources */,
 				9615494619A57ADA00AAD5EF /* desertstorm_right.jpg in Resources */,
+				969C674419A80789002149D0 /* sm_light.shader in Resources */,
 				96154AAB19A57ADA00AAD5EF /* oasisday_left.jpg in Resources */,
 				96154A3019A57ADA00AAD5EF /* lilacisles.zip in Resources */,
+				969C66EA19A7FA14002149D0 /* sega_explosion.jpg in Resources */,
 				96154AF619A57ADA00AAD5EF /* redday_back.jpg in Resources */,
 				96154B6319A57ADA00AAD5EF /* wintermount_top.jpg in Resources */,
 				96154A7119A57ADA00AAD5EF /* valley_back.jpg in Resources */,
@@ -4022,7 +4389,9 @@
 				96154A7019A57ADA00AAD5EF /* Note.txt in Resources */,
 				961549E219A57ADA00AAD5EF /* Note.txt in Resources */,
 				961549FC19A57ADA00AAD5EF /* islands_right.jpg in Resources */,
+				969C66DA19A7FA14002149D0 /* atari_greynoise.jpg in Resources */,
 				96154B0319A57ADA00AAD5EF /* rockyvalley.zip in Resources */,
+				969C673C19A80789002149D0 /* NodeDelegate.vsh in Resources */,
 				9615495E19A57ADA00AAD5EF /* emerald.zip in Resources */,
 				96154B0F19A57ADA00AAD5EF /* shadowpeak_top.jpg in Resources */,
 				96154A2B19A57ADA00AAD5EF /* leatherduster_front.jpg in Resources */,
@@ -4038,12 +4407,15 @@
 				961651F8199F0EEB0088DC97 /* stripes-mask.png in Resources */,
 				96154B5E19A57ADA00AAD5EF /* wintermount.zip in Resources */,
 				961548A619A57AD900AAD5EF /* jajalien1_top.jpg in Resources */,
+				969C66EC19A7FA14002149D0 /* sega_furniture.jpg in Resources */,
 				961549C019A57ADA00AAD5EF /* hazy_lake_back.jpg in Resources */,
 				96154A2D19A57ADA00AAD5EF /* leatherduster_right.jpg in Resources */,
 				96154A0819A57ADA00AAD5EF /* krypto_sky_left.jpg in Resources */,
 				96154B2A19A57ADA00AAD5EF /* snowy_right.jpg in Resources */,
+				969C671119A7FA14002149D0 /* zx_deathscene.jpg in Resources */,
 				96154A5D19A57ADA00AAD5EF /* jajmars_right.jpg in Resources */,
 				961549EC19A57ADA00AAD5EF /* iceflats_front.jpg in Resources */,
+				969C673519A80789002149D0 /* CustomProgram.vsh in Resources */,
 				9615495419A57ADA00AAD5EF /* dunes_right.JPG in Resources */,
 				96FFEE89199FCFFE00E83AA7 /* woman_head_1.jpg in Resources */,
 				961651FB199F0EEB0088DC97 /* noise-normal.png in Resources */,
@@ -4052,6 +4424,7 @@
 				9615496519A57ADA00AAD5EF /* emeraldfog.zip in Resources */,
 				96154A7F19A57ADA00AAD5EF /* alpine_front.jpg in Resources */,
 				96154B1819A57ADA00AAD5EF /* jajsnow1_front.jpg in Resources */,
+				969C66F519A7FA14002149D0 /* sega_persia.jpg in Resources */,
 				9615498919A57ADA00AAD5EF /* frozen_back.jpg in Resources */,
 				961549CF19A57ADA00AAD5EF /* hexagon_back.jpg in Resources */,
 				961549AF19A57ADA00AAD5EF /* xyloote_left.jpg in Resources */,
@@ -4059,6 +4432,8 @@
 				9615496C19A57ADA00AAD5EF /* entropic.zip in Resources */,
 				96154A1119A57ADA00AAD5EF /* jajlake1_top.jpg in Resources */,
 				96154A8B19A57ADA00AAD5EF /* nightsky.zip in Resources */,
+				969C671219A7FA14002149D0 /* zx_feladat.jpg in Resources */,
+				969C66FE19A7FA14002149D0 /* sega_zaxon.jpg in Resources */,
 				9615492D19A57AD900AAD5EF /* desert_set.zip in Resources */,
 				9615496D19A57ADA00AAD5EF /* entropic_back.jpg in Resources */,
 				9615497519A57ADA00AAD5EF /* fadeaway_front.jpg in Resources */,
@@ -4068,6 +4443,7 @@
 				961548BF19A57AD900AAD5EF /* bluesky_front.jpg in Resources */,
 				96154A7419A57ADA00AAD5EF /* valley_right.jpg in Resources */,
 				961548B419A57AD900AAD5EF /* bleached_top.jpg in Resources */,
+				969C671619A7FA14002149D0 /* zx_visibleexit.jpg in Resources */,
 				961549F719A57ADA00AAD5EF /* Note.txt in Resources */,
 				961549E519A57ADA00AAD5EF /* ice_mountain_left.jpg in Resources */,
 				96154B0419A57ADA00AAD5EF /* rockyvalley_back.jpg in Resources */,
@@ -4078,6 +4454,7 @@
 				961549E619A57ADA00AAD5EF /* ice_mountain_right.jpg in Resources */,
 				961548E019A57AD900AAD5EF /* city.zip in Resources */,
 				96154B3F19A57ADA00AAD5EF /* stars_right.jpg in Resources */,
+				969C66F419A7FA14002149D0 /* sega_music_game.jpg in Resources */,
 				96154A2A19A57ADA00AAD5EF /* leatherduster_back.jpg in Resources */,
 				961548AD19A57AD900AAD5EF /* ashcanyon_top.jpg in Resources */,
 				9615494D19A57ADA00AAD5EF /* devpun_right.jpg in Resources */,
@@ -4087,26 +4464,36 @@
 				96154AC519A57ADA00AAD5EF /* plain_sky_front.jpg in Resources */,
 				9615491A19A57AD900AAD5EF /* desert_evening_front.jpg in Resources */,
 				961548BA19A57AD900AAD5EF /* blood_sport512_right.jpg in Resources */,
+				969C674519A80789002149D0 /* sm_surf.shader in Resources */,
 				961548EF19A57AD900AAD5EF /* clouds_back.jpg in Resources */,
 				96154AC419A57ADA00AAD5EF /* plain_sky_back.jpg in Resources */,
+				969C66FB19A7FA14002149D0 /* sega_snow.jpg in Resources */,
 				961549F319A57ADA00AAD5EF /* iceflow_front.jpg in Resources */,
 				96A3B968199EEED300AEF7B3 /* MainMenu.xib in Resources */,
+				969C66FA19A7FA14002149D0 /* sega_saturn.jpg in Resources */,
 				96154B4819A57ADA00AAD5EF /* jajsundown1_back.jpg in Resources */,
 				96154A1719A57ADA00AAD5EF /* jajlake2_right.jpg in Resources */,
 				96154A6019A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615497719A57ADA00AAD5EF /* fadeaway_right.jpg in Resources */,
 				96154A5719A57ADA00AAD5EF /* mars_right.jpg in Resources */,
+				969C66EF19A7FA14002149D0 /* sega_island.jpg in Resources */,
+				969C66E919A7FA14002149D0 /* sega_dinosaur.jpg in Resources */,
 				96154AB619A57ADA00AAD5EF /* orangecream.zip in Resources */,
 				96154B0B19A57ADA00AAD5EF /* shadowpeak_back.jpg in Resources */,
 				96154A1C19A57ADA00AAD5EF /* jajlands1_front.jpg in Resources */,
 				961549BA19A57ADA00AAD5EF /* greywash_back.jpg in Resources */,
 				9615497419A57ADA00AAD5EF /* fadeaway_back.jpg in Resources */,
+				969C66FD19A7FA14002149D0 /* sega_splatterhouse.jpg in Resources */,
+				969C673819A80789002149D0 /* mapFragment.shader in Resources */,
 				961548CD19A57AD900AAD5EF /* bluefreeze_front.jpg in Resources */,
 				961549E319A57ADA00AAD5EF /* ice_mountain_back.jpg in Resources */,
+				969C674619A80789002149D0 /* toon.shader in Resources */,
 				961549DF19A57ADA00AAD5EF /* jajice1_left.jpg in Resources */,
 				96154AC719A57ADA00AAD5EF /* plain_sky_right.jpg in Resources */,
+				969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */,
 				96154AD519A57ADA00AAD5EF /* powderpeak_left.jpg in Resources */,
 				96154AE019A57ADA00AAD5EF /* purplenebula.zip in Resources */,
+				969C671519A7FA14002149D0 /* zx_spheroid.jpg in Resources */,
 				96154ACB19A57ADA00AAD5EF /* podsky.zip in Resources */,
 				96154ADD19A57ADA00AAD5EF /* powderpeaknight_right.jpg in Resources */,
 				9615495019A57ADA00AAD5EF /* dunes.zip in Resources */,
@@ -4125,6 +4512,7 @@
 				961549D619A57ADA00AAD5EF /* hourglass_back.jpg in Resources */,
 				9615490F19A57AD900AAD5EF /* jajdarkland1_top.jpg in Resources */,
 				96154A3E19A57ADA00AAD5EF /* lostvalley.zip in Resources */,
+				969C671719A7FA14002149D0 /* zx_YSTI.jpg in Resources */,
 				96154A9B19A57ADA00AAD5EF /* nightwalker_front.jpg in Resources */,
 				9615497319A57ADA00AAD5EF /* fadeaway.zip in Resources */,
 				9615492119A57AD900AAD5EF /* desert_front.jpg in Resources */,
@@ -4146,12 +4534,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */,
+				969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */,
 				966EB47B19A5232200D05880 /* SCNNode.swift in Sources */,
 				966EB47119A5231800D05880 /* NSColor.swift in Sources */,
 				96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */,
 				96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */,
 				96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */,
 				96AE29E519A5D01600CFC595 /* MainViewController_Verses.swift in Sources */,
+				969C674A19A807F7002149D0 /* SCNFloor.swift in Sources */,
 				96AE29E919A5D03100CFC595 /* MainViewController_Bridge.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
 				966EB46C19A5230200D05880 /* MIDIPlayer.swift in Sources */,

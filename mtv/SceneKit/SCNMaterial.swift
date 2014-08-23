@@ -17,6 +17,17 @@ extension SCNMaterial {
         self.shininess = 100
     }
 
+    convenience init(image name: String) {
+        self.init()
+        self.ambient.contents = NSColor.blackColor()
+        self.diffuse.contents = NSImage(named: name)
+        self.diffuse.contentsTransform = CATransform3DScale(CATransform3DMakeRotation(CGFloat(M_PI / 4.0), 0, 0, 1), 2.0, 2.0, 1.0);
+        self.specular.wrapS = .WrapModeMirror
+        self.specular.wrapT = .WrapModeMirror
+        self.diffuse.wrapS  = .WrapModeMirror
+        self.diffuse.wrapT  = .WrapModeMirror
+    }
+
     func addColorAnimation(colors: [NSColor],
         duration: Double,
         repeatCount: Float = 1.0,

@@ -1,8 +1,6 @@
 @import Foundation;
 #import "MIDIPlayerCore.h"
 
-static MIDIPlayerCore *globalSelf; // this sucks
-
 @interface MIDIPlayerCore () {
     MusicPlayer player;
     MusicSequence sequence;
