@@ -823,10 +823,10 @@
 		969C673F19A80789002149D0 /* ParticleSystem.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672719A80789002149D0 /* ParticleSystem.vsh */; };
 		969C674019A80789002149D0 /* SceneDelegate.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672819A80789002149D0 /* SceneDelegate.fsh */; };
 		969C674119A80789002149D0 /* SceneDelegate.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 969C672919A80789002149D0 /* SceneDelegate.vsh */; };
-		969C674219A80789002149D0 /* sm_frag.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672A19A80789002149D0 /* sm_frag.shader */; };
-		969C674319A80789002149D0 /* sm_geom.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672B19A80789002149D0 /* sm_geom.shader */; };
-		969C674419A80789002149D0 /* sm_light.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672C19A80789002149D0 /* sm_light.shader */; };
-		969C674519A80789002149D0 /* sm_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672D19A80789002149D0 /* sm_surf.shader */; };
+		969C674219A80789002149D0 /* video_frag.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672A19A80789002149D0 /* video_frag.shader */; };
+		969C674319A80789002149D0 /* bumps_geom.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672B19A80789002149D0 /* bumps_geom.shader */; };
+		969C674419A80789002149D0 /* glow_light.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672C19A80789002149D0 /* glow_light.shader */; };
+		969C674519A80789002149D0 /* greenoil_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672D19A80789002149D0 /* greenoil_surf.shader */; };
 		969C674619A80789002149D0 /* toon.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672E19A80789002149D0 /* toon.shader */; };
 		969C674719A80789002149D0 /* wave.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672F19A80789002149D0 /* wave.shader */; };
 		969C674819A80789002149D0 /* xRay.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C673019A80789002149D0 /* xRay.shader */; };
@@ -841,6 +841,7 @@
 		969C675D19A825CE002149D0 /* scree_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675719A825CE002149D0 /* scree_diffuse.jpg */; };
 		969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C675819A825CE002149D0 /* stone_diffuse.png */; };
 		969C675F19A825CE002149D0 /* wood_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C675919A825CE002149D0 /* wood_diffuse.jpg */; };
+		969C676119A82B9B002149D0 /* ShaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C676019A82B9B002149D0 /* ShaderManager.swift */; };
 		96A3B961199EEED200AEF7B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B960199EEED200AEF7B3 /* main.swift */; };
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
@@ -1701,10 +1702,10 @@
 		969C672719A80789002149D0 /* ParticleSystem.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ParticleSystem.vsh; sourceTree = "<group>"; };
 		969C672819A80789002149D0 /* SceneDelegate.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SceneDelegate.fsh; sourceTree = "<group>"; };
 		969C672919A80789002149D0 /* SceneDelegate.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SceneDelegate.vsh; sourceTree = "<group>"; };
-		969C672A19A80789002149D0 /* sm_frag.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_frag.shader; sourceTree = "<group>"; };
-		969C672B19A80789002149D0 /* sm_geom.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_geom.shader; sourceTree = "<group>"; };
-		969C672C19A80789002149D0 /* sm_light.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_light.shader; sourceTree = "<group>"; };
-		969C672D19A80789002149D0 /* sm_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sm_surf.shader; sourceTree = "<group>"; };
+		969C672A19A80789002149D0 /* video_frag.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video_frag.shader; sourceTree = "<group>"; };
+		969C672B19A80789002149D0 /* bumps_geom.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bumps_geom.shader; sourceTree = "<group>"; };
+		969C672C19A80789002149D0 /* glow_light.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glow_light.shader; sourceTree = "<group>"; };
+		969C672D19A80789002149D0 /* greenoil_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = greenoil_surf.shader; sourceTree = "<group>"; };
 		969C672E19A80789002149D0 /* toon.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toon.shader; sourceTree = "<group>"; };
 		969C672F19A80789002149D0 /* wave.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wave.shader; sourceTree = "<group>"; };
 		969C673019A80789002149D0 /* xRay.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xRay.shader; sourceTree = "<group>"; };
@@ -1719,6 +1720,7 @@
 		969C675719A825CE002149D0 /* scree_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scree_diffuse.jpg; sourceTree = "<group>"; };
 		969C675819A825CE002149D0 /* stone_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_diffuse.png; sourceTree = "<group>"; };
 		969C675919A825CE002149D0 /* wood_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood_diffuse.jpg; sourceTree = "<group>"; };
+		969C676019A82B9B002149D0 /* ShaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderManager.swift; sourceTree = "<group>"; };
 		96A3B95B199EEED200AEF7B3 /* mtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A3B95F199EEED200AEF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A3B960199EEED200AEF7B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -3407,6 +3409,7 @@
 				966EB47719A5232200D05880 /* SCNNode.swift */,
 				96153F8819A579AB00AAD5EF /* SCNScene.swift */,
 				969C674919A807F7002149D0 /* SCNFloor.swift */,
+				969C676019A82B9B002149D0 /* ShaderManager.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -3514,10 +3517,10 @@
 				969C672719A80789002149D0 /* ParticleSystem.vsh */,
 				969C672819A80789002149D0 /* SceneDelegate.fsh */,
 				969C672919A80789002149D0 /* SceneDelegate.vsh */,
-				969C672A19A80789002149D0 /* sm_frag.shader */,
-				969C672B19A80789002149D0 /* sm_geom.shader */,
-				969C672C19A80789002149D0 /* sm_light.shader */,
-				969C672D19A80789002149D0 /* sm_surf.shader */,
+				969C672A19A80789002149D0 /* video_frag.shader */,
+				969C672B19A80789002149D0 /* bumps_geom.shader */,
+				969C672C19A80789002149D0 /* glow_light.shader */,
+				969C672D19A80789002149D0 /* greenoil_surf.shader */,
 				969C672E19A80789002149D0 /* toon.shader */,
 				969C672F19A80789002149D0 /* wave.shader */,
 				969C673019A80789002149D0 /* xRay.shader */,
@@ -3945,7 +3948,7 @@
 				9615491F19A57AD900AAD5EF /* desert2.zip in Resources */,
 				961548E919A57AD900AAD5EF /* cliffsofinsanity_front.jpg in Resources */,
 				96154A6219A57ADA00AAD5EF /* morose_back.jpg in Resources */,
-				969C674319A80789002149D0 /* sm_geom.shader in Resources */,
+				969C674319A80789002149D0 /* bumps_geom.shader in Resources */,
 				96154A3719A57ADA00AAD5EF /* limon.zip in Resources */,
 				969C66DF19A7FA14002149D0 /* atari_pseudotext.jpg in Resources */,
 				96154A7D19A57ADA00AAD5EF /* alpine.zip in Resources */,
@@ -3967,7 +3970,7 @@
 				96154B4419A57ADA00AAD5EF /* stratosphere_front.jpg in Resources */,
 				961549EF19A57ADA00AAD5EF /* iceflats_top.jpg in Resources */,
 				961548AB19A57AD900AAD5EF /* ashcanyon_left.jpg in Resources */,
-				969C674219A80789002149D0 /* sm_frag.shader in Resources */,
+				969C674219A80789002149D0 /* video_frag.shader in Resources */,
 				9615496A19A57ADA00AAD5EF /* emeraldfog_top.jpg in Resources */,
 				961548E819A57AD900AAD5EF /* cliffsofinsanity_back.jpg in Resources */,
 				961549B119A57ADA00AAD5EF /* xyloote_top.jpg in Resources */,
@@ -4401,7 +4404,7 @@
 				961548D019A57AD900AAD5EF /* bluefreeze_top.jpg in Resources */,
 				96154AA219A57ADA00AAD5EF /* nuke_back.jpg in Resources */,
 				9615494619A57ADA00AAD5EF /* desertstorm_right.jpg in Resources */,
-				969C674419A80789002149D0 /* sm_light.shader in Resources */,
+				969C674419A80789002149D0 /* glow_light.shader in Resources */,
 				96154AAB19A57ADA00AAD5EF /* oasisday_left.jpg in Resources */,
 				96154A3019A57ADA00AAD5EF /* lilacisles.zip in Resources */,
 				969C66EA19A7FA14002149D0 /* sega_explosion.jpg in Resources */,
@@ -4487,7 +4490,7 @@
 				96154AC519A57ADA00AAD5EF /* plain_sky_front.jpg in Resources */,
 				9615491A19A57AD900AAD5EF /* desert_evening_front.jpg in Resources */,
 				961548BA19A57AD900AAD5EF /* blood_sport512_right.jpg in Resources */,
-				969C674519A80789002149D0 /* sm_surf.shader in Resources */,
+				969C674519A80789002149D0 /* greenoil_surf.shader in Resources */,
 				961548EF19A57AD900AAD5EF /* clouds_back.jpg in Resources */,
 				96154AC419A57ADA00AAD5EF /* plain_sky_back.jpg in Resources */,
 				969C66FB19A7FA14002149D0 /* sega_snow.jpg in Resources */,
@@ -4557,6 +4560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969C676119A82B9B002149D0 /* ShaderManager.swift in Sources */,
 				966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */,
 				969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */,
 				966EB47B19A5232200D05880 /* SCNNode.swift in Sources */,

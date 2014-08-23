@@ -1,6 +1,7 @@
 
 import SceneKit
 
+
 extension MainViewController {
 
     func FirstHits(index: Int) {
@@ -8,6 +9,7 @@ extension MainViewController {
 
         switch index {
         case 1:
+            let mysteryCube = self.nodeForKey(&mysteryCubeKey)
             mysteryCube.removeFromParentNode()
             rootNode.stopRotation()
             setSkybox("desert")

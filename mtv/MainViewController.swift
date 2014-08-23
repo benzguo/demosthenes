@@ -25,9 +25,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let floor: SCNFloor
     let floorNode: SCNNode
 
-    let mysteryCube: SCNNode
-    var sphereNode: SCNNode!
-
     required init(coder: NSCoder!) {
         // scene
         scene = SCNScene()
@@ -69,18 +66,12 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         floor.setCubemap("city")
         floorNode = SCNNode(geometry: floor)
 
-        // objects
-        let box = SCNBox(size: 80.0)
-        box.firstMaterial = SCNMaterial(cubeMap: "greywash")
-        mysteryCube = SCNNode(geometry: box)
-        mysteryCube.rotate(M_PI/2.0, x: 1, y: 0, z: 0)
-        mysteryCube.setRotation(vector: SCNVector3Make(1, 0.5, 0), duration: 10.0)
+
 
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
         rootNode.addChildNode(omniLightNode)
         rootNode.addChildNode(floorNode)
-        rootNode.addChildNode(mysteryCube)
 
         super.init(coder: coder)
 
@@ -95,8 +86,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.scene = scene
         sceneView.delegate = self
         sceneView.pointOfView = cameraNode
+        sceneView.playing = true
+        sceneView.loops = true
         overlayScene = OverlayScene(size: sceneView.bounds.size)
         overlayScene.setImage("atari_bluenoise")
+        // WARN: TRY THIS ON OSX 10.10
 //        sceneView.overlaySKScene = overlayScene // NEED OSX 10.10
 
 //        let animalgirlNode = SCNNode(resourceName: "animalgirl")
@@ -134,6 +128,15 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     func setSkybox(name: String) {
         scene.setSkybox(name)
         floor.setCubemap(name)
+    }
+
+    func nodeForKey(key: UnsafePointer<()>) -> SCNNode {
+        let node : SCNNode! = objc_getAssociatedObject(self, key) as SCNNode!
+        return node
+    }
+
+    func saveNode(node: SCNNode, withKey key: UnsafePointer<()>) {
+        objc_setAssociatedObject(self, key, node, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
     }
 
 }
