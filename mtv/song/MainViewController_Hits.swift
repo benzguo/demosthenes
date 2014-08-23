@@ -1,6 +1,4 @@
-
 import SceneKit
-
 
 extension MainViewController {
 
@@ -18,9 +16,9 @@ extension MainViewController {
         case 3:
             setSkybox("desert_evening")
         case 4:
-            setSkybox("desertstorm")
+            setSkybox("endset")
         case 5:
-            setSkybox("desertsky")
+            setSkybox("endset")
         default:
             break
         }

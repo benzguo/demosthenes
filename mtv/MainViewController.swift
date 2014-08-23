@@ -74,7 +74,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
         rootNode.addChildNode(omniLightNode)
-        rootNode.addChildNode(floorNode)
+//        rootNode.addChildNode(floorNode)
 
         super.init(coder: coder)
 

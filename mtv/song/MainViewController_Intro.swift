@@ -22,6 +22,16 @@ extension MainViewController {
         floor.setFragmentShader("video_frag")
 
 
+
+//        let animation = CABasicAnimation(keyPath: "filters.px.inputScale")
+//        animation.toValue = 50
+//        animation.fromValue = 0
+//        animation.autoreverses = true
+//        animation.repeatCount = FLT_MAX
+//        animation.duration = 2.0
+//        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+//        rootNode.addAnimation(animation, forKey: "pixellateAnimation")
+
         SCNTransaction.commit()
     }
 
@@ -29,13 +39,21 @@ extension MainViewController {
         SCNTransaction.begin()
         switch index {
         case 1:
-            let sphere = SCNSphere(radius: 50)
 
-            let virusNode = SCNNode(geometry: sphere)
-            virusNode.position = SCNVector3Make(3, 6, 0)
-            virusNode.setSurfaceShader("greenoil_surf")
 
-            rootNode.addChildNode(virusNode)
+            let box = SCNBox(size: 50)
+            let boxNode = SCNNode(geometry: box)
+            boxNode.setRotation(vector: SCNVector3Make(1, 0.5, 0), duration: 10.0)
+            boxNode.setSurfaceShader("greenoil_surf")
+
+            let pixellateFilter = CIFilter(name: "CIPixellate")
+            pixellateFilter.setDefaults()
+            pixellateFilter.setValue(20, forKey: "inputScale")
+            pixellateFilter.name = "px"
+
+            boxNode.filters = [pixellateFilter]
+
+            rootNode.addChildNode(boxNode)
 
 
        break
