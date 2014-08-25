@@ -135,6 +135,8 @@ extension MainViewController {
 
     // MARK: SCNSceneRendererDelegate
     func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
+        return
+
         let time = NSDate().timeIntervalSinceDate(startTime)
         if isnan(time) {
             return

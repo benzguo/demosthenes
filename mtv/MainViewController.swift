@@ -35,7 +35,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // audio
         cursor = Cursor()
-        audioPlayer = AVAudioPlayer(aif: "Song In My Head")
+        audioPlayer = AVAudioPlayer(aif: "Wenn Ich Einmall")
 
         // cameras
         camera = SCNCamera()
@@ -66,19 +66,18 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         // floor
         floor = SCNFloor()
         floor.reflectionFalloffEnd = 3.0
-        floor.setCubemap("city")
+        floor.setCubemap("purplenebula")
         floorNode = SCNNode(geometry: floor)
-
 
 
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
         rootNode.addChildNode(omniLightNode)
-        rootNode.addChildNode(floorNode)
+//        rootNode.addChildNode(floorNode)
 
         super.init(coder: coder)
 
-        setSkybox("city")
+        setSkybox("purplenebula")
     }
 
     override func awakeFromNib() {
@@ -97,12 +96,31 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // WARN: TRY THIS ON OSX 10.10
 //        sceneView.overlaySKScene = overlayScene // NEED OSX 10.10
+//        floor.setFragmentShader("video_frag")
+//        floor.setSurfaceShader("oil_surf")
 
-//        let animalgirlNode = SCNNode(resourceName: "animalgirl")
-//        animalgirlNode.rotate(-M_PI/3.0, x: 0, y: 1, z: 0)
-//        animalgirlNode.position = SCNVector3Make(0, -190, 0)
-//        animalgirlNode.scale(0.1)
-//        rootNode.addChildNode(animalgirlNode)
+
+        let btv1 = SCNNode(resourceName: "beethoven")
+        btv1.scale(1.5)
+
+        let btv2 = SCNNode(resourceName: "beethoven")
+        btv2.scale(1.5)
+
+        rootNode.addChildNode(btv1)
+        rootNode.addChildNode(btv2)
+
+        btv1.position = SCNVector3Make(0, -8, 30)
+        btv2.position = SCNVector3Make(0, -8, 30)
+
+        btv1.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        btv2.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+
+        let tileFilter = CIFilter(name: "CIPerspectiveTile")
+        tileFilter.setDefaults()
+        tileFilter.name = "px"
+        btv1.filters = [tileFilter]
+        btv1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
+
 }
 
     func start() {

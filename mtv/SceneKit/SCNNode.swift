@@ -19,9 +19,7 @@ extension SCNNode {
     }
 
     func rotate(angle: Double, x: Float, y: Float, z: Float) {
-        let rotation = CATransform3DMakeRotation(CGFloat(angle),
-            CGFloat(x), CGFloat(y), CGFloat(z))
-        self.transform = rotation
+        self.rotation = SCNVector4Make(CGFloat(x), CGFloat(y), CGFloat(z), CGFloat(angle))
     }
 
     func setRotation(vector v: SCNVector3, duration: Double, repeatCount: Float = Float.infinity) {

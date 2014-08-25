@@ -8,7 +8,7 @@ for (int i = 1; i < 7; i++) {
 	p = vec3(nx, ny, 1.0 * p.z);
 }
 
-vec3 col = mix(vec3(0.4, 0.5, 0.0), vec3(1.4, 2.0, 0.5), p.x * 0.1);
+vec3 col = mix(vec3(0.0, 0.5, 1.0), vec3(1.4, 2.0, 0.5), p.x * 0.1);
 col = mix(vec3(1.0), col, surfIntensity);
 
 _surface.diffuse.rgb = col;

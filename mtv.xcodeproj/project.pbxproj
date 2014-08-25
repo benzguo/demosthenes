@@ -724,6 +724,8 @@
 		961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E8199F0EEB0088DC97 /* wood-normal.png */; };
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
+		9628302719AADD60002D66EF /* beethoven.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9628302619AADD60002D66EF /* beethoven.dae */; };
+		9628302919AADD9E002D66EF /* Wenn Ich Einmall.aif in Resources */ = {isa = PBXBuildFile; fileRef = 9628302819AADD9E002D66EF /* Wenn Ich Einmall.aif */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		966EB46019A5224000D05880 /* Song In My Head.aif in Resources */ = {isa = PBXBuildFile; fileRef = 966EB45F19A5224000D05880 /* Song In My Head.aif */; };
 		966EB46419A5224B00D05880 /* SongInMyHead_BenLH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */; };
@@ -826,7 +828,7 @@
 		969C674219A80789002149D0 /* video_frag.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672A19A80789002149D0 /* video_frag.shader */; };
 		969C674319A80789002149D0 /* bumps_geom.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672B19A80789002149D0 /* bumps_geom.shader */; };
 		969C674419A80789002149D0 /* glow_light.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672C19A80789002149D0 /* glow_light.shader */; };
-		969C674519A80789002149D0 /* greenoil_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672D19A80789002149D0 /* greenoil_surf.shader */; };
+		969C674519A80789002149D0 /* oil_surf.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672D19A80789002149D0 /* oil_surf.shader */; };
 		969C674619A80789002149D0 /* toon.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672E19A80789002149D0 /* toon.shader */; };
 		969C674719A80789002149D0 /* wave.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C672F19A80789002149D0 /* wave.shader */; };
 		969C674819A80789002149D0 /* xRay.shader in Resources */ = {isa = PBXBuildFile; fileRef = 969C673019A80789002149D0 /* xRay.shader */; };
@@ -1602,6 +1604,8 @@
 		961651E8199F0EEB0088DC97 /* wood-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wood-normal.png"; sourceTree = "<group>"; };
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
+		9628302619AADD60002D66EF /* beethoven.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = beethoven.dae; sourceTree = "<group>"; };
+		9628302819AADD9E002D66EF /* Wenn Ich Einmall.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wenn Ich Einmall.aif"; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966EB45F19A5224000D05880 /* Song In My Head.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song In My Head.aif"; sourceTree = "<group>"; };
 		966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_BenLH.mid; sourceTree = "<group>"; };
@@ -1705,7 +1709,7 @@
 		969C672A19A80789002149D0 /* video_frag.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = video_frag.shader; sourceTree = "<group>"; };
 		969C672B19A80789002149D0 /* bumps_geom.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bumps_geom.shader; sourceTree = "<group>"; };
 		969C672C19A80789002149D0 /* glow_light.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glow_light.shader; sourceTree = "<group>"; };
-		969C672D19A80789002149D0 /* greenoil_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = greenoil_surf.shader; sourceTree = "<group>"; };
+		969C672D19A80789002149D0 /* oil_surf.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oil_surf.shader; sourceTree = "<group>"; };
 		969C672E19A80789002149D0 /* toon.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toon.shader; sourceTree = "<group>"; };
 		969C672F19A80789002149D0 /* wave.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wave.shader; sourceTree = "<group>"; };
 		969C673019A80789002149D0 /* xRay.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xRay.shader; sourceTree = "<group>"; };
@@ -3358,6 +3362,7 @@
 		96165203199F19E80088DC97 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				9628302619AADD60002D66EF /* beethoven.dae */,
 				96FFEE5E199FCFFE00E83AA7 /* animalgirl */,
 				96FFEE6D199FCFFE00E83AA7 /* animalgirl.dae */,
 				96FFEE6E199FCFFE00E83AA7 /* vermeer */,
@@ -3417,6 +3422,7 @@
 		969AA26F19A259D4000741A1 /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				9628302819AADD9E002D66EF /* Wenn Ich Einmall.aif */,
 				966EB45F19A5224000D05880 /* Song In My Head.aif */,
 			);
 			path = audio;
@@ -3520,7 +3526,7 @@
 				969C672A19A80789002149D0 /* video_frag.shader */,
 				969C672B19A80789002149D0 /* bumps_geom.shader */,
 				969C672C19A80789002149D0 /* glow_light.shader */,
-				969C672D19A80789002149D0 /* greenoil_surf.shader */,
+				969C672D19A80789002149D0 /* oil_surf.shader */,
 				969C672E19A80789002149D0 /* toon.shader */,
 				969C672F19A80789002149D0 /* wave.shader */,
 				969C673019A80789002149D0 /* xRay.shader */,
@@ -3574,7 +3580,7 @@
 				969C668F19A7F7E1002149D0 /* OverlayScene.swift */,
 				9644BB6C199EF16200F1EE50 /* MainViewController.swift */,
 				96AE29EA19A5E4BE00CFC595 /* Cursor.swift */,
-				96AE29DF19A5CE3900CFC595 /* song */,
+				96AE29DF19A5CE3900CFC595 /* SongInMyHead */,
 				96A3B964199EEED300AEF7B3 /* Images.xcassets */,
 				96A3B95E199EEED200AEF7B3 /* Supporting Files */,
 			);
@@ -3590,7 +3596,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		96AE29DF19A5CE3900CFC595 /* song */ = {
+		96AE29DF19A5CE3900CFC595 /* SongInMyHead */ = {
 			isa = PBXGroup;
 			children = (
 				96AE29E219A5CF3800CFC595 /* Sequencer.swift */,
@@ -3600,7 +3606,7 @@
 				96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */,
 				96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */,
 			);
-			name = song;
+			name = SongInMyHead;
 			sourceTree = "<group>";
 		};
 		96FFEE5E199FCFFE00E83AA7 /* animalgirl */ = {
@@ -4172,6 +4178,7 @@
 				969C670F19A7FA14002149D0 /* zx_charttopper.jpg in Resources */,
 				961549E019A57ADA00AAD5EF /* jajice1_right.jpg in Resources */,
 				961549B819A57ADA00AAD5EF /* Note.txt in Resources */,
+				9628302919AADD9E002D66EF /* Wenn Ich Einmall.aif in Resources */,
 				961548C719A57AD900AAD5EF /* nansen_left.jpg in Resources */,
 				9615496719A57ADA00AAD5EF /* emeraldfog_front.jpg in Resources */,
 				961548C419A57AD900AAD5EF /* blue_green.zip in Resources */,
@@ -4356,6 +4363,7 @@
 				96154B0219A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548D219A57AD900AAD5EF /* calm.zip in Resources */,
 				96154AD719A57ADA00AAD5EF /* powderpeak_top.jpg in Resources */,
+				9628302719AADD60002D66EF /* beethoven.dae in Resources */,
 				96154A0D19A57ADA00AAD5EF /* jajlake1_back.jpg in Resources */,
 				96154AD319A57ADA00AAD5EF /* powderpeak_back.jpg in Resources */,
 				96154A3919A57ADA00AAD5EF /* limon_front.jpg in Resources */,
@@ -4490,7 +4498,7 @@
 				96154AC519A57ADA00AAD5EF /* plain_sky_front.jpg in Resources */,
 				9615491A19A57AD900AAD5EF /* desert_evening_front.jpg in Resources */,
 				961548BA19A57AD900AAD5EF /* blood_sport512_right.jpg in Resources */,
-				969C674519A80789002149D0 /* greenoil_surf.shader in Resources */,
+				969C674519A80789002149D0 /* oil_surf.shader in Resources */,
 				961548EF19A57AD900AAD5EF /* clouds_back.jpg in Resources */,
 				96154AC419A57ADA00AAD5EF /* plain_sky_back.jpg in Resources */,
 				969C66FB19A7FA14002149D0 /* sega_snow.jpg in Resources */,

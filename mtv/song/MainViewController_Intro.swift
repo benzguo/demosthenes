@@ -20,8 +20,7 @@ extension MainViewController {
         rootNode.addChildNode(mysteryCube)
         self.saveNode(mysteryCube, withKey: &mysteryCubeKey)
 
-        floor.setFragmentShader("video_frag")
-
+        
 
         cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
 
