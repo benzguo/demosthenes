@@ -7,6 +7,11 @@ extension MainViewController {
 	    SCNTransaction.begin()
 
 	    switch index {
+    	case 0:
+            setSkybox("orangecream")
+            floorNode.removeFromParentNode()
+    		break
+    		
     	case 1:
     		break
     		
@@ -17,9 +22,6 @@ extension MainViewController {
     		break
     		
     	case 4:
-    		break
-    		
-    	case 5:
     		break
     		
 	    default:

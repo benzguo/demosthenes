@@ -23,7 +23,7 @@ extension MainViewController {
         floor.setFragmentShader("video_frag")
 
 
-        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
+       
 
 //        let animation = CABasicAnimation(keyPath: "filters.px.inputScale")
 //        animation.toValue = 50

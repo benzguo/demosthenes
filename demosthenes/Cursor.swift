@@ -4,7 +4,7 @@ public class Cursor {
     var nextEventTime: Double = 0.0
 
     init() {
-        
+        nextEventTime = section.events()[index]
     }
 
     func step() {

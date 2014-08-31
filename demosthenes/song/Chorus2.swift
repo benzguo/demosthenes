@@ -7,6 +7,9 @@ extension MainViewController {
 	    SCNTransaction.begin()
 
 	    switch index {
+    	case 0:
+    		break
+    		
     	case 1:
     		break
     		
@@ -50,9 +53,6 @@ extension MainViewController {
     		break
     		
     	case 15:
-    		break
-    		
-    	case 16:
     		break
     		
 	    default:

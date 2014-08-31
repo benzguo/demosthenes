@@ -8,17 +8,17 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            print("case 0")
-            setSkybox("desert")
+            scene.setSkybox("desertplains")
+            floor.setCubemap("desertstorm")
+            floor.setFragmentShader("video_frag")
     		break
     		
     	case 1:
-            print("case 1")
-            setSkybox("desertstorm")
+            scene.setSkybox("desertstorm")
+            floor.setCubemap("desertplains")
     		break
     		
 	    default:
-            print("default")
 	    	break
 	    }
     	

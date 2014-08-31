@@ -70,9 +70,12 @@ import SceneKit
 public enum Section: Int {
 "
 	file.write(s)
-	file.write("    case Start = 0\n")
 	for i in 0..sections.count-1
-		file.write("    case #{sections[i]}\n")
+		file.write("    case #{sections[i]}")
+        if i == 0
+            file.write(" = 0")
+        end
+        file.write("\n")
 	end
 
 	s = "
@@ -80,7 +83,6 @@ static let eventsTable: [[Double]] =
 [
 "
 	file.write(s)
-	file.write("    [0],\n")
 	events.each do |section|
 		file.write("    #{section},\n")
 	end
@@ -100,7 +102,6 @@ extension MainViewController {
             return
         }
         if time >= cursor.nextEventTime {
-            cursor.step()
             let section = cursor.section
             let index = cursor.index
             switch section {
@@ -118,6 +119,7 @@ extension MainViewController {
             default:
                 break
             }
+            cursor.step()
         }
     }
 }
@@ -143,7 +145,7 @@ extension MainViewController {
     	file.write(s)
     	for i in 0..events[i].count - 1
     		s = "
-    	case #{i+1}:
+    	case #{i}:
     		break
     		"
     		file.write(s)

@@ -7,10 +7,13 @@ extension MainViewController {
 	    SCNTransaction.begin()
 
 	    switch index {
-    	case 1:
+    	case 0:
+            setSkybox("desertstorm")
+            floor.setFragmentShader("video_frag")           
     		break
     		
-    	case 2:
+    	case 1:
+            setSkybox("desertplains")
     		break
     		
 	    default:

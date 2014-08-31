@@ -39,15 +39,15 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // cameras
         camera = SCNCamera()
-        camera.xFov = 110.0 // increase for wide angle
-        camera.yFov = 42.0
+        camera.xFov = 100.0 // increase for wide angle
+        camera.yFov = 80.0
         cameraHandle = SCNNode()
         rootNode.addChildNode(cameraHandle)
         cameraPitch = SCNNode()
         cameraHandle.addChildNode(cameraPitch)
         cameraNode = SCNNode()
         cameraNode.camera = camera
-        cameraNode.position = SCNVector3Make(0, 1, 50)
+        cameraNode.position = SCNVector3Make(0, 1, 100)
         cameraPitch.addChildNode(cameraNode)
 
         // lights
@@ -66,10 +66,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         // floor
         floor = SCNFloor()
         floor.reflectionFalloffEnd = 3.0
-        floor.setCubemap("city")
         floorNode = SCNNode(geometry: floor)
-
-
 
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
@@ -78,7 +75,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         super.init(coder: coder)
 
-        setSkybox("city")
     }
 
     override func awakeFromNib() {
@@ -90,19 +86,27 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.pointOfView = cameraNode
         sceneView.playing = true
         sceneView.loops = true
-        overlayScene = OverlayScene(size: sceneView.bounds.size)
-        overlayScene.setImage("atari_bluenoise")
+
+        setSkybox("jajspace2")
+//        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
+
+
 
         start()
 
-        // WARN: TRY THIS ON OSX 10.10
+        let saguaro = SCNNode(resourceName: "cheeseburger")
+        rootNode.addChildNode(saguaro)
+//        saguaro.scale(0.1)
+        saguaro.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        saguaro.position = SCNVector3Make(0, 5, 80)
+//        saguaro.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
+
+// WARN: TRY THIS ON OSX 10.10
+//        overlayScene = OverlayScene(size: sceneView.bounds.size)
+//        overlayScene.setImage("atari_bluenoise")
 //        sceneView.overlaySKScene = overlayScene // NEED OSX 10.10
 
-//        let animalgirlNode = SCNNode(resourceName: "animalgirl")
-//        animalgirlNode.rotate(-M_PI/3.0, x: 0, y: 1, z: 0)
-//        animalgirlNode.position = SCNVector3Make(0, -190, 0)
-//        animalgirlNode.scale(0.1)
-//        rootNode.addChildNode(animalgirlNode)
+
 }
 
     func start() {
