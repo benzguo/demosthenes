@@ -6,4 +6,10 @@ extension AVAudioPlayer {
         let url = NSURL(fileURLWithPath: path)
         self.init(contentsOfURL: url, error: nil)
     }
+
+    convenience init(wav: String) {
+        let path = NSBundle.mainBundle().pathForResource(wav, ofType: "wav")
+        let url = NSURL(fileURLWithPath: path)
+        self.init(contentsOfURL: url, error: nil)
+    }   
 }

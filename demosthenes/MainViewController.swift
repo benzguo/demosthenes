@@ -35,7 +35,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         // audio
         cursor = Cursor()
-        audioPlayer = AVAudioPlayer(aif: "Song In My Head")
+        audioPlayer = AVAudioPlayer(wav: "TacoTree")
 
         // cameras
         camera = SCNCamera()

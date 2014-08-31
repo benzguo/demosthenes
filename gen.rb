@@ -17,6 +17,7 @@ sections = [
 	"Chorus3",
 	"Outro"
 ]
+out_folder = "gen"
 
 seq = MIDI::Sequence.new()
 tracks = []
@@ -63,18 +64,15 @@ events.each do |section|
 	print "#{section}\n"
 end
 
-File.open("Sequencer.swift", 'w') do |file| 
+File.open("#{out_folder}/Sequencer.swift", 'w') do |file| 
 	s = "
 import SceneKit
 public enum Section: Int {
 "
 	file.write(s)
+	file.write("    case Start = 0\n")
 	for i in 0..sections.count-1
-		file.write("    case #{sections[i]}")
-		if i == 0
-			file.write( " = 0")	
-		end
-		file.write("\n")
+		file.write("    case #{sections[i]}\n")
 	end
 
 	s = "
@@ -82,6 +80,7 @@ static let eventsTable: [[Double]] =
 [
 "
 	file.write(s)
+	file.write("    [0],\n")
 	events.each do |section|
 		file.write("    #{section},\n")
 	end
@@ -129,7 +128,7 @@ end
 for i in 0..sections.count-1
 	name = sections[i]
 	num_events = events[i].count	
-	File.open("#{name}.swift", 'w') do |file| 
+	File.open("#{out_folder}/#{name}.swift", 'w') do |file| 
 		s = "
 import SceneKit
 
@@ -144,11 +143,17 @@ extension MainViewController {
     	file.write(s)
     	for i in 0..events[i].count - 1
     		s = "
-    	case #{i}:
+    	case #{i+1}:
     		break
     		"
     		file.write(s)
     	end
+    	s = "
+	    default:
+	    	break
+	    }
+    	"
+    	file.write(s)
     	s = "
     	SCNTransaction.commit()
     }

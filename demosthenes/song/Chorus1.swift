@@ -7,9 +7,6 @@ extension MainViewController {
 	    SCNTransaction.begin()
 
 	    switch index {
-    	case 0:
-    		break
-    		
     	case 1:
     		break
     		
@@ -19,6 +16,13 @@ extension MainViewController {
     	case 3:
     		break
     		
+    	case 4:
+    		break
+    		
+	    default:
+	    	break
+	    }
+    	
     	SCNTransaction.commit()
     }
 }

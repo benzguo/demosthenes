@@ -851,6 +851,7 @@
 		96A8B07019B2A8E70016BCD5 /* Preverse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06519B2A8E70016BCD5 /* Preverse2.swift */; };
 		96A8B07119B2A8E70016BCD5 /* Verse1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06619B2A8E70016BCD5 /* Verse1.swift */; };
 		96A8B07219B2A8E70016BCD5 /* Verse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06719B2A8E70016BCD5 /* Verse2.swift */; };
+		96A8B07419B2ABA20016BCD5 /* TacoTree.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96A8B07319B2ABA20016BCD5 /* TacoTree.wav */; };
 		96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */; };
 		96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */; };
 		96AE29E319A5CF3800CFC595 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E219A5CF3800CFC595 /* Sequencer.swift */; };
@@ -1733,6 +1734,7 @@
 		96A8B06519B2A8E70016BCD5 /* Preverse2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preverse2.swift; path = song/Preverse2.swift; sourceTree = "<group>"; };
 		96A8B06619B2A8E70016BCD5 /* Verse1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Verse1.swift; path = song/Verse1.swift; sourceTree = "<group>"; };
 		96A8B06719B2A8E70016BCD5 /* Verse2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Verse2.swift; path = song/Verse2.swift; sourceTree = "<group>"; };
+		96A8B07319B2ABA20016BCD5 /* TacoTree.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TacoTree.wav; sourceTree = "<group>"; };
 		96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Intro.swift; path = song/MainViewController_Intro.swift; sourceTree = "<group>"; };
 		96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Hits.swift; path = song/MainViewController_Hits.swift; sourceTree = "<group>"; };
 		96AE29E219A5CF3800CFC595 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sequencer.swift; path = song/Sequencer.swift; sourceTree = "<group>"; };
@@ -3398,6 +3400,7 @@
 		969AA26F19A259D4000741A1 /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				96A8B07319B2ABA20016BCD5 /* TacoTree.wav */,
 				966EB45F19A5224000D05880 /* Song In My Head.aif */,
 			);
 			path = audio;
@@ -3977,6 +3980,7 @@
 				969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */,
 				961549D019A57ADA00AAD5EF /* hexagon_front.jpg in Resources */,
 				961549AB19A57ADA00AAD5EF /* green.zip in Resources */,
+				96A8B07419B2ABA20016BCD5 /* TacoTree.wav in Resources */,
 				961548A719A57AD900AAD5EF /* Note.txt in Resources */,
 				961549AE19A57ADA00AAD5EF /* xyloote_front.jpg in Resources */,
 				96FFEE97199FCFFE00E83AA7 /* violinist.dae in Resources */,
