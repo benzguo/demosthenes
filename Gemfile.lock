@@ -1,0 +1,9 @@
+GEM
+  specs:
+    midilib (2.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  midilib

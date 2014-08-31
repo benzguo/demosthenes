@@ -726,18 +726,12 @@
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		966EB46019A5224000D05880 /* Song In My Head.aif in Resources */ = {isa = PBXBuildFile; fileRef = 966EB45F19A5224000D05880 /* Song In My Head.aif */; };
-		966EB46419A5224B00D05880 /* SongInMyHead_BenLH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */; };
-		966EB46519A5224B00D05880 /* SongInMyHead_BenRH.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB46319A5224B00D05880 /* SongInMyHead_BenRH.mid */; };
-		966EB46B19A5230200D05880 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46719A5230200D05880 /* MIDI.swift */; };
-		966EB46C19A5230200D05880 /* MIDIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46819A5230200D05880 /* MIDIPlayer.swift */; };
-		966EB46D19A5230200D05880 /* MIDIPlayerCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46A19A5230200D05880 /* MIDIPlayerCore.m */; };
 		966EB47119A5231800D05880 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46F19A5231800D05880 /* NSColor.swift */; };
 		966EB47219A5231800D05880 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47019A5231800D05880 /* NSView.swift */; };
 		966EB47819A5232200D05880 /* SCNBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47419A5232200D05880 /* SCNBox.swift */; };
 		966EB47919A5232200D05880 /* SCNGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47519A5232200D05880 /* SCNGeometry.swift */; };
 		966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47619A5232200D05880 /* SCNMaterial.swift */; };
 		966EB47B19A5232200D05880 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47719A5232200D05880 /* SCNNode.swift */; };
-		966EB47F19A52DB700D05880 /* snare.mid in Resources */ = {isa = PBXBuildFile; fileRef = 966EB47E19A52DB700D05880 /* snare.mid */; };
 		969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C668F19A7F7E1002149D0 /* OverlayScene.swift */; };
 		969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669219A7FA14002149D0 /* atari_bluenoise.jpg */; };
 		969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669319A7FA14002149D0 /* atari_creamnoise.jpg */; };
@@ -846,12 +840,20 @@
 		96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B962199EEED200AEF7B3 /* AppDelegate.swift */; };
 		96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B964199EEED300AEF7B3 /* Images.xcassets */; };
 		96A3B968199EEED300AEF7B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A3B966199EEED300AEF7B3 /* MainMenu.xib */; };
+		96A8B06819B2A8E70016BCD5 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B05D19B2A8E70016BCD5 /* Bridge.swift */; };
+		96A8B06919B2A8E70016BCD5 /* Chorus1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B05E19B2A8E70016BCD5 /* Chorus1.swift */; };
+		96A8B06A19B2A8E70016BCD5 /* Chorus2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B05F19B2A8E70016BCD5 /* Chorus2.swift */; };
+		96A8B06B19B2A8E70016BCD5 /* Chorus3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06019B2A8E70016BCD5 /* Chorus3.swift */; };
+		96A8B06C19B2A8E70016BCD5 /* Outro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06119B2A8E70016BCD5 /* Outro.swift */; };
+		96A8B06D19B2A8E70016BCD5 /* Prechorus1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06219B2A8E70016BCD5 /* Prechorus1.swift */; };
+		96A8B06E19B2A8E70016BCD5 /* Prechorus2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06319B2A8E70016BCD5 /* Prechorus2.swift */; };
+		96A8B06F19B2A8E70016BCD5 /* Preverse1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06419B2A8E70016BCD5 /* Preverse1.swift */; };
+		96A8B07019B2A8E70016BCD5 /* Preverse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06519B2A8E70016BCD5 /* Preverse2.swift */; };
+		96A8B07119B2A8E70016BCD5 /* Verse1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06619B2A8E70016BCD5 /* Verse1.swift */; };
+		96A8B07219B2A8E70016BCD5 /* Verse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B06719B2A8E70016BCD5 /* Verse2.swift */; };
 		96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */; };
 		96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */; };
 		96AE29E319A5CF3800CFC595 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E219A5CF3800CFC595 /* Sequencer.swift */; };
-		96AE29E519A5D01600CFC595 /* MainViewController_Verses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E419A5D01600CFC595 /* MainViewController_Verses.swift */; };
-		96AE29E719A5D02500CFC595 /* MainViewController_Choruses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */; };
-		96AE29E919A5D03100CFC595 /* MainViewController_Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */; };
 		96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EA19A5E4BE00CFC595 /* Cursor.swift */; };
 		96AE29ED19A5E59600CFC595 /* AVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */; };
 		96FFEE7C199FCFFE00E83AA7 /* __Water_Pool_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE5F199FCFFE00E83AA7 /* __Water_Pool_1.jpg */; };
@@ -1604,19 +1606,12 @@
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966EB45F19A5224000D05880 /* Song In My Head.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song In My Head.aif"; sourceTree = "<group>"; };
-		966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_BenLH.mid; sourceTree = "<group>"; };
-		966EB46319A5224B00D05880 /* SongInMyHead_BenRH.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = SongInMyHead_BenRH.mid; sourceTree = "<group>"; };
-		966EB46719A5230200D05880 /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
-		966EB46819A5230200D05880 /* MIDIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIPlayer.swift; sourceTree = "<group>"; };
-		966EB46919A5230200D05880 /* MIDIPlayerCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIPlayerCore.h; sourceTree = "<group>"; };
-		966EB46A19A5230200D05880 /* MIDIPlayerCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIPlayerCore.m; sourceTree = "<group>"; };
 		966EB46F19A5231800D05880 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 		966EB47019A5231800D05880 /* NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		966EB47419A5232200D05880 /* SCNBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNBox.swift; sourceTree = "<group>"; };
 		966EB47519A5232200D05880 /* SCNGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNGeometry.swift; sourceTree = "<group>"; };
 		966EB47619A5232200D05880 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		966EB47719A5232200D05880 /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
-		966EB47E19A52DB700D05880 /* snare.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = snare.mid; sourceTree = "<group>"; };
 		969C668F19A7F7E1002149D0 /* OverlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScene.swift; sourceTree = "<group>"; };
 		969C669219A7FA14002149D0 /* atari_bluenoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_bluenoise.jpg; sourceTree = "<group>"; };
 		969C669319A7FA14002149D0 /* atari_creamnoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_creamnoise.jpg; sourceTree = "<group>"; };
@@ -1727,12 +1722,20 @@
 		96A3B962199EEED200AEF7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A3B964199EEED300AEF7B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96A3B967199EEED300AEF7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96A8B05D19B2A8E70016BCD5 /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bridge.swift; path = song/Bridge.swift; sourceTree = "<group>"; };
+		96A8B05E19B2A8E70016BCD5 /* Chorus1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chorus1.swift; path = song/Chorus1.swift; sourceTree = "<group>"; };
+		96A8B05F19B2A8E70016BCD5 /* Chorus2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chorus2.swift; path = song/Chorus2.swift; sourceTree = "<group>"; };
+		96A8B06019B2A8E70016BCD5 /* Chorus3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chorus3.swift; path = song/Chorus3.swift; sourceTree = "<group>"; };
+		96A8B06119B2A8E70016BCD5 /* Outro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Outro.swift; path = song/Outro.swift; sourceTree = "<group>"; };
+		96A8B06219B2A8E70016BCD5 /* Prechorus1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prechorus1.swift; path = song/Prechorus1.swift; sourceTree = "<group>"; };
+		96A8B06319B2A8E70016BCD5 /* Prechorus2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prechorus2.swift; path = song/Prechorus2.swift; sourceTree = "<group>"; };
+		96A8B06419B2A8E70016BCD5 /* Preverse1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preverse1.swift; path = song/Preverse1.swift; sourceTree = "<group>"; };
+		96A8B06519B2A8E70016BCD5 /* Preverse2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preverse2.swift; path = song/Preverse2.swift; sourceTree = "<group>"; };
+		96A8B06619B2A8E70016BCD5 /* Verse1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Verse1.swift; path = song/Verse1.swift; sourceTree = "<group>"; };
+		96A8B06719B2A8E70016BCD5 /* Verse2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Verse2.swift; path = song/Verse2.swift; sourceTree = "<group>"; };
 		96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Intro.swift; path = song/MainViewController_Intro.swift; sourceTree = "<group>"; };
 		96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Hits.swift; path = song/MainViewController_Hits.swift; sourceTree = "<group>"; };
 		96AE29E219A5CF3800CFC595 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sequencer.swift; path = song/Sequencer.swift; sourceTree = "<group>"; };
-		96AE29E419A5D01600CFC595 /* MainViewController_Verses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Verses.swift; path = song/MainViewController_Verses.swift; sourceTree = "<group>"; };
-		96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Choruses.swift; path = song/MainViewController_Choruses.swift; sourceTree = "<group>"; };
-		96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Bridge.swift; path = song/MainViewController_Bridge.swift; sourceTree = "<group>"; };
 		96AE29EA19A5E4BE00CFC595 /* Cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
 		96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioPlayer.swift; sourceTree = "<group>"; };
 		96F08CDD19A1278300C1409A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -3367,28 +3370,6 @@
 			path = models;
 			sourceTree = "<group>";
 		};
-		966EB46119A5224B00D05880 /* midi_files */ = {
-			isa = PBXGroup;
-			children = (
-				966EB47E19A52DB700D05880 /* snare.mid */,
-				966EB46219A5224B00D05880 /* SongInMyHead_BenLH.mid */,
-				966EB46319A5224B00D05880 /* SongInMyHead_BenRH.mid */,
-			);
-			path = midi_files;
-			sourceTree = "<group>";
-		};
-		966EB46619A5230200D05880 /* MIDI */ = {
-			isa = PBXGroup;
-			children = (
-				966EB46719A5230200D05880 /* MIDI.swift */,
-				966EB46819A5230200D05880 /* MIDIPlayer.swift */,
-				966EB46919A5230200D05880 /* MIDIPlayerCore.h */,
-				966EB46A19A5230200D05880 /* MIDIPlayerCore.m */,
-			);
-			name = MIDI;
-			path = demosthenes/MIDI;
-			sourceTree = SOURCE_ROOT;
-		};
 		966EB46E19A5231800D05880 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -3559,14 +3540,12 @@
 		96A3B95D199EEED200AEF7B3 /* mtv */ = {
 			isa = PBXGroup;
 			children = (
-				966EB46119A5224B00D05880 /* midi_files */,
 				969AA26F19A259D4000741A1 /* audio */,
 				96165203199F19E80088DC97 /* models */,
 				969C669119A7FA14002149D0 /* images */,
 				961651D0199F0EEB0088DC97 /* materials */,
 				969C671819A80789002149D0 /* shaders */,
 				966EB46E19A5231800D05880 /* Categories */,
-				966EB46619A5230200D05880 /* MIDI */,
 				966EB47319A5232200D05880 /* SceneKit */,
 				96F08CDD19A1278300C1409A /* Bridging-Header.h */,
 				96A3B962199EEED200AEF7B3 /* AppDelegate.swift */,
@@ -3595,11 +3574,19 @@
 			isa = PBXGroup;
 			children = (
 				96AE29E219A5CF3800CFC595 /* Sequencer.swift */,
+				96A8B06419B2A8E70016BCD5 /* Preverse1.swift */,
+				96A8B06619B2A8E70016BCD5 /* Verse1.swift */,
+				96A8B06219B2A8E70016BCD5 /* Prechorus1.swift */,
+				96A8B05E19B2A8E70016BCD5 /* Chorus1.swift */,
+				96A8B06519B2A8E70016BCD5 /* Preverse2.swift */,
+				96A8B06719B2A8E70016BCD5 /* Verse2.swift */,
+				96A8B06319B2A8E70016BCD5 /* Prechorus2.swift */,
+				96A8B05D19B2A8E70016BCD5 /* Bridge.swift */,
+				96A8B05F19B2A8E70016BCD5 /* Chorus2.swift */,
+				96A8B06019B2A8E70016BCD5 /* Chorus3.swift */,
+				96A8B06119B2A8E70016BCD5 /* Outro.swift */,
 				96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */,
 				96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */,
-				96AE29E419A5D01600CFC595 /* MainViewController_Verses.swift */,
-				96AE29E619A5D02500CFC595 /* MainViewController_Choruses.swift */,
-				96AE29E819A5D03100CFC595 /* MainViewController_Bridge.swift */,
 			);
 			name = song;
 			sourceTree = "<group>";
@@ -3774,7 +3761,6 @@
 				961549CE19A57ADA00AAD5EF /* hexagon.zip in Resources */,
 				9615494119A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A8319A57ADA00AAD5EF /* Note.txt in Resources */,
-				966EB47F19A52DB700D05880 /* snare.mid in Resources */,
 				9615490819A57AD900AAD5EF /* darkgloom_top.jpg in Resources */,
 				9615495519A57ADA00AAD5EF /* dunes_top.jpg in Resources */,
 				9615492B19A57AD900AAD5EF /* jajdesert1_top.jpg in Resources */,
@@ -3875,7 +3861,6 @@
 				9615493619A57AD900AAD5EF /* desertplains_front.jpg in Resources */,
 				9615490919A57AD900AAD5EF /* Note.txt in Resources */,
 				96FFEE92199FCFFE00E83AA7 /* v5_3.jpg in Resources */,
-				966EB46419A5224B00D05880 /* SongInMyHead_BenLH.mid in Resources */,
 				9615493219A57AD900AAD5EF /* endset_top.jpg in Resources */,
 				961549A619A57ADA00AAD5EF /* grave_front.jpg in Resources */,
 				9615498419A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
@@ -4423,7 +4408,6 @@
 				9615495E19A57ADA00AAD5EF /* emerald.zip in Resources */,
 				96154B0F19A57ADA00AAD5EF /* shadowpeak_top.jpg in Resources */,
 				96154A2B19A57ADA00AAD5EF /* leatherduster_front.jpg in Resources */,
-				966EB46519A5224B00D05880 /* SongInMyHead_BenRH.mid in Resources */,
 				961548ED19A57AD900AAD5EF /* Note.txt in Resources */,
 				961548DA19A57AD900AAD5EF /* jajcannons1_back.jpg in Resources */,
 				961548B719A57AD900AAD5EF /* blood_sport512_back.jpg in Resources */,
@@ -4562,27 +4546,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				969C676119A82B9B002149D0 /* ShaderManager.swift in Sources */,
+				96A8B07119B2A8E70016BCD5 /* Verse1.swift in Sources */,
 				966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */,
 				969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */,
+				96A8B06B19B2A8E70016BCD5 /* Chorus3.swift in Sources */,
 				966EB47B19A5232200D05880 /* SCNNode.swift in Sources */,
 				966EB47119A5231800D05880 /* NSColor.swift in Sources */,
+				96A8B06919B2A8E70016BCD5 /* Chorus1.swift in Sources */,
+				96A8B06F19B2A8E70016BCD5 /* Preverse1.swift in Sources */,
+				96A8B07219B2A8E70016BCD5 /* Verse2.swift in Sources */,
 				96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */,
 				96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */,
 				96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */,
-				96AE29E519A5D01600CFC595 /* MainViewController_Verses.swift in Sources */,
+				96A8B06E19B2A8E70016BCD5 /* Prechorus2.swift in Sources */,
 				969C674A19A807F7002149D0 /* SCNFloor.swift in Sources */,
-				96AE29E919A5D03100CFC595 /* MainViewController_Bridge.swift in Sources */,
 				9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */,
-				966EB46C19A5230200D05880 /* MIDIPlayer.swift in Sources */,
 				96153F8919A579AB00AAD5EF /* SCNScene.swift in Sources */,
 				966EB47819A5232200D05880 /* SCNBox.swift in Sources */,
+				96A8B07019B2A8E70016BCD5 /* Preverse2.swift in Sources */,
 				966EB47219A5231800D05880 /* NSView.swift in Sources */,
+				96A8B06D19B2A8E70016BCD5 /* Prechorus1.swift in Sources */,
+				96A8B06C19B2A8E70016BCD5 /* Outro.swift in Sources */,
+				96A8B06819B2A8E70016BCD5 /* Bridge.swift in Sources */,
 				96AE29E319A5CF3800CFC595 /* Sequencer.swift in Sources */,
 				96A3B963199EEED200AEF7B3 /* AppDelegate.swift in Sources */,
-				96AE29E719A5D02500CFC595 /* MainViewController_Choruses.swift in Sources */,
-				966EB46D19A5230200D05880 /* MIDIPlayerCore.m in Sources */,
+				96A8B06A19B2A8E70016BCD5 /* Chorus2.swift in Sources */,
 				966EB47919A5232200D05880 /* SCNGeometry.swift in Sources */,
-				966EB46B19A5230200D05880 /* MIDI.swift in Sources */,
 				96A3B961199EEED200AEF7B3 /* main.swift in Sources */,
 				96AE29ED19A5E59600CFC595 /* AVAudioPlayer.swift in Sources */,
 			);
