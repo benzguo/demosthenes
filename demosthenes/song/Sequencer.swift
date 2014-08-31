@@ -1,8 +1,7 @@
 
 import SceneKit
 public enum Section: Int {
-    case Start = 0
-    case Preverse1
+    case Preverse1 = 0
     case Verse1
     case Prechorus1
     case Chorus1
@@ -16,7 +15,6 @@ public enum Section: Int {
 
 static let eventsTable: [[Double]] = 
 [
-    [0],
     [10.245, 19.021],
     [27.902, 32.313, 38.917, 45.511, 54.407],
     [63.194, 71.975],
@@ -43,7 +41,6 @@ extension MainViewController {
             return
         }
         if time >= cursor.nextEventTime {
-            cursor.step()
             let section = cursor.section
             let index = cursor.index
             switch section {
@@ -84,6 +81,7 @@ extension MainViewController {
             default:
                 break
             }
+            cursor.step()
         }
     }
 }

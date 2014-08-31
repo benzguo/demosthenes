@@ -1,7 +1,11 @@
 public class Cursor {
-    var section: Section = .Start
+    var section: Section = .Preverse1
     var index: Int = 0
     var nextEventTime: Double = 0.0
+
+    init() {
+        
+    }
 
     func step() {
         index++
