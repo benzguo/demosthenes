@@ -87,18 +87,20 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.playing = true
         sceneView.loops = true
 
-        setSkybox("jajspace2")
+        setSkybox("desert")
 //        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
 
 
 
         start()
 
-        let saguaro = SCNNode(resourceName: "cheeseburger")
-        rootNode.addChildNode(saguaro)
-//        saguaro.scale(0.1)
-        saguaro.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        saguaro.position = SCNVector3Make(0, 5, 80)
+        let agave = SCNNode(resourceName: "agave_palm")
+        rootNode.addChildNode(agave)
+        agave.scale(0.4)
+        agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        agave.position = SCNVector3Make(0, 0, 50)
+
+        
 //        saguaro.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
 
 // WARN: TRY THIS ON OSX 10.10

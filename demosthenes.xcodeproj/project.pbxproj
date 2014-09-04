@@ -717,6 +717,10 @@
 		961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E8199F0EEB0088DC97 /* wood-normal.png */; };
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
+		9644B85519B6D6AB0091EF31 /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85119B6D6AB0091EF31 /* material_1.png */; };
+		9644B85619B6D6AB0091EF31 /* material_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85219B6D6AB0091EF31 /* material_2.png */; };
+		9644B85719B6D6AB0091EF31 /* material_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85319B6D6AB0091EF31 /* material_2_2.png */; };
+		9644B85819B6D6AB0091EF31 /* agave_palm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85419B6D6AB0091EF31 /* agave_palm.dae */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		966EB46019A5224000D05880 /* Song In My Head.aif in Resources */ = {isa = PBXBuildFile; fileRef = 966EB45F19A5224000D05880 /* Song In My Head.aif */; };
 		966EB47119A5231800D05880 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46F19A5231800D05880 /* NSColor.swift */; };
@@ -852,32 +856,11 @@
 		96AD915F19B3B7BD00732834 /* alpine_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915819B3B7BD00732834 /* alpine_right.jpg */; };
 		96AD916019B3B7BD00732834 /* alpine_top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915919B3B7BD00732834 /* alpine_top.jpg */; };
 		96AD916119B3B7BD00732834 /* Note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915A19B3B7BD00732834 /* Note.txt */; };
-		96AD916A19B3C72600732834 /* tree_planes.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96AD916919B3C72600732834 /* tree_planes.dae */; };
-		96AD916E19B3C72E00732834 /* bladeren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD916C19B3C72E00732834 /* bladeren.jpg */; };
-		96AD916F19B3C72E00732834 /* stam-smal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD916D19B3C72E00732834 /* stam-smal.jpg */; };
-		96AD917319B3C9BC00732834 /* Carpet_Loop_Pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD917119B3C9BC00732834 /* Carpet_Loop_Pattern.jpg */; };
-		96AD917419B3C9BC00732834 /* cheeseburger.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96AD917219B3C9BC00732834 /* cheeseburger.dae */; };
-		96AD917919B3CCCE00732834 /* __CorrogateRust_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD917619B3CCCE00732834 /* __CorrogateRust_.jpg */; };
-		96AD917A19B3CCCE00732834 /* __CorrogateRust__0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD917719B3CCCE00732834 /* __CorrogateRust__0.jpg */; };
-		96AD917B19B3CCCE00732834 /* saguaro.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96AD917819B3CCCE00732834 /* saguaro.dae */; };
 		96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */; };
 		96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */; };
 		96AE29E319A5CF3800CFC595 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E219A5CF3800CFC595 /* Sequencer.swift */; };
 		96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EA19A5E4BE00CFC595 /* Cursor.swift */; };
 		96AE29ED19A5E59600CFC595 /* AVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */; };
-		96FFEE8B199FCFFE00E83AA7 /* v1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE6F199FCFFE00E83AA7 /* v1.jpg */; };
-		96FFEE8C199FCFFE00E83AA7 /* v2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE70199FCFFE00E83AA7 /* v2.jpg */; };
-		96FFEE8D199FCFFE00E83AA7 /* v3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE71199FCFFE00E83AA7 /* v3.jpg */; };
-		96FFEE8E199FCFFE00E83AA7 /* v5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE72199FCFFE00E83AA7 /* v5.jpg */; };
-		96FFEE8F199FCFFE00E83AA7 /* v5_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE73199FCFFE00E83AA7 /* v5_0.jpg */; };
-		96FFEE90199FCFFE00E83AA7 /* v5_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE74199FCFFE00E83AA7 /* v5_1.jpg */; };
-		96FFEE91199FCFFE00E83AA7 /* v5_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE75199FCFFE00E83AA7 /* v5_2.jpg */; };
-		96FFEE92199FCFFE00E83AA7 /* v5_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE76199FCFFE00E83AA7 /* v5_3.jpg */; };
-		96FFEE93199FCFFE00E83AA7 /* v5_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE77199FCFFE00E83AA7 /* v5_4.jpg */; };
-		96FFEE94199FCFFE00E83AA7 /* v5_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE78199FCFFE00E83AA7 /* v5_5.jpg */; };
-		96FFEE95199FCFFE00E83AA7 /* v5_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE79199FCFFE00E83AA7 /* v5_6.jpg */; };
-		96FFEE96199FCFFE00E83AA7 /* vermeer.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE7A199FCFFE00E83AA7 /* vermeer.dae */; };
-		96FFEE97199FCFFE00E83AA7 /* violinist.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FFEE7B199FCFFE00E83AA7 /* violinist.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1591,6 +1574,10 @@
 		961651E8199F0EEB0088DC97 /* wood-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wood-normal.png"; sourceTree = "<group>"; };
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
+		9644B85119B6D6AB0091EF31 /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
+		9644B85219B6D6AB0091EF31 /* material_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2.png; sourceTree = "<group>"; };
+		9644B85319B6D6AB0091EF31 /* material_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2_2.png; sourceTree = "<group>"; };
+		9644B85419B6D6AB0091EF31 /* agave_palm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = agave_palm.dae; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966EB45F19A5224000D05880 /* Song In My Head.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song In My Head.aif"; sourceTree = "<group>"; };
 		966EB46F19A5231800D05880 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
@@ -1728,33 +1715,12 @@
 		96AD915819B3B7BD00732834 /* alpine_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alpine_right.jpg; sourceTree = "<group>"; };
 		96AD915919B3B7BD00732834 /* alpine_top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alpine_top.jpg; sourceTree = "<group>"; };
 		96AD915A19B3B7BD00732834 /* Note.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Note.txt; sourceTree = "<group>"; };
-		96AD916919B3C72600732834 /* tree_planes.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = tree_planes.dae; path = trees/tree_planes.dae; sourceTree = "<group>"; };
-		96AD916C19B3C72E00732834 /* bladeren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bladeren.jpg; sourceTree = "<group>"; };
-		96AD916D19B3C72E00732834 /* stam-smal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stam-smal.jpg"; sourceTree = "<group>"; };
-		96AD917119B3C9BC00732834 /* Carpet_Loop_Pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carpet_Loop_Pattern.jpg; sourceTree = "<group>"; };
-		96AD917219B3C9BC00732834 /* cheeseburger.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = cheeseburger.dae; path = food/cheeseburger.dae; sourceTree = "<group>"; };
-		96AD917619B3CCCE00732834 /* __CorrogateRust_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = __CorrogateRust_.jpg; sourceTree = "<group>"; };
-		96AD917719B3CCCE00732834 /* __CorrogateRust__0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = __CorrogateRust__0.jpg; sourceTree = "<group>"; };
-		96AD917819B3CCCE00732834 /* saguaro.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = saguaro.dae; path = trees/saguaro.dae; sourceTree = "<group>"; };
 		96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Intro.swift; path = song/MainViewController_Intro.swift; sourceTree = "<group>"; };
 		96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Hits.swift; path = song/MainViewController_Hits.swift; sourceTree = "<group>"; };
 		96AE29E219A5CF3800CFC595 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sequencer.swift; path = song/Sequencer.swift; sourceTree = "<group>"; };
 		96AE29EA19A5E4BE00CFC595 /* Cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
 		96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioPlayer.swift; sourceTree = "<group>"; };
 		96F08CDD19A1278300C1409A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		96FFEE6F199FCFFE00E83AA7 /* v1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v1.jpg; sourceTree = "<group>"; };
-		96FFEE70199FCFFE00E83AA7 /* v2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v2.jpg; sourceTree = "<group>"; };
-		96FFEE71199FCFFE00E83AA7 /* v3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v3.jpg; sourceTree = "<group>"; };
-		96FFEE72199FCFFE00E83AA7 /* v5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5.jpg; sourceTree = "<group>"; };
-		96FFEE73199FCFFE00E83AA7 /* v5_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_0.jpg; sourceTree = "<group>"; };
-		96FFEE74199FCFFE00E83AA7 /* v5_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_1.jpg; sourceTree = "<group>"; };
-		96FFEE75199FCFFE00E83AA7 /* v5_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_2.jpg; sourceTree = "<group>"; };
-		96FFEE76199FCFFE00E83AA7 /* v5_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_3.jpg; sourceTree = "<group>"; };
-		96FFEE77199FCFFE00E83AA7 /* v5_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_4.jpg; sourceTree = "<group>"; };
-		96FFEE78199FCFFE00E83AA7 /* v5_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_5.jpg; sourceTree = "<group>"; };
-		96FFEE79199FCFFE00E83AA7 /* v5_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v5_6.jpg; sourceTree = "<group>"; };
-		96FFEE7A199FCFFE00E83AA7 /* vermeer.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = vermeer.dae; sourceTree = "<group>"; };
-		96FFEE7B199FCFFE00E83AA7 /* violinist.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = violinist.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3335,17 +3301,20 @@
 		96165203199F19E80088DC97 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				96AD917519B3CCCE00732834 /* saguaro */,
-				96AD917819B3CCCE00732834 /* saguaro.dae */,
-				96AD917019B3C9BC00732834 /* cheeseburger */,
-				96AD917219B3C9BC00732834 /* cheeseburger.dae */,
-				96AD916B19B3C72E00732834 /* tree_planes */,
-				96AD916919B3C72600732834 /* tree_planes.dae */,
-				96FFEE6E199FCFFE00E83AA7 /* vermeer */,
-				96FFEE7A199FCFFE00E83AA7 /* vermeer.dae */,
-				96FFEE7B199FCFFE00E83AA7 /* violinist.dae */,
+				9644B85019B6D6AB0091EF31 /* agave_palm */,
+				9644B85419B6D6AB0091EF31 /* agave_palm.dae */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		9644B85019B6D6AB0091EF31 /* agave_palm */ = {
+			isa = PBXGroup;
+			children = (
+				9644B85119B6D6AB0091EF31 /* material_1.png */,
+				9644B85219B6D6AB0091EF31 /* material_2.png */,
+				9644B85319B6D6AB0091EF31 /* material_2_2.png */,
+			);
+			path = agave_palm;
 			sourceTree = "<group>";
 		};
 		966EB46E19A5231800D05880 /* Categories */ = {
@@ -3563,35 +3532,6 @@
 			path = alpine;
 			sourceTree = "<group>";
 		};
-		96AD916B19B3C72E00732834 /* tree_planes */ = {
-			isa = PBXGroup;
-			children = (
-				96AD916C19B3C72E00732834 /* bladeren.jpg */,
-				96AD916D19B3C72E00732834 /* stam-smal.jpg */,
-			);
-			name = tree_planes;
-			path = trees/tree_planes;
-			sourceTree = "<group>";
-		};
-		96AD917019B3C9BC00732834 /* cheeseburger */ = {
-			isa = PBXGroup;
-			children = (
-				96AD917119B3C9BC00732834 /* Carpet_Loop_Pattern.jpg */,
-			);
-			name = cheeseburger;
-			path = food/cheeseburger;
-			sourceTree = "<group>";
-		};
-		96AD917519B3CCCE00732834 /* saguaro */ = {
-			isa = PBXGroup;
-			children = (
-				96AD917619B3CCCE00732834 /* __CorrogateRust_.jpg */,
-				96AD917719B3CCCE00732834 /* __CorrogateRust__0.jpg */,
-			);
-			name = saguaro;
-			path = trees/saguaro;
-			sourceTree = "<group>";
-		};
 		96AE29DF19A5CE3900CFC595 /* song */ = {
 			isa = PBXGroup;
 			children = (
@@ -3611,24 +3551,6 @@
 				96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */,
 			);
 			name = song;
-			sourceTree = "<group>";
-		};
-		96FFEE6E199FCFFE00E83AA7 /* vermeer */ = {
-			isa = PBXGroup;
-			children = (
-				96FFEE6F199FCFFE00E83AA7 /* v1.jpg */,
-				96FFEE70199FCFFE00E83AA7 /* v2.jpg */,
-				96FFEE71199FCFFE00E83AA7 /* v3.jpg */,
-				96FFEE72199FCFFE00E83AA7 /* v5.jpg */,
-				96FFEE73199FCFFE00E83AA7 /* v5_0.jpg */,
-				96FFEE74199FCFFE00E83AA7 /* v5_1.jpg */,
-				96FFEE75199FCFFE00E83AA7 /* v5_2.jpg */,
-				96FFEE76199FCFFE00E83AA7 /* v5_3.jpg */,
-				96FFEE77199FCFFE00E83AA7 /* v5_4.jpg */,
-				96FFEE78199FCFFE00E83AA7 /* v5_5.jpg */,
-				96FFEE79199FCFFE00E83AA7 /* v5_6.jpg */,
-			);
-			path = vermeer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3703,13 +3625,11 @@
 				96154A6919A57ADA00AAD5EF /* mountains_back.jpg in Resources */,
 				961548BB19A57AD900AAD5EF /* blood_sport512_top.JPG in Resources */,
 				969C671019A7FA14002149D0 /* zx_computer_room.jpg in Resources */,
-				96AD917319B3C9BC00732834 /* Carpet_Loop_Pattern.jpg in Resources */,
 				961548CB19A57AD900AAD5EF /* bluefreeze.zip in Resources */,
 				9615497A19A57ADA00AAD5EF /* flatrock.zip in Resources */,
 				961549FD19A57ADA00AAD5EF /* islands_top.jpg in Resources */,
 				96154A8C19A57ADA00AAD5EF /* nightsky_back.jpg in Resources */,
 				96154B3719A57ADA00AAD5EF /* starfield_left.jpg in Resources */,
-				96FFEE8C199FCFFE00E83AA7 /* v2.jpg in Resources */,
 				969C673119A80789002149D0 /* carPaint.shader in Resources */,
 				96154A6119A57ADA00AAD5EF /* morose.zip in Resources */,
 				9615498B19A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
@@ -3720,7 +3640,6 @@
 				96A3B965199EEED300AEF7B3 /* Images.xcassets in Resources */,
 				969C66F319A7FA14002149D0 /* sega_marilyndiptych.jpg in Resources */,
 				96154A9119A57ADA00AAD5EF /* Note.txt in Resources */,
-				96FFEE8F199FCFFE00E83AA7 /* v5_0.jpg in Resources */,
 				96154ACC19A57ADA00AAD5EF /* podsky_back.jpg in Resources */,
 				961548A919A57AD900AAD5EF /* ashcanyon_back.jpg in Resources */,
 				96154B2719A57ADA00AAD5EF /* snowy_back.jpg in Resources */,
@@ -3751,7 +3670,6 @@
 				9615498019A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154AB819A57ADA00AAD5EF /* orangecream_front.jpg in Resources */,
 				96154AE619A57ADA00AAD5EF /* Note.txt in Resources */,
-				96FFEE94199FCFFE00E83AA7 /* v5_5.jpg in Resources */,
 				9615498D19A57ADA00AAD5EF /* frozen_top.jpg in Resources */,
 				96154B1719A57ADA00AAD5EF /* jajsnow1_back.jpg in Resources */,
 				961548C019A57AD900AAD5EF /* bluesky_left.jpg in Resources */,
@@ -3816,7 +3734,6 @@
 				96154A5F19A57ADA00AAD5EF /* mars1.zip in Resources */,
 				96154A9D19A57ADA00AAD5EF /* nightwalker_right.jpg in Resources */,
 				961549C519A57ADA00AAD5EF /* hazylake.zip in Resources */,
-				96AD917A19B3CCCE00732834 /* __CorrogateRust__0.jpg in Resources */,
 				96154B2F19A57ADA00AAD5EF /* jajspace2_right.jpg in Resources */,
 				961548AA19A57AD900AAD5EF /* ashcanyon_front.jpg in Resources */,
 				96154AAE19A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -3855,7 +3772,6 @@
 				9615492319A57AD900AAD5EF /* desert_right.jpg in Resources */,
 				9615493619A57AD900AAD5EF /* desertplains_front.jpg in Resources */,
 				9615490919A57AD900AAD5EF /* Note.txt in Resources */,
-				96FFEE92199FCFFE00E83AA7 /* v5_3.jpg in Resources */,
 				9615493219A57AD900AAD5EF /* endset_top.jpg in Resources */,
 				961549A619A57ADA00AAD5EF /* grave_front.jpg in Resources */,
 				9615498419A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
@@ -3879,13 +3795,13 @@
 				9615492919A57AD900AAD5EF /* jajdesert1_left.jpg in Resources */,
 				961548F519A57AD900AAD5EF /* comawhite.zip in Resources */,
 				961548B519A57AD900AAD5EF /* Note.txt in Resources */,
+				9644B85819B6D6AB0091EF31 /* agave_palm.dae in Resources */,
 				961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */,
 				9615492E19A57AD900AAD5EF /* endset_back.jpg in Resources */,
 				969C675019A824C7002149D0 /* color_envmap.png in Resources */,
 				96154A8719A57ADA00AAD5EF /* nwo512_front.jpg in Resources */,
 				9615499C19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B4E19A57ADA00AAD5EF /* sundown.zip in Resources */,
-				96AD917419B3C9BC00732834 /* cheeseburger.dae in Resources */,
 				96154A7A19A57ADA00AAD5EF /* mudskipper_right.jpg in Resources */,
 				96154B1E19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154B4319A57ADA00AAD5EF /* stratosphere_back.jpg in Resources */,
@@ -3894,7 +3810,6 @@
 				96154A8919A57ADA00AAD5EF /* nwo512_right.jpg in Resources */,
 				96AD915E19B3B7BD00732834 /* alpine_left.jpg in Resources */,
 				961549DC19A57ADA00AAD5EF /* ice.zip in Resources */,
-				96FFEE96199FCFFE00E83AA7 /* vermeer.dae in Resources */,
 				961549EB19A57ADA00AAD5EF /* iceflats_back.jpg in Resources */,
 				9615498319A57ADA00AAD5EF /* frozen_front.jpg in Resources */,
 				961549E919A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -3976,7 +3891,6 @@
 				96A8B07419B2ABA20016BCD5 /* TacoTree.wav in Resources */,
 				961548A719A57AD900AAD5EF /* Note.txt in Resources */,
 				961549AE19A57ADA00AAD5EF /* xyloote_front.jpg in Resources */,
-				96FFEE97199FCFFE00E83AA7 /* violinist.dae in Resources */,
 				96154B5F19A57ADA00AAD5EF /* wintermount_back.jpg in Resources */,
 				969C670419A7FA14002149D0 /* segagg_suburb.jpg in Resources */,
 				961549EA19A57ADA00AAD5EF /* iceflats1.zip in Resources */,
@@ -4009,11 +3923,11 @@
 				9615496B19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A9919A57ADA00AAD5EF /* nightwalker.zip in Resources */,
 				96154A9719A57ADA00AAD5EF /* nnksky01_top.jpg in Resources */,
-				96FFEE8B199FCFFE00E83AA7 /* v1.jpg in Resources */,
 				96AD915F19B3B7BD00732834 /* alpine_right.jpg in Resources */,
 				96154A2519A57ADA00AAD5EF /* jajlands2_right.jpg in Resources */,
 				96154B2B19A57ADA00AAD5EF /* snowy_top.jpg in Resources */,
 				961549A219A57ADA00AAD5EF /* grandcanyon.zip in Resources */,
+				9644B85719B6D6AB0091EF31 /* material_2_2.png in Resources */,
 				96154ADB19A57ADA00AAD5EF /* powderpeaknight_front.jpg in Resources */,
 				9615490419A57AD900AAD5EF /* darkgloom_back.jpg in Resources */,
 				96154B5719A57ADA00AAD5EF /* underwater.zip in Resources */,
@@ -4061,7 +3975,6 @@
 				96154AFD19A57ADA00AAD5EF /* redplanet_back.jpg in Resources */,
 				96154A1919A57ADA00AAD5EF /* lake2.zip in Resources */,
 				96154AD419A57ADA00AAD5EF /* powderpeak_front.jpg in Resources */,
-				96FFEE91199FCFFE00E83AA7 /* v5_2.jpg in Resources */,
 				961548B919A57AD900AAD5EF /* blood_sport512_left.jpg in Resources */,
 				96154A4219A57ADA00AAD5EF /* lostvalley_right.jpg in Resources */,
 				969C66DE19A7FA14002149D0 /* atari_letterglitch.jpg in Resources */,
@@ -4140,7 +4053,6 @@
 				9615498119A57ADA00AAD5EF /* frozen.zip in Resources */,
 				969C66E619A7FA14002149D0 /* sega_cockpit.jpg in Resources */,
 				9615499119A57ADA00AAD5EF /* frozendusk_front.jpg in Resources */,
-				96FFEE95199FCFFE00E83AA7 /* v5_6.jpg in Resources */,
 				961549BF19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154AFC19A57ADA00AAD5EF /* redplanet.zip in Resources */,
 				961548FF19A57AD900AAD5EF /* cottoncandy_left.jpg in Resources */,
@@ -4162,7 +4074,6 @@
 				961549A119A57ADA00AAD5EF /* grand_canyon_top.jpg in Resources */,
 				96154B1519A57ADA00AAD5EF /* siege_right.jpg in Resources */,
 				96154B4519A57ADA00AAD5EF /* stratosphere_left.jpg in Resources */,
-				96FFEE8D199FCFFE00E83AA7 /* v3.jpg in Resources */,
 				969C673219A80789002149D0 /* character.shader in Resources */,
 				969C675A19A825CE002149D0 /* earth_diffuse.jpg in Resources */,
 				969C66EB19A7FA14002149D0 /* sega_field.jpg in Resources */,
@@ -4182,7 +4093,6 @@
 				961549A419A57ADA00AAD5EF /* grave.zip in Resources */,
 				96154AC619A57ADA00AAD5EF /* plain_sky_left.jpg in Resources */,
 				96154B4D19A57ADA00AAD5EF /* Note.txt in Resources */,
-				96AD916F19B3C72E00732834 /* stam-smal.jpg in Resources */,
 				96154A8619A57ADA00AAD5EF /* nwo512_back.jpg in Resources */,
 				96154A1619A57ADA00AAD5EF /* jajlake2_left.jpg in Resources */,
 				96154B3919A57ADA00AAD5EF /* starfield_top.jpg in Resources */,
@@ -4192,7 +4102,6 @@
 				96154A3319A57ADA00AAD5EF /* lilacisles_left.jpg in Resources */,
 				9615491819A57AD900AAD5EF /* desert_evening.zip in Resources */,
 				9615490619A57AD900AAD5EF /* darkgloom_left.jpg in Resources */,
-				96AD916E19B3C72E00732834 /* bladeren.jpg in Resources */,
 				961549D919A57ADA00AAD5EF /* hourglass_right.jpg in Resources */,
 				9615492819A57AD900AAD5EF /* jajdesert1_front.jpg in Resources */,
 				96154B1D19A57ADA00AAD5EF /* snow.zip in Resources */,
@@ -4213,7 +4122,6 @@
 				969C675119A824C7002149D0 /* tiledbright_envmap.jpg in Resources */,
 				9615499F19A57ADA00AAD5EF /* grand_canyon_left.jpg in Resources */,
 				961549F519A57ADA00AAD5EF /* iceflow_right.jpg in Resources */,
-				96FFEE90199FCFFE00E83AA7 /* v5_1.jpg in Resources */,
 				9615496419A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615493D19A57AD900AAD5EF /* desertsky_front.jpg in Resources */,
 				9615493E19A57AD900AAD5EF /* desertsky_left.jpg in Resources */,
@@ -4253,7 +4161,6 @@
 				9615497D19A57ADA00AAD5EF /* flatrock_left.jpg in Resources */,
 				96154B0D19A57ADA00AAD5EF /* shadowpeak_left.jpg in Resources */,
 				969C670B19A7FA14002149D0 /* zx_areyouusingtv.jpg in Resources */,
-				96AD917919B3CCCE00732834 /* __CorrogateRust_.jpg in Resources */,
 				961548A219A57AD900AAD5EF /* jajalien1_back.jpg in Resources */,
 				96154A6B19A57ADA00AAD5EF /* mountains_left.jpg in Resources */,
 				969C673619A80789002149D0 /* explode.shader in Resources */,
@@ -4265,14 +4172,15 @@
 				96154AF319A57ADA00AAD5EF /* rapture_top.jpg in Resources */,
 				96154AC919A57ADA00AAD5EF /* plainsky.zip in Resources */,
 				96154A3519A57ADA00AAD5EF /* lilacisles_top.jpg in Resources */,
-				96FFEE93199FCFFE00E83AA7 /* v5_4.jpg in Resources */,
 				96154B3519A57ADA00AAD5EF /* starfield_back.jpg in Resources */,
 				96154A4919A57ADA00AAD5EF /* lostatseanight_right.jpg in Resources */,
 				96154B3819A57ADA00AAD5EF /* starfield_right.jpg in Resources */,
 				96154B2419A57ADA00AAD5EF /* snowblind_top.jpg in Resources */,
 				9615499619A57ADA00AAD5EF /* gardensky.zip in Resources */,
 				969C673919A80789002149D0 /* mapGeometry.shader in Resources */,
+				9644B85519B6D6AB0091EF31 /* material_1.png in Resources */,
 				96154AB719A57ADA00AAD5EF /* orangecream_back.jpg in Resources */,
+				9644B85619B6D6AB0091EF31 /* material_2.png in Resources */,
 				961549E119A57ADA00AAD5EF /* jajice1_top.jpg in Resources */,
 				961548DE19A57AD900AAD5EF /* jajcannons1_top.jpg in Resources */,
 				96154A6719A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -4330,7 +4238,6 @@
 				96154ADE19A57ADA00AAD5EF /* powderpeaknight_top.jpg in Resources */,
 				969C670219A7FA14002149D0 /* segagg_purpleyellow.jpg in Resources */,
 				9615494919A57ADA00AAD5EF /* devilpunch.zip in Resources */,
-				96FFEE8E199FCFFE00E83AA7 /* v5.jpg in Resources */,
 				96154AB919A57ADA00AAD5EF /* orangecream_left.jpg in Resources */,
 				9615496919A57ADA00AAD5EF /* emeraldfog_right.jpg in Resources */,
 				9615497E19A57ADA00AAD5EF /* flatrock_right.jpg in Resources */,
@@ -4345,7 +4252,6 @@
 				9615497219A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A7719A57ADA00AAD5EF /* mudskipper_back.jpg in Resources */,
 				96154AE319A57ADA00AAD5EF /* purplenebula_left.jpg in Resources */,
-				96AD917B19B3CCCE00732834 /* saguaro.dae in Resources */,
 				961548E419A57AD900AAD5EF /* city_right.jpg in Resources */,
 				961548CF19A57AD900AAD5EF /* bluefreeze_right.jpg in Resources */,
 				96154A7B19A57ADA00AAD5EF /* mudskipper_top.jpg in Resources */,
@@ -4365,7 +4271,6 @@
 				96AD915B19B3B7BD00732834 /* alpine.zip in Resources */,
 				96154A4619A57ADA00AAD5EF /* lostatseanight_back.jpg in Resources */,
 				96154ABE19A57ADA00AAD5EF /* plague_back.jpg in Resources */,
-				96AD916A19B3C72600732834 /* tree_planes.dae in Resources */,
 				9615493319A57AD900AAD5EF /* Note.txt in Resources */,
 				961549BE19A57ADA00AAD5EF /* greywash_top.jpg in Resources */,
 				96154A1E19A57ADA00AAD5EF /* jajlands1_right.jpg in Resources */,
