@@ -729,6 +729,10 @@
 		966EB47919A5232200D05880 /* SCNGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47519A5232200D05880 /* SCNGeometry.swift */; };
 		966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47619A5232200D05880 /* SCNMaterial.swift */; };
 		966EB47B19A5232200D05880 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47719A5232200D05880 /* SCNNode.swift */; };
+		96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC219BBA1C000BA98AD /* flat_tree.dae */; };
+		96939BC719BBA1C700BA98AD /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC519BBA1C700BA98AD /* material_1.png */; };
+		96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC619BBA1C700BA98AD /* material_1_1.png */; };
+		96939BCD19BBA1CC00BA98AD /* aloe.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BCB19BBA1CC00BA98AD /* aloe.dae */; };
 		969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C668F19A7F7E1002149D0 /* OverlayScene.swift */; };
 		969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669219A7FA14002149D0 /* atari_bluenoise.jpg */; };
 		969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669319A7FA14002149D0 /* atari_creamnoise.jpg */; };
@@ -856,8 +860,6 @@
 		96AD915F19B3B7BD00732834 /* alpine_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915819B3B7BD00732834 /* alpine_right.jpg */; };
 		96AD916019B3B7BD00732834 /* alpine_top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915919B3B7BD00732834 /* alpine_top.jpg */; };
 		96AD916119B3B7BD00732834 /* Note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96AD915A19B3B7BD00732834 /* Note.txt */; };
-		96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */; };
-		96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */; };
 		96AE29E319A5CF3800CFC595 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29E219A5CF3800CFC595 /* Sequencer.swift */; };
 		96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EA19A5E4BE00CFC595 /* Cursor.swift */; };
 		96AE29ED19A5E59600CFC595 /* AVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */; };
@@ -1586,6 +1588,10 @@
 		966EB47519A5232200D05880 /* SCNGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNGeometry.swift; sourceTree = "<group>"; };
 		966EB47619A5232200D05880 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		966EB47719A5232200D05880 /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		96939BC219BBA1C000BA98AD /* flat_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = flat_tree.dae; sourceTree = "<group>"; };
+		96939BC519BBA1C700BA98AD /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
+		96939BC619BBA1C700BA98AD /* material_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1_1.png; sourceTree = "<group>"; };
+		96939BCB19BBA1CC00BA98AD /* aloe.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = aloe.dae; sourceTree = "<group>"; };
 		969C668F19A7F7E1002149D0 /* OverlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScene.swift; sourceTree = "<group>"; };
 		969C669219A7FA14002149D0 /* atari_bluenoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_bluenoise.jpg; sourceTree = "<group>"; };
 		969C669319A7FA14002149D0 /* atari_creamnoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_creamnoise.jpg; sourceTree = "<group>"; };
@@ -1715,8 +1721,6 @@
 		96AD915819B3B7BD00732834 /* alpine_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alpine_right.jpg; sourceTree = "<group>"; };
 		96AD915919B3B7BD00732834 /* alpine_top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alpine_top.jpg; sourceTree = "<group>"; };
 		96AD915A19B3B7BD00732834 /* Note.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Note.txt; sourceTree = "<group>"; };
-		96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Intro.swift; path = song/MainViewController_Intro.swift; sourceTree = "<group>"; };
-		96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController_Hits.swift; path = song/MainViewController_Hits.swift; sourceTree = "<group>"; };
 		96AE29E219A5CF3800CFC595 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sequencer.swift; path = song/Sequencer.swift; sourceTree = "<group>"; };
 		96AE29EA19A5E4BE00CFC595 /* Cursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
 		96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioPlayer.swift; sourceTree = "<group>"; };
@@ -3301,6 +3305,9 @@
 		96165203199F19E80088DC97 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				96939BCB19BBA1CC00BA98AD /* aloe.dae */,
+				96939BC419BBA1C700BA98AD /* flat_tree */,
+				96939BC219BBA1C000BA98AD /* flat_tree.dae */,
 				9644B85019B6D6AB0091EF31 /* agave_palm */,
 				9644B85419B6D6AB0091EF31 /* agave_palm.dae */,
 			);
@@ -3340,6 +3347,15 @@
 				969C676019A82B9B002149D0 /* ShaderManager.swift */,
 			);
 			path = SceneKit;
+			sourceTree = "<group>";
+		};
+		96939BC419BBA1C700BA98AD /* flat_tree */ = {
+			isa = PBXGroup;
+			children = (
+				96939BC519BBA1C700BA98AD /* material_1.png */,
+				96939BC619BBA1C700BA98AD /* material_1_1.png */,
+			);
+			path = flat_tree;
 			sourceTree = "<group>";
 		};
 		969AA26F19A259D4000741A1 /* audio */ = {
@@ -3547,8 +3563,6 @@
 				96A8B05F19B2A8E70016BCD5 /* Chorus2.swift */,
 				96A8B06019B2A8E70016BCD5 /* Chorus3.swift */,
 				96A8B06119B2A8E70016BCD5 /* Outro.swift */,
-				96AE29DB19A5CDF300CFC595 /* MainViewController_Intro.swift */,
-				96AE29DD19A5CE0800CFC595 /* MainViewController_Hits.swift */,
 			);
 			name = song;
 			sourceTree = "<group>";
@@ -3787,6 +3801,7 @@
 				969C670019A7FA14002149D0 /* segagg_persia.jpg in Resources */,
 				969C66D919A7FA14002149D0 /* atari_greyglitch.jpg in Resources */,
 				96154A0719A57ADA00AAD5EF /* krypto_sky_front.jpg in Resources */,
+				96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */,
 				969C673D19A80789002149D0 /* ParticleSystem.fsh in Resources */,
 				961549B519A57ADA00AAD5EF /* greenhaze_left.jpg in Resources */,
 				96154B1A19A57ADA00AAD5EF /* jajsnow1_right.jpg in Resources */,
@@ -3888,6 +3903,7 @@
 				969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */,
 				961549D019A57ADA00AAD5EF /* hexagon_front.jpg in Resources */,
 				961549AB19A57ADA00AAD5EF /* green.zip in Resources */,
+				96939BCD19BBA1CC00BA98AD /* aloe.dae in Resources */,
 				96A8B07419B2ABA20016BCD5 /* TacoTree.wav in Resources */,
 				961548A719A57AD900AAD5EF /* Note.txt in Resources */,
 				961549AE19A57ADA00AAD5EF /* xyloote_front.jpg in Resources */,
@@ -3908,6 +3924,7 @@
 				961548E719A57AD900AAD5EF /* cliffsofinsanity.zip in Resources */,
 				961548E619A57AD900AAD5EF /* Note.txt in Resources */,
 				9615490219A57AD900AAD5EF /* Note.txt in Resources */,
+				96939BC719BBA1C700BA98AD /* material_1.png in Resources */,
 				961549F119A57ADA00AAD5EF /* iceflow.zip in Resources */,
 				969C673719A80789002149D0 /* floor.shader in Resources */,
 				96154AAD19A57ADA00AAD5EF /* oasisday_top.jpg in Resources */,
@@ -4126,6 +4143,7 @@
 				9615493D19A57AD900AAD5EF /* desertsky_front.jpg in Resources */,
 				9615493E19A57AD900AAD5EF /* desertsky_left.jpg in Resources */,
 				96154B4619A57ADA00AAD5EF /* stratosphere_right.jpg in Resources */,
+				96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */,
 				96154AED19A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548FA19A57AD900AAD5EF /* comawhite_top.jpg in Resources */,
 				9615490D19A57AD900AAD5EF /* jajdarkland1_left.jpg in Resources */,
@@ -4455,8 +4473,6 @@
 				96A8B06919B2A8E70016BCD5 /* Chorus1.swift in Sources */,
 				96A8B06F19B2A8E70016BCD5 /* Preverse1.swift in Sources */,
 				96A8B07219B2A8E70016BCD5 /* Verse2.swift in Sources */,
-				96AE29DE19A5CE0800CFC595 /* MainViewController_Hits.swift in Sources */,
-				96AE29DC19A5CDF300CFC595 /* MainViewController_Intro.swift in Sources */,
 				96AE29EB19A5E4BE00CFC595 /* Cursor.swift in Sources */,
 				96A8B06E19B2A8E70016BCD5 /* Prechorus2.swift in Sources */,
 				969C674A19A807F7002149D0 /* SCNFloor.swift in Sources */,

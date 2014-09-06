@@ -25,8 +25,13 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let ambientLightNode: SCNNode
     let omniLight: SCNLight
     let omniLightNode: SCNNode
+    let omniLightB: SCNLight
+    let omniLightBNode: SCNNode
     let floor: SCNFloor
     let floorNode: SCNNode
+
+    let glitchPlane: SCNNode
+    let agave: SCNNode
 
     required init(coder: NSCoder!) {
         // scene
@@ -63,6 +68,12 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         omniLightNode.light = omniLight
         omniLightNode.position = SCNVector3Make(0, 80, 80)
 
+        omniLightB = SCNLight()
+        omniLightB.type = SCNLightTypeOmni
+        omniLightBNode = SCNNode()
+        omniLightBNode.light = omniLight
+        omniLightBNode.position = SCNVector3Make(0, -200, 100)
+
         // floor
         floor = SCNFloor()
         floor.reflectionFalloffEnd = 3.0
@@ -71,7 +82,33 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
         rootNode.addChildNode(omniLightNode)
-        rootNode.addChildNode(floorNode)
+        rootNode.addChildNode(omniLightBNode)
+//        rootNode.addChildNode(floorNode)
+
+        //////////// CUSTOM
+
+        let plane = SCNPlane(width: 100.0, height: 100.0)
+        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
+        plane.widthSegmentCount = 15
+        plane.heightSegmentCount = 15
+        glitchPlane = SCNNode(geometry: plane)
+        glitchPlane.position = SCNVector3Make(0, 10, -80)
+        glitchPlane.rotate(-M_PI/8.0, x: 1, y: 0, z: 0)
+        glitchPlane.setGeometryShader("bumps_geom")
+        cameraNode.addChildNode(glitchPlane)
+
+        agave = SCNNode(resourceName: "agave_palm")
+        agave.scale(0.6)
+        agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        agave.position = SCNVector3Make(-24, -40, -40)
+        cameraNode.addChildNode(agave)
+
+//        let aloe = SCNNode(resourceName: "aloe")
+//        aloe.scale(0.1)
+//        aloe.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+//        aloe.position = SCNVector3Make(-15, -25, -30)
+//        cameraNode.addChildNode(aloe)
+
 
         super.init(coder: coder)
 
@@ -87,6 +124,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.playing = true
         sceneView.loops = true
 
+        let pixellateFilter = CIFilter(name: "CIPixellate")
+        pixellateFilter.setDefaults()
+        pixellateFilter.setValue(20, forKey: "inputScale")
+        pixellateFilter.name = "px"
+
         setSkybox("desert")
 //        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
 
@@ -94,13 +136,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         start()
 
-        let agave = SCNNode(resourceName: "agave_palm")
-        rootNode.addChildNode(agave)
-        agave.scale(0.4)
-        agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(0, 0, 50)
 
-        
+
+        cameraNode.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
+
+
 //        saguaro.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
 
 // WARN: TRY THIS ON OSX 10.10
@@ -109,7 +149,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        sceneView.overlaySKScene = overlayScene // NEED OSX 10.10
 
 
-}
+    }
 
     func start() {
         audioPlayer.prepareToPlay()

@@ -11,7 +11,7 @@ float eval(vec3 p) {
 }
 
 vec3 computeNormal(vec3 p, vec3 n) {
-	vec3 e = vec3(0.1, 0.0, 0.0);
+	vec3 e = vec3(0.1, 0.1, 0.1);
 	return normalize(n - geomIntensity * vec3(eval(p + e.xyy) - eval(p - e.xyy),
 						  		              eval(p + e.yxy) - eval(p - e.yxy),
                                               eval(p + e.yyx) - eval(p - e.yyx)));
