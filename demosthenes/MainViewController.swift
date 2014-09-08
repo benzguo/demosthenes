@@ -30,7 +30,8 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let floor: SCNFloor
     let floorNode: SCNNode
 
-    let glitchPlane: SCNNode
+    let glitchPlane1: SCNNode
+    let glitchPlane2: SCNNode
     let agave: SCNNode
 
     required init(coder: NSCoder!) {
@@ -89,18 +90,30 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
         plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
-        plane.widthSegmentCount = 15
-        plane.heightSegmentCount = 15
-        glitchPlane = SCNNode(geometry: plane)
-        glitchPlane.position = SCNVector3Make(0, 10, -80)
-        glitchPlane.rotate(-M_PI/8.0, x: 1, y: 0, z: 0)
-        glitchPlane.setGeometryShader("bumps_geom")
-        cameraNode.addChildNode(glitchPlane)
+        plane.widthSegmentCount = 10
+        plane.heightSegmentCount = 10
+        glitchPlane1 = SCNNode(geometry: plane)
+        glitchPlane1.position = SCNVector3Make(0, 0, -90)
+        glitchPlane1.setGeometryShader("bumps_geom")
+        glitchPlane1.setFragmentShader("video_frag")
+        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
+        cameraNode.addChildNode(glitchPlane1)
+        
+        let plane2 = SCNPlane(width: 100.0, height: 100.0)
+        plane2.firstMaterial = SCNMaterial(cubeMap: "endset")
+        plane2.widthSegmentCount = 10
+        plane2.heightSegmentCount = 10
+        glitchPlane2 = SCNNode(geometry: plane2)
+        glitchPlane2.position = SCNVector3Make(0, 0, -90)
+        glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
+        glitchPlane2.setGeometryShader("bumps_geom")
+        glitchPlane2.setFragmentShader("video_frag")
+        cameraNode.addChildNode(glitchPlane2)
 
         agave = SCNNode(resourceName: "agave_palm")
         agave.scale(0.6)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-24, -40, -40)
+        agave.position = SCNVector3Make(-23, -40, -40)
         cameraNode.addChildNode(agave)
 
 //        let aloe = SCNNode(resourceName: "aloe")
@@ -124,10 +137,24 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         sceneView.playing = true
         sceneView.loops = true
 
-        let pixellateFilter = CIFilter(name: "CIPixellate")
-        pixellateFilter.setDefaults()
-        pixellateFilter.setValue(20, forKey: "inputScale")
-        pixellateFilter.name = "px"
+        let colorControls = CIFilter(name: "CIColorControls")
+        colorControls.setDefaults()
+        colorControls.setValue(3.0, forKey: "inputSaturation")
+        let bloomFilter = CIFilter(name: "CIBloom")
+        bloomFilter.setDefaults()
+        let hexagonalPixellate = CIFilter(name: "CIHexagonalPixellate")
+        hexagonalPixellate.setDefaults()
+
+
+        let kaleidoscope = CIFilter(name: "CIOpTile")
+        kaleidoscope.setValue(CIVector(x: 0, y: 0), forKey: "inputCenter")
+//        kaleidoscope.setValue(CIVector(x: 50, y: 50), forKey: "inputInsetPoint1")
+//        kaleidoscope.setValue(20, forKey: "inputCount")
+        kaleidoscope.setDefaults()
+        agave.filters = [colorControls, bloomFilter]
+        glitchPlane1.filters = [hexagonalPixellate]
+        glitchPlane2.filters = [hexagonalPixellate]
+
 
         setSkybox("desert")
 //        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)

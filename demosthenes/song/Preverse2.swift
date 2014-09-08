@@ -9,7 +9,6 @@ extension MainViewController {
 	    switch index {
     	case 0:
             setSkybox("desertstorm")
-            floor.setFragmentShader("video_frag")           
     		break
     		
     	case 1:

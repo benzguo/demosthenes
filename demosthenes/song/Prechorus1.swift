@@ -8,7 +8,6 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            rootNode.addChildNode(floorNode)
     		break
     		
     	case 1:
