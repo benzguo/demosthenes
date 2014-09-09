@@ -1,6 +1,6 @@
 uniform float geomIntensity = 10.0;
 
-float freq = 1.8;
+float freq = 1.5;
 float power = 4.0;
 float factor = 1.0;
 

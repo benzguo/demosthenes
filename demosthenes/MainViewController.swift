@@ -23,10 +23,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     let ambientLight: SCNLight
     let ambientLightNode: SCNNode
-    let omniLight: SCNLight
-    let omniLightNode: SCNNode
-    let omniLightB: SCNLight
+    let omniLightANode: SCNNode
     let omniLightBNode: SCNNode
+    let omniLightCNode: SCNNode
     let floor: SCNFloor
     let floorNode: SCNNode
 
@@ -63,17 +62,23 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         ambientLightNode = SCNNode()
         ambientLightNode.light = ambientLight
 
-        omniLight = SCNLight()
-        omniLight.type = SCNLightTypeOmni
-        omniLightNode = SCNNode()
-        omniLightNode.light = omniLight
-        omniLightNode.position = SCNVector3Make(0, 80, 80)
+        let omniLightA = SCNLight()
+        omniLightA.type = SCNLightTypeOmni
+        omniLightANode = SCNNode()
+        omniLightANode.light = omniLightA
+        omniLightANode.position = SCNVector3Make(0, 80, 80)
 
-        omniLightB = SCNLight()
+        let omniLightB = SCNLight()
         omniLightB.type = SCNLightTypeOmni
         omniLightBNode = SCNNode()
-        omniLightBNode.light = omniLight
-        omniLightBNode.position = SCNVector3Make(0, -200, 100)
+        omniLightBNode.light = omniLightB
+        omniLightBNode.position = SCNVector3Make(0, 0, 100)
+
+        let omniLightC = SCNLight()
+        omniLightC.type = SCNLightTypeOmni
+        omniLightCNode = SCNNode()
+        omniLightCNode.light = omniLightC
+        omniLightCNode.position = SCNVector3Make(0, -80, 40)
 
         // floor
         floor = SCNFloor()
@@ -82,23 +87,33 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
-        rootNode.addChildNode(omniLightNode)
+        rootNode.addChildNode(omniLightANode)
         rootNode.addChildNode(omniLightBNode)
+        rootNode.addChildNode(omniLightCNode)
 //        rootNode.addChildNode(floorNode)
 
         //////////// CUSTOM
 
+        let box = SCNBox(width: 50, height: 100, length: 80, chamferRadius: 0)
+        let material = SCNMaterial()
+        material.diffuse.contents = NSColor.blackColor();
+        material.ambient.contents = NSColor.blackColor()
+        box.firstMaterial = material
+        let blackBox = SCNNode(geometry: box)
+        blackBox.position = SCNVector3Make(0, 0, -80)
+        cameraNode.addChildNode(blackBox)       
+
         let plane = SCNPlane(width: 100.0, height: 100.0)
-        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
+//        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
         plane.widthSegmentCount = 10
         plane.heightSegmentCount = 10
         glitchPlane1 = SCNNode(geometry: plane)
-        glitchPlane1.position = SCNVector3Make(0, 0, -90)
-        glitchPlane1.setGeometryShader("bumps_geom")
-        glitchPlane1.setFragmentShader("video_frag")
-        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
-        cameraNode.addChildNode(glitchPlane1)
-        
+        glitchPlane1.position = SCNVector3Make(0, 0, -80)
+//        glitchPlane1.setGeometryShader("bumps_geom1")
+//        glitchPlane1.setFragmentShader("video_frag")
+//        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
+//        cameraNode.addChildNode(glitchPlane1)
+
         let plane2 = SCNPlane(width: 100.0, height: 100.0)
         plane2.firstMaterial = SCNMaterial(cubeMap: "endset")
         plane2.widthSegmentCount = 10
@@ -106,9 +121,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2 = SCNNode(geometry: plane2)
         glitchPlane2.position = SCNVector3Make(0, 0, -90)
         glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
-        glitchPlane2.setGeometryShader("bumps_geom")
+        glitchPlane2.setGeometryShader("bumps_geom2")
         glitchPlane2.setFragmentShader("video_frag")
-        cameraNode.addChildNode(glitchPlane2)
+//        cameraNode.addChildNode(glitchPlane2)
 
         agave = SCNNode(resourceName: "agave_palm")
         agave.scale(0.6)
@@ -142,8 +157,8 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         colorControls.setValue(3.0, forKey: "inputSaturation")
         let bloomFilter = CIFilter(name: "CIBloom")
         bloomFilter.setDefaults()
-        let hexagonalPixellate = CIFilter(name: "CIHexagonalPixellate")
-        hexagonalPixellate.setDefaults()
+        let hexagonal = CIFilter(name: "CIHexagonalPixellate")
+        hexagonal.setDefaults()
 
 
         let kaleidoscope = CIFilter(name: "CIOpTile")
@@ -152,8 +167,8 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        kaleidoscope.setValue(20, forKey: "inputCount")
         kaleidoscope.setDefaults()
         agave.filters = [colorControls, bloomFilter]
-        glitchPlane1.filters = [hexagonalPixellate]
-        glitchPlane2.filters = [hexagonalPixellate]
+//        glitchPlane1.filters = [hexagonal]
+        glitchPlane2.filters = []
 
 
         setSkybox("desert")
