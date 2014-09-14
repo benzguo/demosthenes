@@ -9,6 +9,9 @@ extension MainViewController {
 	    switch index {
     	case 0:
             setSkybox("clouds")
+            starBox.removeFromParentNode()
+            cameraNode.addChildNode(glitchPlane1)
+//            cameraNode.addChildNode(glitchPlane2)
     		break
     		
     	case 1:

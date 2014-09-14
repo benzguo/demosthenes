@@ -8,6 +8,8 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
+            setSkybox("orangecream")
+            cameraNode.addChildNode(agave)
     		break
     		
     	case 1:

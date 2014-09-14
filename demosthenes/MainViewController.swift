@@ -31,6 +31,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     let glitchPlane1: SCNNode
     let glitchPlane2: SCNNode
+    let starBox: SCNNode
     let agave: SCNNode
 
     required init(coder: NSCoder!) {
@@ -72,7 +73,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         omniLightB.type = SCNLightTypeOmni
         omniLightBNode = SCNNode()
         omniLightBNode.light = omniLightB
-        omniLightBNode.position = SCNVector3Make(0, 0, 100)
+        omniLightBNode.position = SCNVector3Make(0, 0, 150)
 
         let omniLightC = SCNLight()
         omniLightC.type = SCNLightTypeOmni
@@ -95,27 +96,26 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         //////////// CUSTOM
 
         let box = SCNBox(width: 50, height: 100, length: 80, chamferRadius: 0)
-        let material = SCNMaterial()
-        material.diffuse.contents = NSColor.blackColor();
-        material.ambient.contents = NSColor.blackColor()
-        box.firstMaterial = material
-        let blackBox = SCNNode(geometry: box)
-        blackBox.position = SCNVector3Make(0, 0, -80)
-        cameraNode.addChildNode(blackBox)       
+        let starMaterial = SCNMaterial(cubeMap: "starfield")
+        box.firstMaterial = starMaterial
+        starBox = SCNNode(geometry: box)
+        starBox.position = SCNVector3Make(0, 0, -80)
+        starBox.setFragmentShader("video_frag")
+        cameraNode.addChildNode(starBox)       
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
 //        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
+        plane.firstMaterial = SCNMaterial(cubeMap: "hazy_lake")
         plane.widthSegmentCount = 10
         plane.heightSegmentCount = 10
         glitchPlane1 = SCNNode(geometry: plane)
         glitchPlane1.position = SCNVector3Make(0, 0, -80)
-//        glitchPlane1.setGeometryShader("bumps_geom1")
-//        glitchPlane1.setFragmentShader("video_frag")
+        glitchPlane1.setGeometryShader("bumps_geom1")
+        glitchPlane1.setFragmentShader("video_frag")
 //        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
-//        cameraNode.addChildNode(glitchPlane1)
 
         let plane2 = SCNPlane(width: 100.0, height: 100.0)
-        plane2.firstMaterial = SCNMaterial(cubeMap: "endset")
+        plane2.firstMaterial = SCNMaterial(cubeMap: "hazy_lake")
         plane2.widthSegmentCount = 10
         plane2.heightSegmentCount = 10
         glitchPlane2 = SCNNode(geometry: plane2)
@@ -123,13 +123,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
         glitchPlane2.setGeometryShader("bumps_geom2")
         glitchPlane2.setFragmentShader("video_frag")
-//        cameraNode.addChildNode(glitchPlane2)
 
         agave = SCNNode(resourceName: "agave_palm")
         agave.scale(0.6)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
         agave.position = SCNVector3Make(-23, -40, -40)
-        cameraNode.addChildNode(agave)
 
 //        let aloe = SCNNode(resourceName: "aloe")
 //        aloe.scale(0.1)
@@ -171,7 +169,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2.filters = []
 
 
-        setSkybox("desert")
+        setSkybox("purplenebula")
 //        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
 
 

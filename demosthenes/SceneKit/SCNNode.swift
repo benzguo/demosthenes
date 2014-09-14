@@ -4,7 +4,7 @@ extension SCNNode {
     convenience init(resourceName: String) {
         self.init()
         let sceneURL = NSBundle.mainBundle().URLForResource(resourceName, withExtension: "dae")
-        let sceneSource = SCNSceneSource(URL: sceneURL, options: nil)
+        let sceneSource = SCNSceneSource(URL: sceneURL!, options: nil)
         let identifiers = sceneSource.identifiersOfEntriesWithClass(SCNNode.self) as [String]
         for id: String in identifiers {
             let node = sceneSource.entryWithIdentifier(id, withClass: SCNNode.self) as SCNNode
@@ -67,12 +67,12 @@ extension SCNNode {
 
     private func setShader(name: String, entryPoint: String) {
         let shader = ShaderManager.shaderNamed(name)
-        let maybeModifiers: NSDictionary? = self.geometry.firstMaterial.shaderModifiers
+        let maybeModifiers: NSDictionary? = self.geometry!.firstMaterial!.shaderModifiers
         var shaderModifiers = NSMutableDictionary()
         if let modifiers = maybeModifiers {
             shaderModifiers = modifiers.mutableCopy() as NSMutableDictionary
         }
         shaderModifiers[entryPoint] = shader
-        self.geometry.firstMaterial.shaderModifiers = shaderModifiers
+        self.geometry!.firstMaterial!.shaderModifiers = shaderModifiers
     }
 }

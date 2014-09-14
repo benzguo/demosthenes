@@ -10,15 +10,6 @@ extension MainViewController {
 	    switch index {
     	case 0:
             scene.setSkybox("desertplains")
-
-            let url = NSBundle.mainBundle().URLForResource("movie2", withExtension: "mov")
-            let player = AVPlayer(URL: url)
-            player.actionAtItemEnd = .None
-            player.muted = true
-            player.play()
-
-
-
     		break
 
     	case 1:

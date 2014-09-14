@@ -8,9 +8,9 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            setSkybox("orangecream")
-
-            
+            scene.setSkybox("hazy_lake")
+            let material = SCNMaterial(cubeMap: "hazy_lake")
+            starBox.geometry!.firstMaterial = material
 
 
     		break
