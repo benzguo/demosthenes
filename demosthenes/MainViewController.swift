@@ -95,8 +95,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
         //////////// CUSTOM
 
-        let box = SCNBox(width: 50, height: 100, length: 80, chamferRadius: 0)
+        let box = SCNBox(width: 200, height: 100, length: 80, chamferRadius: 0)
         let starMaterial = SCNMaterial(cubeMap: "starfield")
+        starMaterial.transparency = 0.7
         box.firstMaterial = starMaterial
         starBox = SCNNode(geometry: box)
         starBox.position = SCNVector3Make(0, 0, -80)
@@ -104,30 +105,35 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         cameraNode.addChildNode(starBox)       
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
-//        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
-        plane.firstMaterial = SCNMaterial(cubeMap: "hazy_lake")
+        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
         plane.widthSegmentCount = 10
         plane.heightSegmentCount = 10
         glitchPlane1 = SCNNode(geometry: plane)
-        glitchPlane1.position = SCNVector3Make(0, 0, -80)
-        glitchPlane1.setGeometryShader("bumps_geom1")
+        glitchPlane1.position = SCNVector3Make(0, 0, -90)
+//        glitchPlane1.setGeometryShader("bumps_geom1")
         glitchPlane1.setFragmentShader("video_frag")
+        glitchPlane1.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
+        let hexagonal = CIFilter(name: "CIHexagonalPixellate")
+        hexagonal.setDefaults()
+        hexagonal.setValue(12, forKey:"inputScale")
+        glitchPlane1.filters = [hexagonal]
+
 //        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
 
         let plane2 = SCNPlane(width: 100.0, height: 100.0)
-        plane2.firstMaterial = SCNMaterial(cubeMap: "hazy_lake")
+        plane2.firstMaterial = SCNMaterial(cubeMap: "snowblind")
         plane2.widthSegmentCount = 10
         plane2.heightSegmentCount = 10
         glitchPlane2 = SCNNode(geometry: plane2)
-        glitchPlane2.position = SCNVector3Make(0, 0, -90)
-        glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
-        glitchPlane2.setGeometryShader("bumps_geom2")
-        glitchPlane2.setFragmentShader("video_frag")
+        glitchPlane2.position = SCNVector3Make(0, 0, -91)
+//        glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
+//        glitchPlane2.setGeometryShader("bumps_geom1")
+//        glitchPlane2.setFragmentShader("video_frag")
 
         agave = SCNNode(resourceName: "agave_palm")
-        agave.scale(0.6)
+        agave.scale(0.4)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-23, -40, -40)
+        agave.position = SCNVector3Make(-14, -26, -40)
 
 //        let aloe = SCNNode(resourceName: "aloe")
 //        aloe.scale(0.1)
@@ -155,8 +161,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         colorControls.setValue(3.0, forKey: "inputSaturation")
         let bloomFilter = CIFilter(name: "CIBloom")
         bloomFilter.setDefaults()
-        let hexagonal = CIFilter(name: "CIHexagonalPixellate")
-        hexagonal.setDefaults()
+
 
 
         let kaleidoscope = CIFilter(name: "CIOpTile")
@@ -165,7 +170,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        kaleidoscope.setValue(20, forKey: "inputCount")
         kaleidoscope.setDefaults()
         agave.filters = [colorControls, bloomFilter]
-//        glitchPlane1.filters = [hexagonal]
+
         glitchPlane2.filters = []
 
 

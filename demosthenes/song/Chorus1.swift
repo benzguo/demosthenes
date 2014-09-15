@@ -9,9 +9,9 @@ extension MainViewController {
 	    switch index {
     	case 0:
             setSkybox("clouds")
-            starBox.removeFromParentNode()
+            starBox.geometry!.firstMaterial!.transparency = 0.4
             cameraNode.addChildNode(glitchPlane1)
-//            cameraNode.addChildNode(glitchPlane2)
+            cameraNode.addChildNode(glitchPlane2)
     		break
     		
     	case 1:

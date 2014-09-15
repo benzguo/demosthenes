@@ -36,7 +36,7 @@ static let eventsTable: [[Double]] =
 extension MainViewController {
 
     func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
-        let time = NSDate().timeIntervalSinceDate(startTime!)
+        let time = NSDate().timeIntervalSinceDate(startTime!) + 80
         if isnan(time) {
             return
         }
