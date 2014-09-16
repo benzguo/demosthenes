@@ -8,6 +8,12 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
+            setSkybox("clouds")
+            leftOverlay.geometry!.firstMaterial!.transparency = 0.4
+            cameraNode.addChildNode(glitchPlane1)
+            cameraNode.addChildNode(glitchPlane2)
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.5)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.5)
     		break
     		
     	case 1:

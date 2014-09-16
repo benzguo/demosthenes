@@ -9,11 +9,16 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            scene.setSkybox("desertplains")
+            cameraNode.setRotation(vector: SCNVector3Make(0, -1, 0), duration: 100.0)
+            scene.setSkybox("orangecream")
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.5)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.5)
+
     		break
 
     	case 1:
-            scene.setSkybox("desertstorm")
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.5)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.5)
     		break
 
 	    default:

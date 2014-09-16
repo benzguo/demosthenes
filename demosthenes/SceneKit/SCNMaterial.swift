@@ -1,7 +1,7 @@
 import SceneKit
 
 extension SCNMaterial {
-    convenience init(cubeMap name: String) {
+    convenience init(cubeMap name: String, transparency: Double = 1.0) {
         self.init()
         let cubeMap = [
             NSImage(named: "\(name)_right"),
@@ -15,6 +15,7 @@ extension SCNMaterial {
         self.diffuse.contents = NSColor.blackColor()
         self.specular.contents = NSColor.whiteColor()
         self.shininess = 100
+        self.transparency = CGFloat(transparency)
     }
 
     convenience init(image name: String) {

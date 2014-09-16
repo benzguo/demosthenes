@@ -6,6 +6,8 @@ import CoreMedia
 // delay before audio playback, in seconds
 let audioPlaybackDelay = 0.2
 
+
+
 class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     var sceneView: SCNView!
@@ -31,7 +33,8 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
     let glitchPlane1: SCNNode
     let glitchPlane2: SCNNode
-    let starBox: SCNNode
+    let leftOverlay: SCNNode
+    let rightOverlay: SCNNode
     let agave: SCNNode
 
     required init(coder: NSCoder!) {
@@ -93,16 +96,25 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         rootNode.addChildNode(omniLightCNode)
 //        rootNode.addChildNode(floorNode)
 
-        //////////// CUSTOM
 
-        let box = SCNBox(width: 200, height: 100, length: 80, chamferRadius: 0)
-        let starMaterial = SCNMaterial(cubeMap: "starfield")
-        starMaterial.transparency = 0.7
-        box.firstMaterial = starMaterial
-        starBox = SCNNode(geometry: box)
-        starBox.position = SCNVector3Make(0, 0, -80)
-        starBox.setFragmentShader("video_frag")
-        cameraNode.addChildNode(starBox)       
+        let leftBox = SCNBox(width: 100, height: 100, length: 80, chamferRadius: 0)
+        let leftMaterial = SCNMaterial(cubeMap: "jajspace2")
+        leftMaterial.transparency = 0.7
+        leftBox.firstMaterial = leftMaterial
+        leftOverlay = SCNNode(geometry: leftBox)
+        leftOverlay.position = SCNVector3Make(50, 0, -80)
+        leftOverlay.setFragmentShader("video_frag")
+        cameraNode.addChildNode(leftOverlay)
+
+        let rightBox = SCNBox(width: 100, height: 100, length: 80, chamferRadius: 0)
+//        let spaceMaterial = SCNMaterial(cubeMap: "jajspace2")
+        let rightMaterial = SCNMaterial(cubeMap: "starfield")
+        rightMaterial.transparency = 0.7
+        rightBox.firstMaterial = rightMaterial
+        rightOverlay = SCNNode(geometry: rightBox)
+        rightOverlay.position = SCNVector3Make(-50, 0, -80)
+        rightOverlay.setFragmentShader("video_frag")
+        cameraNode.addChildNode(rightOverlay)
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
         plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
@@ -115,7 +127,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane1.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
         let hexagonal = CIFilter(name: "CIHexagonalPixellate")
         hexagonal.setDefaults()
-        hexagonal.setValue(12, forKey:"inputScale")
+//        hexagonal.setValue(10, forKey:"inputScale")
         glitchPlane1.filters = [hexagonal]
 
 //        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
@@ -126,14 +138,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         plane2.heightSegmentCount = 10
         glitchPlane2 = SCNNode(geometry: plane2)
         glitchPlane2.position = SCNVector3Make(0, 0, -91)
-//        glitchPlane2.rotate(M_PI/4.0, x: 0, y: 0, z: 1)
-//        glitchPlane2.setGeometryShader("bumps_geom1")
-//        glitchPlane2.setFragmentShader("video_frag")
 
         agave = SCNNode(resourceName: "agave_palm")
         agave.scale(0.4)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-14, -26, -40)
+        agave.position = SCNVector3Make(-15.5, -26, -40)
 
 //        let aloe = SCNNode(resourceName: "aloe")
 //        aloe.scale(0.1)
@@ -162,20 +171,12 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         let bloomFilter = CIFilter(name: "CIBloom")
         bloomFilter.setDefaults()
 
-
-
-        let kaleidoscope = CIFilter(name: "CIOpTile")
-        kaleidoscope.setValue(CIVector(x: 0, y: 0), forKey: "inputCenter")
-//        kaleidoscope.setValue(CIVector(x: 50, y: 50), forKey: "inputInsetPoint1")
-//        kaleidoscope.setValue(20, forKey: "inputCount")
-        kaleidoscope.setDefaults()
         agave.filters = [colorControls, bloomFilter]
 
         glitchPlane2.filters = []
 
 
         setSkybox("purplenebula")
-//        cameraNode.setRotation(vector: SCNVector3Make(0, 1, 0), duration: 100.0)
 
 
 
@@ -183,7 +184,8 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 
 
 
-        cameraNode.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
+
+        cameraNode.setRotation(vector: SCNVector3Make(0, 0, -1), duration: 100.0)
 
 
 //        saguaro.setRotation(vector: SCNVector3Make(1, 0, -1), duration: 100.0)
@@ -197,6 +199,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     }
 
     func start() {
+        audioPlayer.currentTime = currentTime
         audioPlayer.prepareToPlay()
         startTime = NSDate()
         audioPlayer.playAtTime(audioPlayer.deviceCurrentTime + audioPlaybackDelay)

@@ -8,10 +8,11 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            scene.setSkybox("hazy_lake")
-            let material = SCNMaterial(cubeMap: "hazy_lake")
-            starBox.geometry!.firstMaterial = material
-
+//            scene.setSkybox("hazy_lake")
+//            let material = SCNMaterial(cubeMap: "hazy_lake")
+//            leftOverlay.geometry!.firstMaterial = material
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.4)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.4)
 
     		break
     		

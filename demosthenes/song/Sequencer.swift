@@ -33,10 +33,13 @@ static let eventsTable: [[Double]] =
     }
 }
 
+// start time, in seconds
+let currentTime: Double = 27
+
 extension MainViewController {
 
     func renderer(aRenderer: SCNSceneRenderer!, willRenderScene scene: SCNScene!, atTime time: NSTimeInterval) {
-        let time = NSDate().timeIntervalSinceDate(startTime!) + 80
+        let time = NSDate().timeIntervalSinceDate(startTime!) + currentTime
         if isnan(time) {
             return
         }

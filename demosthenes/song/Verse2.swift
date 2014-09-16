@@ -9,7 +9,6 @@ extension MainViewController {
 	    switch index {
     	case 0:
             setSkybox("orangecream")
-            floorNode.removeFromParentNode()
     		break
     		
     	case 1:
