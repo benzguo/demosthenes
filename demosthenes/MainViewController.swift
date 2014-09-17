@@ -28,8 +28,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let omniLightANode: SCNNode
     let omniLightBNode: SCNNode
     let omniLightCNode: SCNNode
-    let floor: SCNFloor
-    let floorNode: SCNNode
 
     let glitchPlane1: SCNNode
     let glitchPlane2: SCNNode
@@ -85,17 +83,11 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         omniLightCNode.light = omniLightC
         omniLightCNode.position = SCNVector3Make(0, -80, 40)
 
-        // floor
-        floor = SCNFloor()
-        floor.reflectionFalloffEnd = 3.0
-        floorNode = SCNNode(geometry: floor)
-
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(ambientLightNode)
         rootNode.addChildNode(omniLightANode)
         rootNode.addChildNode(omniLightBNode)
         rootNode.addChildNode(omniLightCNode)
-//        rootNode.addChildNode(floorNode)
 
 
         let leftPlane = SCNPlane(width: 200, height: 150)
@@ -143,9 +135,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2.position = SCNVector3Make(0, 0, -91)
 
         agave = SCNNode(resourceName: "agave_palm")
-        agave.scale(0.4)
+        agave.scale(0.8)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-15.5, -26, -60)
+        agave.position = SCNVector3Make(-31, -52, -70)
 
 //        let aloe = SCNNode(resourceName: "aloe")
 //        aloe.scale(0.1)
@@ -179,7 +171,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2.filters = []
 
 
-        setSkybox("purplenebula")
+        scene.setSkybox("purplenebula")
 
 
 
@@ -206,12 +198,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         audioPlayer.prepareToPlay()
         startTime = NSDate()
         audioPlayer.playAtTime(audioPlayer.deviceCurrentTime + audioPlaybackDelay)
-    }
-
-
-    func setSkybox(name: String) {
-        scene.setSkybox(name)
-        floor.setCubemap(name)
     }
 
     func nodeForKey(key: UnsafePointer<()>) -> SCNNode {

@@ -11,14 +11,15 @@ extension MainViewController {
             glitchPlane1.removeFromParentNode()
             glitchPlane2.removeFromParentNode()
             agave.removeFromParentNode()
-            setSkybox("bleached")
-            let leftMaterial = SCNMaterial(cubeMap: "bleached")
-            leftMaterial.transparency = 0.7
-            leftOverlay.geometry!.firstMaterial! = leftMaterial
+            scene.setSkybox("orangecream")
+            cameraNode.addChildNode(fullOverlay)
+            fullOverlay.geometry!.firstMaterial = SCNMaterial(image: "sega_lightcave", transparency: 0.3)
+            fullOverlay.setFragmentShader("video_frag")
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "starfield", transparency: 0.5)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "starfield", transparency: 0.5)
     		break
     		
     	case 1:
-            setSkybox("desertplains")
     		break
     		
 	    default:

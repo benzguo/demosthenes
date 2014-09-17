@@ -8,7 +8,7 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            setSkybox("clouds")
+            scene.setSkybox("clouds")
             cameraNode.addChildNode(agave)
             agave.setRotation(vector: SCNVector3Make(1, 0, 0), duration: 800.0)
             leftOverlay.geometry!.firstMaterial!.transparency = 0.4

@@ -8,7 +8,7 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            setSkybox("orangecream")
+            scene.setSkybox("orangecream")
     		break
     		
     	case 1:

@@ -8,7 +8,10 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
-            setSkybox("orangecream")
+            scene.setSkybox("orangecream")
+            fullOverlay.removeFromParentNode()
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.4)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.4)
     		break
     		
     	case 1:
