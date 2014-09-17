@@ -8,6 +8,11 @@ extension MainViewController {
 
 	    switch index {
     	case 0:
+            scene.setSkybox("purplenebula")
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "starfield", transparency: 0.5)
+            rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "starfield", transparency: 0.5)
+            rightOverlay.removeFromParentNode()
+            glitchPlane1.removeFromParentNode()
     		break
     		
     	case 1:

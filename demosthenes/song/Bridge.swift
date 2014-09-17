@@ -10,7 +10,7 @@ extension MainViewController {
     	case 0:
             cameraNode.addChildNode(fullOverlay)
             scene.setSkybox("purplenebula")
-            fullOverlay.geometry!.firstMaterial = SCNMaterial(image: "zx_redbody", transparency: 0.3)
+            fullOverlay.geometry!.firstMaterial = SCNMaterial(image: "sega_lightcave", transparency: 0.3)
             fullOverlay.setFragmentShader("video_frag")
             leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "starfield", transparency: 0.5)
             leftOverlay.setFragmentShader("video_frag")
@@ -28,6 +28,8 @@ extension MainViewController {
     		break
     		
     	case 4:
+            fullOverlay.geometry!.firstMaterial = SCNMaterial(image: "bernini_daphne_black", transparency: 0.3)
+            fullOverlay.setFragmentShader("video_frag")
     		break
     		
     	case 5:
