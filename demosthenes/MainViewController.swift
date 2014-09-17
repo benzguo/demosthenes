@@ -35,6 +35,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let glitchPlane2: SCNNode
     let leftOverlay: SCNNode
     let rightOverlay: SCNNode
+    let fullOverlay: SCNNode
     let agave: SCNNode
 
     required init(coder: NSCoder!) {
@@ -97,24 +98,26 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        rootNode.addChildNode(floorNode)
 
 
-        let leftBox = SCNBox(width: 100, height: 100, length: 80, chamferRadius: 0)
-        let leftMaterial = SCNMaterial(cubeMap: "jajspace2")
-        leftMaterial.transparency = 0.7
-        leftBox.firstMaterial = leftMaterial
-        leftOverlay = SCNNode(geometry: leftBox)
-        leftOverlay.position = SCNVector3Make(50, 0, -80)
+        let leftPlane = SCNPlane(width: 200, height: 150)
+        leftOverlay = SCNNode(geometry: leftPlane)
+        leftOverlay.position = SCNVector3Make(-100, 0, -80)
         leftOverlay.setFragmentShader("video_frag")
         cameraNode.addChildNode(leftOverlay)
 
-        let rightBox = SCNBox(width: 100, height: 100, length: 80, chamferRadius: 0)
-//        let spaceMaterial = SCNMaterial(cubeMap: "jajspace2")
-        let rightMaterial = SCNMaterial(cubeMap: "starfield")
-        rightMaterial.transparency = 0.7
-        rightBox.firstMaterial = rightMaterial
-        rightOverlay = SCNNode(geometry: rightBox)
-        rightOverlay.position = SCNVector3Make(-50, 0, -80)
+        let rightPlane = SCNPlane(width: 200, height: 150)
+        rightOverlay = SCNNode(geometry: rightPlane)
+        rightOverlay.position = SCNVector3Make(100, 0, -80)
         rightOverlay.setFragmentShader("video_frag")
         cameraNode.addChildNode(rightOverlay)
+
+        let fullPlane = SCNPlane(width: 200, height: 100)
+        let fullMaterial = SCNMaterial(image: "zx_areyouusingtv", transparency: 0.6)
+        fullPlane.firstMaterial = fullMaterial
+        fullOverlay = SCNNode(geometry: fullPlane)
+        fullOverlay.position = SCNVector3Make(0, 0, -80)
+        fullOverlay.setFragmentShader("video_frag")
+        fullOverlay.setGeometryShader("bumps_geom2")
+        cameraNode.addChildNode(fullOverlay)
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
         plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
@@ -142,7 +145,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         agave = SCNNode(resourceName: "agave_palm")
         agave.scale(0.4)
         agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-15.5, -26, -40)
+        agave.position = SCNVector3Make(-15.5, -26, -60)
 
 //        let aloe = SCNNode(resourceName: "aloe")
 //        aloe.scale(0.1)

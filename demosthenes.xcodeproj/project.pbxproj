@@ -729,6 +729,7 @@
 		966EB47919A5232200D05880 /* SCNGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47519A5232200D05880 /* SCNGeometry.swift */; };
 		966EB47A19A5232200D05880 /* SCNMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47619A5232200D05880 /* SCNMaterial.swift */; };
 		966EB47B19A5232200D05880 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB47719A5232200D05880 /* SCNNode.swift */; };
+		9680C20419C91F6200BD2702 /* bernini_daphne_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20319C91F6200BD2702 /* bernini_daphne_black.png */; };
 		96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC219BBA1C000BA98AD /* flat_tree.dae */; };
 		96939BC719BBA1C700BA98AD /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC519BBA1C700BA98AD /* material_1.png */; };
 		96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC619BBA1C700BA98AD /* material_1_1.png */; };
@@ -1590,6 +1591,7 @@
 		966EB47519A5232200D05880 /* SCNGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNGeometry.swift; sourceTree = "<group>"; };
 		966EB47619A5232200D05880 /* SCNMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNMaterial.swift; sourceTree = "<group>"; };
 		966EB47719A5232200D05880 /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		9680C20319C91F6200BD2702 /* bernini_daphne_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bernini_daphne_black.png; sourceTree = "<group>"; };
 		96939BC219BBA1C000BA98AD /* flat_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = flat_tree.dae; sourceTree = "<group>"; };
 		96939BC519BBA1C700BA98AD /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
 		96939BC619BBA1C700BA98AD /* material_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1_1.png; sourceTree = "<group>"; };
@@ -3374,6 +3376,7 @@
 		969C669119A7FA14002149D0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9680C20319C91F6200BD2702 /* bernini_daphne_black.png */,
 				969C669219A7FA14002149D0 /* atari_bluenoise.jpg */,
 				969C669319A7FA14002149D0 /* atari_creamnoise.jpg */,
 				969C669419A7FA14002149D0 /* atari_greenblock.jpg */,
@@ -4435,6 +4438,7 @@
 				969C674619A80789002149D0 /* toon.shader in Resources */,
 				961549DF19A57ADA00AAD5EF /* jajice1_left.jpg in Resources */,
 				96154AC719A57ADA00AAD5EF /* plain_sky_right.jpg in Resources */,
+				9680C20419C91F6200BD2702 /* bernini_daphne_black.png in Resources */,
 				969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */,
 				96154AD519A57ADA00AAD5EF /* powderpeak_left.jpg in Resources */,
 				96154AE019A57ADA00AAD5EF /* purplenebula.zip in Resources */,

@@ -18,7 +18,7 @@ static let eventsTable: [[Double]] =
     [10.245, 19.021],
     [27.902, 32.313, 38.917, 45.511, 54.407],
     [63.194, 71.975],
-    [80.882, 89.809, 98.669, 107.638],
+    [80.882, 89.809, 98.669, 107.638], //chorus
     [116.513, 125.503],
     [134.43, 139.013, 145.545, 152.316, 161.264],
     [170.097, 178.978],
@@ -34,7 +34,7 @@ static let eventsTable: [[Double]] =
 }
 
 // start time, in seconds
-let currentTime: Double = 27
+let currentTime: Double = 0
 
 extension MainViewController {
 
