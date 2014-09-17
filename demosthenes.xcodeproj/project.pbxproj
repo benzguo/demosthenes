@@ -732,6 +732,8 @@
 		9680C20419C91F6200BD2702 /* bernini_daphne_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20319C91F6200BD2702 /* bernini_daphne_black.png */; };
 		9680C20719C9399400BD2702 /* bernini_daphne_front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20519C9399400BD2702 /* bernini_daphne_front.jpg */; };
 		9680C20819C9399400BD2702 /* bernini_daphne_top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20619C9399400BD2702 /* bernini_daphne_top.jpg */; };
+		9680C20B19C93ACE00BD2702 /* bernini_daphne_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20919C93ACE00BD2702 /* bernini_daphne_back.jpg */; };
+		9680C20C19C93ACE00BD2702 /* bernini_daphne_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20A19C93ACE00BD2702 /* bernini_daphne_hand.png */; };
 		96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC219BBA1C000BA98AD /* flat_tree.dae */; };
 		96939BC719BBA1C700BA98AD /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC519BBA1C700BA98AD /* material_1.png */; };
 		96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC619BBA1C700BA98AD /* material_1_1.png */; };
@@ -1596,6 +1598,8 @@
 		9680C20319C91F6200BD2702 /* bernini_daphne_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bernini_daphne_black.png; sourceTree = "<group>"; };
 		9680C20519C9399400BD2702 /* bernini_daphne_front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bernini_daphne_front.jpg; sourceTree = "<group>"; };
 		9680C20619C9399400BD2702 /* bernini_daphne_top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bernini_daphne_top.jpg; sourceTree = "<group>"; };
+		9680C20919C93ACE00BD2702 /* bernini_daphne_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bernini_daphne_back.jpg; sourceTree = "<group>"; };
+		9680C20A19C93ACE00BD2702 /* bernini_daphne_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bernini_daphne_hand.png; sourceTree = "<group>"; };
 		96939BC219BBA1C000BA98AD /* flat_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = flat_tree.dae; sourceTree = "<group>"; };
 		96939BC519BBA1C700BA98AD /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
 		96939BC619BBA1C700BA98AD /* material_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1_1.png; sourceTree = "<group>"; };
@@ -3380,6 +3384,8 @@
 		969C669119A7FA14002149D0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9680C20919C93ACE00BD2702 /* bernini_daphne_back.jpg */,
+				9680C20A19C93ACE00BD2702 /* bernini_daphne_hand.png */,
 				9680C20519C9399400BD2702 /* bernini_daphne_front.jpg */,
 				9680C20619C9399400BD2702 /* bernini_daphne_top.jpg */,
 				9680C20319C91F6200BD2702 /* bernini_daphne_black.png */,
@@ -3717,6 +3723,7 @@
 				961549CE19A57ADA00AAD5EF /* hexagon.zip in Resources */,
 				9615494119A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615490819A57AD900AAD5EF /* darkgloom_top.jpg in Resources */,
+				9680C20C19C93ACE00BD2702 /* bernini_daphne_hand.png in Resources */,
 				9615495519A57ADA00AAD5EF /* dunes_top.jpg in Resources */,
 				9615492B19A57AD900AAD5EF /* jajdesert1_top.jpg in Resources */,
 				96154B2319A57ADA00AAD5EF /* snowblind_right.jpg in Resources */,
@@ -3968,6 +3975,7 @@
 				96154B2B19A57ADA00AAD5EF /* snowy_top.jpg in Resources */,
 				961549A219A57ADA00AAD5EF /* grandcanyon.zip in Resources */,
 				9644B85719B6D6AB0091EF31 /* material_2_2.png in Resources */,
+				9680C20B19C93ACE00BD2702 /* bernini_daphne_back.jpg in Resources */,
 				96154ADB19A57ADA00AAD5EF /* powderpeaknight_front.jpg in Resources */,
 				9615490419A57AD900AAD5EF /* darkgloom_back.jpg in Resources */,
 				96154B5719A57ADA00AAD5EF /* underwater.zip in Resources */,
