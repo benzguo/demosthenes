@@ -5,9 +5,9 @@ extension SCNNode {
         self.init()
         let sceneURL = NSBundle.mainBundle().URLForResource(resourceName, withExtension: "dae")
         let sceneSource = SCNSceneSource(URL: sceneURL!, options: nil)
-        let identifiers = sceneSource.identifiersOfEntriesWithClass(SCNNode.self) as [String]
+        let identifiers = sceneSource!.identifiersOfEntriesWithClass(SCNNode.self) as [String]
         for id: String in identifiers {
-            let node = sceneSource.entryWithIdentifier(id, withClass: SCNNode.self) as SCNNode
+            let node = sceneSource!.entryWithIdentifier(id, withClass: SCNNode.self) as SCNNode
             self.addChildNode(node)
         }
     }

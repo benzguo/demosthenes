@@ -12,7 +12,8 @@ extension MainViewController {
 //            let material = SCNMaterial(cubeMap: "hazy_lake")
 //            leftOverlay.geometry!.firstMaterial = material
             fullOverlay.removeFromParentNode()
-            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertplains", transparency: 0.4)
+            leftOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertPlains", transparency: 0.4)
+
             rightOverlay.geometry!.firstMaterial = SCNMaterial(cubeMap: "desertstorm", transparency: 0.4)
 
     		break

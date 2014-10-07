@@ -36,7 +36,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let fullOverlay: SCNNode
     let agave: SCNNode
 
-    required init(coder: NSCoder!) {
+    required init?(coder: NSCoder!) {
         // scene
         scene = SCNScene()
         rootNode = scene.rootNode
@@ -112,7 +112,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         cameraNode.addChildNode(fullOverlay)
 
         let plane = SCNPlane(width: 100.0, height: 100.0)
-        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak")
+        plane.firstMaterial = SCNMaterial(cubeMap: "powderpeak", transparency: 1.0)
         plane.widthSegmentCount = 10
         plane.heightSegmentCount = 10
         glitchPlane1 = SCNNode(geometry: plane)
@@ -128,7 +128,7 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
 //        glitchPlane1.setRotation(vector: SCNVector3Make(0, 0, 1), duration: 50.0)
 
         let plane2 = SCNPlane(width: 100.0, height: 100.0)
-        plane2.firstMaterial = SCNMaterial(cubeMap: "snowblind")
+        plane2.firstMaterial = SCNMaterial(cubeMap: "snowblind", transparency: 1.0)
         plane2.widthSegmentCount = 10
         plane2.heightSegmentCount = 10
         glitchPlane2 = SCNNode(geometry: plane2)

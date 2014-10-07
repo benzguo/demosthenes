@@ -2,13 +2,20 @@ import SceneKit
 
 extension SCNScene {
     func setSkybox(name: String) {
-        self.background.contents = [
-            NSImage(named: "\(name)_right"),
-            NSImage(named: "\(name)_left"),
-            NSImage(named: "\(name)_top"),
-            NSImage(named: "\(name)_top"), // no bottom
-            NSImage(named: "\(name)_front"),
-            NSImage(named: "\(name)_back"),
-        ]
+        let right = name + "_right"
+        let left =  ""
+        let top =  ""
+        let front = ""
+        let back = ""
+//        let cubeMap: NSArray = [
+//            NSImage(named: right),
+//            NSImage(named: left),
+//            NSImage(named: top),
+//            NSImage(named: top), // no bottom
+//            NSImage(named: front),
+//            NSImage(named: back)
+//        ]
+        let cubeMap = NSImage(named: right)
+        self.background.contents = cubeMap
     }
 }

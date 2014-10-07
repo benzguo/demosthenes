@@ -4,7 +4,7 @@ public class OverlayScene: SKScene {
 
     public var imageNode: SKSpriteNode
 
-    required public init(coder: NSCoder!) {
+    required public init(coder: NSCoder) {
         fatalError("NSCoding not supported")
     }
 

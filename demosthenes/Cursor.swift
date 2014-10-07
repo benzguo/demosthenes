@@ -11,7 +11,7 @@ public class Cursor {
         index++
         if index >= section.events().count {
             index = 0
-            let maybeSection: Section? = Section.fromRaw(section.toRaw() + 1)
+            let maybeSection: Section? = Section(rawValue: section.rawValue + 1)
             if let nextSection = maybeSection {
                 section = nextSection
                 nextEventTime = section.events()[index]

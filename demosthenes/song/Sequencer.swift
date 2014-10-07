@@ -29,7 +29,7 @@ static let eventsTable: [[Double]] =
 ]
 
     func events() -> [Double] {
-        return Section.eventsTable[self.toRaw()]
+        return Section.eventsTable[self.rawValue]
     }
 }
 

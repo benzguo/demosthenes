@@ -14,7 +14,7 @@ extension SCNFloor {
 
     func setCubemap(name: String) {
         let shaderModifiers = self.firstMaterial!.shaderModifiers
-        firstMaterial = SCNMaterial(cubeMap: name)
+        firstMaterial = SCNMaterial(cubeMap: name, transparency: 1.0)
         firstMaterial!.shaderModifiers = shaderModifiers
     }
 
