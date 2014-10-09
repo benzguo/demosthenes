@@ -34,7 +34,7 @@ static let eventsTable: [[Double]] =
 }
 
 // start time, in seconds
-let currentTime: Double = 0
+let currentTime: Double = 80
 
 extension MainViewController {
 

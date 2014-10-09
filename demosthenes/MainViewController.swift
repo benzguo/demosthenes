@@ -35,6 +35,9 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
     let rightOverlay: SCNNode
     let fullOverlay: SCNNode
     let agave: SCNNode
+    let cubetree: SCNNode
+    let taco: SCNNode
+    let taco2: SCNNode
 
     required init?(coder: NSCoder!) {
         // scene
@@ -134,17 +137,22 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         glitchPlane2 = SCNNode(geometry: plane2)
         glitchPlane2.position = SCNVector3Make(0, 0, -91)
 
-        agave = SCNNode(resourceName: "agave_palm")
-        agave.scale(0.8)
-        agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-        agave.position = SCNVector3Make(-31, -52, -70)
+        agave = SCNNode(resourceName: "treebranch")
+        agave.scale(2.5)
+//        agave.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        agave.position = SCNVector3Make(-20.0, -25, -58)
 
-//        let aloe = SCNNode(resourceName: "aloe")
-//        aloe.scale(0.1)
-//        aloe.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
-//        aloe.position = SCNVector3Make(-15, -25, -30)
-//        cameraNode.addChildNode(aloe)
+        cubetree = SCNNode(resourceName: "cube_tree")
+        cubetree.rotate(-M_PI/2.0, x: 1, y: 0, z: 0)
+        cubetree.position = SCNVector3Make(-20, -20, -40)
 
+        taco = SCNNode(resourceName: "treebranch")
+        taco.scale(2.5)
+        taco.position = SCNVector3Make(-20.0, -25, -58)
+
+        taco2 = SCNNode(resourceName: "treebranch")
+        taco2.rotate(-M_PI/3.0, x: 1, y: 0, z: 0)
+        taco2.position = SCNVector3Make(-13, -15, -40)
 
         super.init(coder: coder)
 
@@ -167,9 +175,6 @@ class MainViewController: NSViewController, SCNSceneRendererDelegate {
         bloomFilter.setDefaults()
 
         agave.filters = [colorControls, bloomFilter]
-
-        glitchPlane2.filters = []
-
 
         scene.setSkybox("purplenebula")
 

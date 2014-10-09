@@ -717,10 +717,6 @@
 		961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 961651E8199F0EEB0088DC97 /* wood-normal.png */; };
 		961651FF199F0EEB0088DC97 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EA199F0EEB0088DC97 /* earth-specular.jpg */; };
 		96165200199F0EEB0088DC97 /* wood-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 961651EB199F0EEB0088DC97 /* wood-specular.jpg */; };
-		9644B85519B6D6AB0091EF31 /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85119B6D6AB0091EF31 /* material_1.png */; };
-		9644B85619B6D6AB0091EF31 /* material_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85219B6D6AB0091EF31 /* material_2.png */; };
-		9644B85719B6D6AB0091EF31 /* material_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85319B6D6AB0091EF31 /* material_2_2.png */; };
-		9644B85819B6D6AB0091EF31 /* agave_palm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9644B85419B6D6AB0091EF31 /* agave_palm.dae */; };
 		9644BB6E199EF16200F1EE50 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644BB6C199EF16200F1EE50 /* MainViewController.swift */; };
 		966EB46019A5224000D05880 /* Song In My Head.aif in Resources */ = {isa = PBXBuildFile; fileRef = 966EB45F19A5224000D05880 /* Song In My Head.aif */; };
 		966EB47119A5231800D05880 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EB46F19A5231800D05880 /* NSColor.swift */; };
@@ -736,10 +732,6 @@
 		9680C20C19C93ACE00BD2702 /* bernini_daphne_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 9680C20A19C93ACE00BD2702 /* bernini_daphne_hand.png */; };
 		9691CAE419E404B300259454 /* SCNMaterial+DST.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CAE319E404B300259454 /* SCNMaterial+DST.m */; };
 		9691CAE719E411FC00259454 /* SCNScene+DST.m in Sources */ = {isa = PBXBuildFile; fileRef = 9691CAE619E411FC00259454 /* SCNScene+DST.m */; };
-		96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC219BBA1C000BA98AD /* flat_tree.dae */; };
-		96939BC719BBA1C700BA98AD /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC519BBA1C700BA98AD /* material_1.png */; };
-		96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96939BC619BBA1C700BA98AD /* material_1_1.png */; };
-		96939BCD19BBA1CC00BA98AD /* aloe.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96939BCB19BBA1CC00BA98AD /* aloe.dae */; };
 		969C669019A7F7E1002149D0 /* OverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C668F19A7F7E1002149D0 /* OverlayScene.swift */; };
 		969C66D519A7FA14002149D0 /* atari_bluenoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669219A7FA14002149D0 /* atari_bluenoise.jpg */; };
 		969C66D619A7FA14002149D0 /* atari_creamnoise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 969C669319A7FA14002149D0 /* atari_creamnoise.jpg */; };
@@ -872,6 +864,23 @@
 		96AE29ED19A5E59600CFC595 /* AVAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE29EC19A5E59600CFC595 /* AVAudioPlayer.swift */; };
 		96E6007F19BF222500F45CBE /* bumps_geom2.shader in Resources */ = {isa = PBXBuildFile; fileRef = 96E6007E19BF222500F45CBE /* bumps_geom2.shader */; };
 		96E6008719BF2E7500F45CBE /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 96E6008619BF2E7500F45CBE /* movie2.mov */; };
+		96FAE25319E6B54B00353BDF /* bladeren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25019E6B54B00353BDF /* bladeren.jpg */; };
+		96FAE25419E6B54B00353BDF /* stam-smal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25119E6B54B00353BDF /* stam-smal.jpg */; };
+		96FAE25519E6B54B00353BDF /* plane_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25219E6B54B00353BDF /* plane_tree.dae */; };
+		96FAE25B19E6B8F800353BDF /* material_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25719E6B8F800353BDF /* material_1.jpg */; };
+		96FAE25C19E6B8F800353BDF /* material_1_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25819E6B8F800353BDF /* material_1_0.jpg */; };
+		96FAE25D19E6B8F800353BDF /* material_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25919E6B8F800353BDF /* material_3.jpg */; };
+		96FAE25E19E6B8F800353BDF /* banana_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE25A19E6B8F800353BDF /* banana_tree.dae */; };
+		96FAE26D19E6BD6400353BDF /* shell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE26B19E6BD6400353BDF /* shell.jpg */; };
+		96FAE26E19E6BD6400353BDF /* tacoshell.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE26C19E6BD6400353BDF /* tacoshell.dae */; };
+		96FAE27419E6BFE000353BDF /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27019E6BFE000353BDF /* material_1.png */; };
+		96FAE27519E6BFE000353BDF /* material_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27119E6BFE000353BDF /* material_2.png */; };
+		96FAE27619E6BFE000353BDF /* material_2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27219E6BFE000353BDF /* material_2_2.png */; };
+		96FAE27719E6BFE000353BDF /* agave_palm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27319E6BFE000353BDF /* agave_palm.dae */; };
+		96FAE27B19E6C13900353BDF /* lone-le.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27919E6C13900353BDF /* lone-le.png */; };
+		96FAE27C19E6C13900353BDF /* treebranch.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27A19E6C13900353BDF /* treebranch.dae */; };
+		96FAE28019E6C27F00353BDF /* material_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27E19E6C27F00353BDF /* material_1.png */; };
+		96FAE28119E6C27F00353BDF /* cube_tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = 96FAE27F19E6C27F00353BDF /* cube_tree.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1585,10 +1594,6 @@
 		961651E8199F0EEB0088DC97 /* wood-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wood-normal.png"; sourceTree = "<group>"; };
 		961651EA199F0EEB0088DC97 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
 		961651EB199F0EEB0088DC97 /* wood-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-specular.jpg"; sourceTree = "<group>"; };
-		9644B85119B6D6AB0091EF31 /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
-		9644B85219B6D6AB0091EF31 /* material_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2.png; sourceTree = "<group>"; };
-		9644B85319B6D6AB0091EF31 /* material_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2_2.png; sourceTree = "<group>"; };
-		9644B85419B6D6AB0091EF31 /* agave_palm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = agave_palm.dae; sourceTree = "<group>"; };
 		9644BB6C199EF16200F1EE50 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		966EB45F19A5224000D05880 /* Song In My Head.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song In My Head.aif"; sourceTree = "<group>"; };
 		966EB46F19A5231800D05880 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
@@ -1606,10 +1611,6 @@
 		9691CAE319E404B300259454 /* SCNMaterial+DST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNMaterial+DST.m"; sourceTree = "<group>"; };
 		9691CAE519E411FC00259454 /* SCNScene+DST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNScene+DST.h"; sourceTree = "<group>"; };
 		9691CAE619E411FC00259454 /* SCNScene+DST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNScene+DST.m"; sourceTree = "<group>"; };
-		96939BC219BBA1C000BA98AD /* flat_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = flat_tree.dae; sourceTree = "<group>"; };
-		96939BC519BBA1C700BA98AD /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
-		96939BC619BBA1C700BA98AD /* material_1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1_1.png; sourceTree = "<group>"; };
-		96939BCB19BBA1CC00BA98AD /* aloe.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = aloe.dae; sourceTree = "<group>"; };
 		969C668F19A7F7E1002149D0 /* OverlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScene.swift; sourceTree = "<group>"; };
 		969C669219A7FA14002149D0 /* atari_bluenoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_bluenoise.jpg; sourceTree = "<group>"; };
 		969C669319A7FA14002149D0 /* atari_creamnoise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atari_creamnoise.jpg; sourceTree = "<group>"; };
@@ -1745,6 +1746,23 @@
 		96E6007E19BF222500F45CBE /* bumps_geom2.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bumps_geom2.shader; sourceTree = "<group>"; };
 		96E6008619BF2E7500F45CBE /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
 		96F08CDD19A1278300C1409A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		96FAE25019E6B54B00353BDF /* bladeren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bladeren.jpg; sourceTree = "<group>"; };
+		96FAE25119E6B54B00353BDF /* stam-smal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stam-smal.jpg"; sourceTree = "<group>"; };
+		96FAE25219E6B54B00353BDF /* plane_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = plane_tree.dae; sourceTree = "<group>"; };
+		96FAE25719E6B8F800353BDF /* material_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = material_1.jpg; sourceTree = "<group>"; };
+		96FAE25819E6B8F800353BDF /* material_1_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = material_1_0.jpg; sourceTree = "<group>"; };
+		96FAE25919E6B8F800353BDF /* material_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = material_3.jpg; sourceTree = "<group>"; };
+		96FAE25A19E6B8F800353BDF /* banana_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = banana_tree.dae; sourceTree = "<group>"; };
+		96FAE26B19E6BD6400353BDF /* shell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shell.jpg; sourceTree = "<group>"; };
+		96FAE26C19E6BD6400353BDF /* tacoshell.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = tacoshell.dae; sourceTree = "<group>"; };
+		96FAE27019E6BFE000353BDF /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
+		96FAE27119E6BFE000353BDF /* material_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2.png; sourceTree = "<group>"; };
+		96FAE27219E6BFE000353BDF /* material_2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_2_2.png; sourceTree = "<group>"; };
+		96FAE27319E6BFE000353BDF /* agave_palm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = agave_palm.dae; sourceTree = "<group>"; };
+		96FAE27919E6C13900353BDF /* lone-le.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lone-le.png"; sourceTree = "<group>"; };
+		96FAE27A19E6C13900353BDF /* treebranch.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = treebranch.dae; sourceTree = "<group>"; };
+		96FAE27E19E6C27F00353BDF /* material_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_1.png; sourceTree = "<group>"; };
+		96FAE27F19E6C27F00353BDF /* cube_tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = cube_tree.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3325,23 +3343,20 @@
 		96165203199F19E80088DC97 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				96939BCB19BBA1CC00BA98AD /* aloe.dae */,
-				96939BC419BBA1C700BA98AD /* flat_tree */,
-				96939BC219BBA1C000BA98AD /* flat_tree.dae */,
-				9644B85019B6D6AB0091EF31 /* agave_palm */,
-				9644B85419B6D6AB0091EF31 /* agave_palm.dae */,
+				96FAE27D19E6C27F00353BDF /* cube_tree */,
+				96FAE27F19E6C27F00353BDF /* cube_tree.dae */,
+				96FAE27819E6C13900353BDF /* treebranch */,
+				96FAE27A19E6C13900353BDF /* treebranch.dae */,
+				96FAE26F19E6BFE000353BDF /* agave_palm */,
+				96FAE27319E6BFE000353BDF /* agave_palm.dae */,
+				96FAE26A19E6BD6400353BDF /* tacoshell */,
+				96FAE26C19E6BD6400353BDF /* tacoshell.dae */,
+				96FAE25619E6B8F800353BDF /* banana_tree */,
+				96FAE25A19E6B8F800353BDF /* banana_tree.dae */,
+				96FAE24F19E6B54B00353BDF /* plane_tree */,
+				96FAE25219E6B54B00353BDF /* plane_tree.dae */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		9644B85019B6D6AB0091EF31 /* agave_palm */ = {
-			isa = PBXGroup;
-			children = (
-				9644B85119B6D6AB0091EF31 /* material_1.png */,
-				9644B85219B6D6AB0091EF31 /* material_2.png */,
-				9644B85319B6D6AB0091EF31 /* material_2_2.png */,
-			);
-			path = agave_palm;
 			sourceTree = "<group>";
 		};
 		966EB46E19A5231800D05880 /* Categories */ = {
@@ -3371,15 +3386,6 @@
 				969C676019A82B9B002149D0 /* ShaderManager.swift */,
 			);
 			path = SceneKit;
-			sourceTree = "<group>";
-		};
-		96939BC419BBA1C700BA98AD /* flat_tree */ = {
-			isa = PBXGroup;
-			children = (
-				96939BC519BBA1C700BA98AD /* material_1.png */,
-				96939BC619BBA1C700BA98AD /* material_1_1.png */,
-			);
-			path = flat_tree;
 			sourceTree = "<group>";
 		};
 		969AA26F19A259D4000741A1 /* audio */ = {
@@ -3606,6 +3612,59 @@
 			path = video;
 			sourceTree = "<group>";
 		};
+		96FAE24F19E6B54B00353BDF /* plane_tree */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE25019E6B54B00353BDF /* bladeren.jpg */,
+				96FAE25119E6B54B00353BDF /* stam-smal.jpg */,
+			);
+			path = plane_tree;
+			sourceTree = "<group>";
+		};
+		96FAE25619E6B8F800353BDF /* banana_tree */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE25719E6B8F800353BDF /* material_1.jpg */,
+				96FAE25819E6B8F800353BDF /* material_1_0.jpg */,
+				96FAE25919E6B8F800353BDF /* material_3.jpg */,
+			);
+			path = banana_tree;
+			sourceTree = "<group>";
+		};
+		96FAE26A19E6BD6400353BDF /* tacoshell */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE26B19E6BD6400353BDF /* shell.jpg */,
+			);
+			path = tacoshell;
+			sourceTree = "<group>";
+		};
+		96FAE26F19E6BFE000353BDF /* agave_palm */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE27019E6BFE000353BDF /* material_1.png */,
+				96FAE27119E6BFE000353BDF /* material_2.png */,
+				96FAE27219E6BFE000353BDF /* material_2_2.png */,
+			);
+			path = agave_palm;
+			sourceTree = "<group>";
+		};
+		96FAE27819E6C13900353BDF /* treebranch */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE27919E6C13900353BDF /* lone-le.png */,
+			);
+			path = treebranch;
+			sourceTree = "<group>";
+		};
+		96FAE27D19E6C27F00353BDF /* cube_tree */ = {
+			isa = PBXGroup;
+			children = (
+				96FAE27E19E6C27F00353BDF /* material_1.png */,
+			);
+			path = cube_tree;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3671,6 +3730,7 @@
 				96154B5119A57ADA00AAD5EF /* toon_snow_front.jpg in Resources */,
 				961549B719A57ADA00AAD5EF /* greenhaze_top.jpg in Resources */,
 				96154A2619A57ADA00AAD5EF /* jajlands2_top.JPG in Resources */,
+				96FAE25B19E6B8F800353BDF /* material_1.jpg in Resources */,
 				96154AB419A57ADA00AAD5EF /* oasisnight_top.jpg in Resources */,
 				96154B2019A57ADA00AAD5EF /* snowblind_back.jpg in Resources */,
 				969C66E419A7FA14002149D0 /* sega_arena.jpg in Resources */,
@@ -3684,6 +3744,7 @@
 				96154A8C19A57ADA00AAD5EF /* nightsky_back.jpg in Resources */,
 				96154B3719A57ADA00AAD5EF /* starfield_left.jpg in Resources */,
 				969C673119A80789002149D0 /* carPaint.shader in Resources */,
+				96FAE25E19E6B8F800353BDF /* banana_tree.dae in Resources */,
 				96154A6119A57ADA00AAD5EF /* morose.zip in Resources */,
 				9615498B19A57ADA00AAD5EF /* frozen_left.jpg in Resources */,
 				9615499D19A57ADA00AAD5EF /* grand_canyon_back.jpg in Resources */,
@@ -3736,6 +3797,7 @@
 				9680C20C19C93ACE00BD2702 /* bernini_daphne_hand.png in Resources */,
 				9615495519A57ADA00AAD5EF /* dunes_top.jpg in Resources */,
 				9615492B19A57AD900AAD5EF /* jajdesert1_top.jpg in Resources */,
+				96FAE27519E6BFE000353BDF /* material_2.png in Resources */,
 				96154B2319A57ADA00AAD5EF /* snowblind_right.jpg in Resources */,
 				96154A4B19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615499719A57ADA00AAD5EF /* gardensky_back.jpg in Resources */,
@@ -3818,6 +3880,7 @@
 				961549E419A57ADA00AAD5EF /* ice_mountain_front.jpg in Resources */,
 				9615495D19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615492719A57AD900AAD5EF /* jajdesert1_back.jpg in Resources */,
+				96FAE25D19E6B8F800353BDF /* material_3.jpg in Resources */,
 				961549C319A57ADA00AAD5EF /* hazy_lake_right.jpg in Resources */,
 				961548DC19A57AD900AAD5EF /* jajcannons1_left.jpg in Resources */,
 				9615497F19A57ADA00AAD5EF /* flatrock_top.jpg in Resources */,
@@ -3841,7 +3904,6 @@
 				969C670019A7FA14002149D0 /* segagg_persia.jpg in Resources */,
 				969C66D919A7FA14002149D0 /* atari_greyglitch.jpg in Resources */,
 				96154A0719A57ADA00AAD5EF /* krypto_sky_front.jpg in Resources */,
-				96939BC319BBA1C000BA98AD /* flat_tree.dae in Resources */,
 				969C673D19A80789002149D0 /* ParticleSystem.fsh in Resources */,
 				961549B519A57ADA00AAD5EF /* greenhaze_left.jpg in Resources */,
 				96154B1A19A57ADA00AAD5EF /* jajsnow1_right.jpg in Resources */,
@@ -3850,7 +3912,6 @@
 				9615492919A57AD900AAD5EF /* jajdesert1_left.jpg in Resources */,
 				961548F519A57AD900AAD5EF /* comawhite.zip in Resources */,
 				961548B519A57AD900AAD5EF /* Note.txt in Resources */,
-				9644B85819B6D6AB0091EF31 /* agave_palm.dae in Resources */,
 				961651FE199F0EEB0088DC97 /* wood-normal.png in Resources */,
 				9615492E19A57AD900AAD5EF /* endset_back.jpg in Resources */,
 				969C675019A824C7002149D0 /* color_envmap.png in Resources */,
@@ -3943,7 +4004,6 @@
 				969C675E19A825CE002149D0 /* stone_diffuse.png in Resources */,
 				961549D019A57ADA00AAD5EF /* hexagon_front.jpg in Resources */,
 				961549AB19A57ADA00AAD5EF /* green.zip in Resources */,
-				96939BCD19BBA1CC00BA98AD /* aloe.dae in Resources */,
 				96A8B07419B2ABA20016BCD5 /* TacoTree.wav in Resources */,
 				961548A719A57AD900AAD5EF /* Note.txt in Resources */,
 				961549AE19A57ADA00AAD5EF /* xyloote_front.jpg in Resources */,
@@ -3959,12 +4019,13 @@
 				96154A1019A57ADA00AAD5EF /* jajlake1_right.jpg in Resources */,
 				961651FC199F0EEB0088DC97 /* scree-normal.jpg in Resources */,
 				96154B3E19A57ADA00AAD5EF /* stars_left.jpg in Resources */,
+				96FAE25519E6B54B00353BDF /* plane_tree.dae in Resources */,
 				969C670A19A7FA14002149D0 /* zx_3dstrategy.jpg in Resources */,
 				961548FC19A57AD900AAD5EF /* cottoncandy.zip in Resources */,
+				96FAE25C19E6B8F800353BDF /* material_1_0.jpg in Resources */,
 				961548E719A57AD900AAD5EF /* cliffsofinsanity.zip in Resources */,
 				961548E619A57AD900AAD5EF /* Note.txt in Resources */,
 				9615490219A57AD900AAD5EF /* Note.txt in Resources */,
-				96939BC719BBA1C700BA98AD /* material_1.png in Resources */,
 				961549F119A57ADA00AAD5EF /* iceflow.zip in Resources */,
 				969C673719A80789002149D0 /* floor.shader in Resources */,
 				96154AAD19A57ADA00AAD5EF /* oasisday_top.jpg in Resources */,
@@ -3973,7 +4034,9 @@
 				961548EB19A57AD900AAD5EF /* cliffsofinsanity_right.jpg in Resources */,
 				96154A7319A57ADA00AAD5EF /* valley_left.jpg in Resources */,
 				96154A8A19A57ADA00AAD5EF /* nwo512_top.jpg in Resources */,
+				96FAE28019E6C27F00353BDF /* material_1.png in Resources */,
 				96154AEF19A57ADA00AAD5EF /* rapture_back.jpg in Resources */,
+				96FAE27719E6BFE000353BDF /* agave_palm.dae in Resources */,
 				96154A0119A57ADA00AAD5EF /* mine_front.jpg in Resources */,
 				961549DD19A57ADA00AAD5EF /* jajice1_back.jpg in Resources */,
 				966EB46019A5224000D05880 /* Song In My Head.aif in Resources */,
@@ -3984,7 +4047,6 @@
 				96154A2519A57ADA00AAD5EF /* jajlands2_right.jpg in Resources */,
 				96154B2B19A57ADA00AAD5EF /* snowy_top.jpg in Resources */,
 				961549A219A57ADA00AAD5EF /* grandcanyon.zip in Resources */,
-				9644B85719B6D6AB0091EF31 /* material_2_2.png in Resources */,
 				9680C20B19C93ACE00BD2702 /* bernini_daphne_back.jpg in Resources */,
 				96154ADB19A57ADA00AAD5EF /* powderpeaknight_front.jpg in Resources */,
 				9615490419A57AD900AAD5EF /* darkgloom_back.jpg in Resources */,
@@ -4025,6 +4087,7 @@
 				96154B3119A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A7619A57ADA00AAD5EF /* mudskipper.zip in Resources */,
 				96154AF719A57ADA00AAD5EF /* redday_front.jpg in Resources */,
+				96FAE27B19E6C13900353BDF /* lone-le.png in Resources */,
 				96154A1A19A57ADA00AAD5EF /* Note.txt in Resources */,
 				969C66F019A7FA14002149D0 /* sega_lightcave.jpg in Resources */,
 				96154A5119A57ADA00AAD5EF /* majesty_top.jpg in Resources */,
@@ -4155,6 +4218,7 @@
 				96154B4D19A57ADA00AAD5EF /* Note.txt in Resources */,
 				96154A8619A57ADA00AAD5EF /* nwo512_back.jpg in Resources */,
 				96154A1619A57ADA00AAD5EF /* jajlake2_left.jpg in Resources */,
+				96FAE25419E6B54B00353BDF /* stam-smal.jpg in Resources */,
 				96154B3919A57ADA00AAD5EF /* starfield_top.jpg in Resources */,
 				9615496E19A57ADA00AAD5EF /* entropic_front.jpg in Resources */,
 				961549A319A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -4164,6 +4228,7 @@
 				9615490619A57AD900AAD5EF /* darkgloom_left.jpg in Resources */,
 				961549D919A57ADA00AAD5EF /* hourglass_right.jpg in Resources */,
 				9615492819A57AD900AAD5EF /* jajdesert1_front.jpg in Resources */,
+				96FAE25319E6B54B00353BDF /* bladeren.jpg in Resources */,
 				96154B1D19A57ADA00AAD5EF /* snow.zip in Resources */,
 				961548D119A57AD900AAD5EF /* Note.txt in Resources */,
 				96154A8819A57ADA00AAD5EF /* nwo512_left.jpg in Resources */,
@@ -4186,7 +4251,6 @@
 				9615493D19A57AD900AAD5EF /* desertsky_front.jpg in Resources */,
 				9615493E19A57AD900AAD5EF /* desertsky_left.jpg in Resources */,
 				96154B4619A57ADA00AAD5EF /* stratosphere_right.jpg in Resources */,
-				96939BC819BBA1C700BA98AD /* material_1_1.png in Resources */,
 				96154AED19A57ADA00AAD5EF /* Note.txt in Resources */,
 				961548FA19A57AD900AAD5EF /* comawhite_top.jpg in Resources */,
 				9615490D19A57AD900AAD5EF /* jajdarkland1_left.jpg in Resources */,
@@ -4220,6 +4284,7 @@
 				96154B5C19A57ADA00AAD5EF /* underwater_top.jpg in Resources */,
 				961549F019A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615497D19A57ADA00AAD5EF /* flatrock_left.jpg in Resources */,
+				96FAE28119E6C27F00353BDF /* cube_tree.dae in Resources */,
 				96154B0D19A57ADA00AAD5EF /* shadowpeak_left.jpg in Resources */,
 				969C670B19A7FA14002149D0 /* zx_areyouusingtv.jpg in Resources */,
 				961548A219A57AD900AAD5EF /* jajalien1_back.jpg in Resources */,
@@ -4239,9 +4304,7 @@
 				96154B2419A57ADA00AAD5EF /* snowblind_top.jpg in Resources */,
 				9615499619A57ADA00AAD5EF /* gardensky.zip in Resources */,
 				969C673919A80789002149D0 /* mapGeometry.shader in Resources */,
-				9644B85519B6D6AB0091EF31 /* material_1.png in Resources */,
 				96154AB719A57ADA00AAD5EF /* orangecream_back.jpg in Resources */,
-				9644B85619B6D6AB0091EF31 /* material_2.png in Resources */,
 				961549E119A57ADA00AAD5EF /* jajice1_top.jpg in Resources */,
 				961548DE19A57AD900AAD5EF /* jajcannons1_top.jpg in Resources */,
 				96154A6719A57ADA00AAD5EF /* Note.txt in Resources */,
@@ -4312,10 +4375,12 @@
 				961549FE19A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615495919A57ADA00AAD5EF /* elbrus_front.jpg in Resources */,
 				9615497219A57ADA00AAD5EF /* Note.txt in Resources */,
+				96FAE27419E6BFE000353BDF /* material_1.png in Resources */,
 				96154A7719A57ADA00AAD5EF /* mudskipper_back.jpg in Resources */,
 				96154AE319A57ADA00AAD5EF /* purplenebula_left.jpg in Resources */,
 				961548E419A57AD900AAD5EF /* city_right.jpg in Resources */,
 				961548CF19A57AD900AAD5EF /* bluefreeze_right.jpg in Resources */,
+				96FAE26D19E6BD6400353BDF /* shell.jpg in Resources */,
 				96154A7B19A57ADA00AAD5EF /* mudskipper_top.jpg in Resources */,
 				96154AE519A57ADA00AAD5EF /* purplenebula_top.jpg in Resources */,
 				9615490C19A57AD900AAD5EF /* jajdarkland1_front.jpg in Resources */,
@@ -4329,6 +4394,7 @@
 				96154A2819A57ADA00AAD5EF /* Note.txt in Resources */,
 				9615494A19A57ADA00AAD5EF /* devpun_back.jpg in Resources */,
 				96154AFA19A57ADA00AAD5EF /* redday_top.jpg in Resources */,
+				96FAE27619E6BFE000353BDF /* material_2_2.png in Resources */,
 				96154A0619A57ADA00AAD5EF /* krypto_sky_back.jpg in Resources */,
 				96AD915B19B3B7BD00732834 /* alpine.zip in Resources */,
 				96154A4619A57ADA00AAD5EF /* lostatseanight_back.jpg in Resources */,
@@ -4341,6 +4407,7 @@
 				961548B019A57AD900AAD5EF /* bleached_back.jpg in Resources */,
 				9615491419A57AD900AAD5EF /* delirious_left.jpg in Resources */,
 				96154AD119A57ADA00AAD5EF /* Note.txt in Resources */,
+				96FAE26E19E6BD6400353BDF /* tacoshell.dae in Resources */,
 				96154AEA19A57ADA00AAD5EF /* purplevalley_left.jpg in Resources */,
 				96154B3D19A57ADA00AAD5EF /* stars_front.jpg in Resources */,
 				96154B0819A57ADA00AAD5EF /* rockyvalley_top.jpg in Resources */,
@@ -4459,6 +4526,7 @@
 				9615497419A57ADA00AAD5EF /* fadeaway_back.jpg in Resources */,
 				969C66FD19A7FA14002149D0 /* sega_splatterhouse.jpg in Resources */,
 				969C673819A80789002149D0 /* mapFragment.shader in Resources */,
+				96FAE27C19E6C13900353BDF /* treebranch.dae in Resources */,
 				961548CD19A57AD900AAD5EF /* bluefreeze_front.jpg in Resources */,
 				961549E319A57ADA00AAD5EF /* ice_mountain_back.jpg in Resources */,
 				969C674619A80789002149D0 /* toon.shader in Resources */,

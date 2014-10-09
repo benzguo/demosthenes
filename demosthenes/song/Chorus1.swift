@@ -10,7 +10,10 @@ extension MainViewController {
     	case 0:
             scene.setSkybox("clouds")
             cameraNode.addChildNode(agave)
-            agave.setRotation(vector: SCNVector3Make(1, 0, 0), duration: 800.0)
+            agave.setRotation(vector: SCNVector3Make(1, 0, 0), duration: 200.0)
+            cameraNode.addChildNode(cubetree)
+            cameraNode.addChildNode(taco)
+            cameraNode.addChildNode(taco2)
             cameraNode.addChildNode(glitchPlane1)
     		break
     		
